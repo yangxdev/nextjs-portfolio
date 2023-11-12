@@ -7,15 +7,15 @@ import Biography from "./Biography";
 
 export default function HomePage() {
   return (
-    <div className="bg-background flex-col flex main-page h-screen w-screen items-center justify-center">
-      <div className="scroll-links absolute cursor-pointer">
+    <div className="bg-background flex-col flex main-page h-full w-screen items-center justify-center">
+      {/* <div className="scroll-links absolute cursor-pointer">
         <ScrollLink to="landing" smooth={true} duration={500}>
           Landing
         </ScrollLink>
         <ScrollLink to="biography" smooth={true} duration={500}>
           Biography
         </ScrollLink>
-      </div>
+      </div> */}
       <Header />
       <Landing />
       <Biography />

@@ -16,7 +16,14 @@
   }
 }
 
+body::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
 body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +32,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+

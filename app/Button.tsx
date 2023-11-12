@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./css/styles.module.css";
 
 type ButtonProps = {
-  type: "begin" | "header" | "logo";
+  type: "begin" | "header" | "logo" | "main";
   content: string;
   onClick?: () => void;
 };
@@ -19,6 +19,9 @@ const Button: React.FC<ButtonProps> = ({ type, content, onClick }) => {
       break;
     case "logo":
       buttonStyle = styles["logo-button"];
+      break;
+    case "main":
+      buttonStyle = styles["main-button"];
       break;
     default:
       break;

@@ -15,3 +15,7 @@
 .header-button {
   @apply text-text font-light text-center select-none cursor-pointer hover:opacity-80
 }
+
+.main-button {
+  @apply text-text w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200
+}
