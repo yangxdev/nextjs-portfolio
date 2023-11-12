@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import Header from "./Header";
 import Landing from "./Landing";
 import Biography from "./Biography";
+import Footer from "./Footer";
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Header />
       <Landing />
       <Biography />
+      <Footer />
     </div>
   );
 }
