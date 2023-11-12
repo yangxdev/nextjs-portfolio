@@ -8,7 +8,7 @@ export default function Biography() {
     ];
 
     return (
-        <div className="biography mx-40 py-20 h-full select-none border-b border-slate-700">
+        <div id="Biography" className="biography mx-40 py-20 h-full select-none border-b border-slate-700">
             <div className="biography-text flex flex-row">
                 <div className="biography-text-col1 text-xl mr-8">
                     <p>

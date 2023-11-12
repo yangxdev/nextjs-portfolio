@@ -17,7 +17,7 @@ export default function Landing() {
     ];
 
     return (
-        <div className="landing mx-40 select-none pt-40 pb-20 border-b border-slate-700">
+        <div id="Landing" className="landing mx-40 select-none pt-40 pb-20 border-b border-slate-700">
             <div className="landing-text">
                 <div className="landing-text-primary text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
