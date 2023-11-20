@@ -5,10 +5,11 @@ import Header from "./Header";
 import Landing from "./Landing";
 import Biography from "./Biography";
 import Footer from "./Footer";
+import CoverLetterMaker from "./Projects/CoverLetterMaker";
 
 export default function HomePage() {
 
-  const sections = ['Landing', 'Biography'];
+  const sections = ['Landing', 'Biography', 'CLM'];
 
   return (
     <div className="bg-background flex-col flex main-page h-full w-screen items-center justify-center">
@@ -31,6 +32,7 @@ export default function HomePage() {
       </div>
       <Landing />
       <Biography />
+      <CoverLetterMaker />
       <Footer />
     </div>
   );

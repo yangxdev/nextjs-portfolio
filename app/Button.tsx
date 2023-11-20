@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./css/styles.module.css";
 
 type ButtonProps = {
-  type: "begin" | "header" | "logo" | "main";
+  type: "begin" | "header" | "logo" | "main" | "send" | "copy";
   content: string;
+  disabled?: boolean;
   onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({ type, content, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ type, content, disabled, onClick }) => {
   let buttonStyle = "";
 
   switch (type) {
@@ -23,12 +24,18 @@ const Button: React.FC<ButtonProps> = ({ type, content, onClick }) => {
     case "main":
       buttonStyle = styles["main-button"];
       break;
+    case "send":
+      buttonStyle = styles["send-button"];
+      break;
+    case "copy":
+      buttonStyle = styles["copy-button"];
+      break;
     default:
       break;
   }
 
   return (
-    <div className={`common-button-style ${buttonStyle}`} onClick={onClick}>
+    <div className={`common-button-style ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : 'cursor-pointer'}`} onClick={disabled ? undefined : onClick}>
       {content}
     </div>
   );
