@@ -26,7 +26,7 @@ export default function CoverLetterMaker() {
         const experience1 = inputExperience1.current?.value;
         const experience2 = inputExperience2.current?.value;
 
-        const updatedCvText = `Dear Recruiter of ${company},\nNice to meet you! My name is ${name} and I’m writing to you to express my interest in the position as a ${role} at this company. With nearly two years of experience in full-stack development (with great focus on the front-end technologies) at work, during university and on various personal projects, and having just completed my studies for the ${degree} in ${course} at ${school}, I’m enthusiastic about the opportunity to join your innovative team.\nWith a strong foundation in full-stack technologies, including extensive experience with JavaScript (jQuery, React / NextJS) and Java (JSP), I am confident in my ability to contribute effectively to your company. My background in full-stack development in an Scrum Agile team of 10 for an international e-commerce platform, coupled with my academic achievements in Computer Science, positions me well to thrive in a dynamic and innovative environment like yours. Additionally, my goal to work internationally aligns perfectly with the global nature of your company, and I am eager to bring my skills and enthusiasm to your esteemed team.\nLooking forward to hearing from you, I wish you a nice day!\nSincerely,\n${name}`;
+        const updatedCvText = `Dear Recruiter of ${company},\nNice to meet you! My name is ${name} and I’m writing to you to express my interest in the position as a ${role} at this company. With nearly two years of experience in full-stack development (with great focus on the front-end technologies) at work, during university and on various personal projects, and having just completed my studies for the Bachelor Degree in Computer Science at University of Milan-Bicocca, I’m enthusiastic about the opportunity to join your innovative team.\nWith a strong foundation in full-stack technologies, including extensive experience with JavaScript (jQuery, React / NextJS) and Java (JSP), I am confident in my ability to contribute effectively to your company. My background in full-stack development in an Scrum Agile team of 10 for an international e-commerce platform, coupled with my academic achievements in Computer Science, positions me well to thrive in a dynamic and innovative environment like yours. Additionally, my goal to work internationally aligns perfectly with the global nature of your company, and I am eager to bring my skills and enthusiasm to your esteemed team.\nLooking forward to hearing from you, I wish you a nice day!\nSincerely,\n${name}`;
 
         toast("Cover letter generated!",
             {
@@ -42,7 +42,7 @@ export default function CoverLetterMaker() {
         setCvText(updatedCvText);
     };
 
-    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
     const allElemsAreEmpty = (elems: NodeListOf<HTMLInputElement> | { value: string; }[] | undefined) => {
         let status = false;
@@ -79,14 +79,14 @@ export default function CoverLetterMaker() {
             <p className="text-center text-white">Fill in the fields below and click on Generate to create your own cover letter!</p>
             <br /> <br />
             <div className="flex justify-center max-w-6l flex-wrap">
-                <input type="text" className={inputField} ref={inputName} placeholder="Enter your name" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputCompany} placeholder="Enter company name" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputRole} placeholder="Enter role" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputDegree} placeholder="Enter your degree" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputCourse} placeholder="Enter your course" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputSchool} placeholder="Enter your school" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputExperience1} placeholder="Enter your 1st experience" onChange={handleInputChange} />
-                <input type="text" className={inputField} ref={inputExperience2} placeholder="Enter your 2nd experience" onChange={handleInputChange} />
+                <input type="text" className={inputField} ref={inputName} placeholder="Enter your name" onChange={handleInputChange} defaultValue={'Yang'}/>
+                <input type="text" className={inputField} ref={inputCompany} placeholder="Enter company name" onChange={handleInputChange} defaultValue={'Deloitte'}/>
+                <input type="text" className={inputField} ref={inputRole} placeholder="Enter role" onChange={handleInputChange} defaultValue={'Software Engineer'}/>
+                {/* <input type="text" className={inputField} ref={inputDegree} placeholder="Enter your degree" onChange={handleInputChange} /> */}
+                {/* <input type="text" className={inputField} ref={inputCourse} placeholder="Enter your course" onChange={handleInputChange} /> */}
+                {/* <input type="text" className={inputField} ref={inputSchool} placeholder="Enter your school" onChange={handleInputChange} /> */}
+                {/* <input type="text" className={inputField} ref={inputExperience1} placeholder="Enter your 1st experience" onChange={handleInputChange} /> */}
+                {/* <input type="text" className={inputField} ref={inputExperience2} placeholder="Enter your 2nd experience" onChange={handleInputChange} /> */}
             </div>
             <div className="flex justify-center mt-4">
                 <Button type="generate" content="Generate" onClick={getCvText} disabled={isButtonDisabled}/>

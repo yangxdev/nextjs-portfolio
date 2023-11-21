@@ -17,7 +17,7 @@ export default function Landing() {
     ];
 
     return (
-        <div id="Landing" className="landing max-w-5xl mx-40 select-none pt-40 pb-20 border-b border-slate-700">
+        <div id="Welcome" className="landing max-w-5xl mx-40 select-none pt-40 pb-20 border-b border-slate-700">
             <div className="landing-text">
                 <div className="landing-text-primary text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
@@ -25,7 +25,7 @@ export default function Landing() {
                     experiences.
                 </div>
                 <div className="landing-text-secondary mt-4 text-md font-normal">
-                    Currently based in Milan, Italy, I&apos;m a Developer at{" "}
+                    Currently based in Milan, Italy, I&apos;m a Software Engineer at{" "}
                     <span className="text-accent font-semibold">Deloitte Digital</span>,
                     where I bring innovative solutions to life through code and
                     creativity.

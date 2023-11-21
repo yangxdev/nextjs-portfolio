@@ -9,7 +9,7 @@ export default function Footer() {
     ];
 
     return (
-        <div className="footer mx-40 py-20 flex items-center flex-col justify-center select-none">
+        <div id="Contact Me" className="footer mx-40 py-20 flex items-center flex-col justify-center select-none">
             <div className="footer-text-title text-center text-5xl font-bold">
                 GET IN TOUCH
             </div>
