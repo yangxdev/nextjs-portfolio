@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./css/styles.module.css";
 
 type ButtonProps = {
-  type: "begin" | "header" | "logo" | "main" | "send" | "copy";
+  type: "begin" | "header" | "logo" | "main" | "generate" | "copy";
   content: string;
   disabled?: boolean;
   onClick?: () => void;
@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({ type, content, disabled, onClick }) => 
     case "main":
       buttonStyle = styles["main-button"];
       break;
-    case "send":
+    case "generate":
       buttonStyle = styles["send-button"];
       break;
     case "copy":
