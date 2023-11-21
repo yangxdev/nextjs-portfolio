@@ -6,11 +6,12 @@ import Landing from "./Landing";
 import Biography from "./Biography";
 import Footer from "./Footer";
 import CoverLetterMaker from "./Projects/CoverLetterMaker";
+import FrontendMentor from "./Projects/FrontendMentor";
 import { Toaster } from "react-hot-toast";
 
 export default function HomePage() {
 
-  const sections = ['Landing', 'Biography', 'CLM'];
+  const sections = ['Landing', 'Biography', 'FM', 'CLM'];
 
   return (
     <div className="bg-background flex-col flex main-page h-full w-screen items-center justify-center">
@@ -34,6 +35,7 @@ export default function HomePage() {
       </div>
       <Landing />
       <Biography />
+      <FrontendMentor />
       <CoverLetterMaker />
       <Footer />
     </div>

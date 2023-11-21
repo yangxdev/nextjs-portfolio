@@ -73,7 +73,7 @@ export default function CoverLetterMaker() {
 
     const cvTextRef = useRef<HTMLElement>(null);
     return (
-        <div id="CLM" ref={clmRef as React.RefObject<HTMLDivElement>} className="landing max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
+        <div id="CLM" ref={clmRef as React.RefObject<HTMLDivElement>} className="clm max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
             <h1 className="text-5xl text-center text-white">Cover Letter Maker</h1>
             <br />
             <p className="text-center text-white">Fill in the fields below and click on Generate to create your own cover letter!</p>

@@ -23,7 +23,6 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
-
   /* color: rgb(var(--foreground-rgb)); */
   color: white;
   background: linear-gradient(
@@ -34,4 +33,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+[data-rmiz-modal-overlay="visible"] {
+  /* background-color: rgba(255, 255, 255, 1); */
+  background-color: black !important;
+}
 
+[data-rmiz-modal-img] {
+  @apply rounded-xl;
+  cursor: pointer !important;
+}
+
+[data-rmiz-btn-unzoom] {
+  cursor: pointer !important;
+}
+
+[data-rmiz-content="found"] img,
+[data-rmiz-content="found"] svg,
+[data-rmiz-content="found"] [role="img"],
+[data-rmiz-content="found"] [data-zoom] {
+  cursor: pointer !important;
+}
