@@ -16,7 +16,7 @@ export default function FrontendMentor() {
     const [isMobileView3, setIsMobileView3] = useState(false);
 
     return (
-        <div id='FM' className="frontend-mentor max-w-5xl mx-40 py-20 border-b select-none border-slate-700">
+        <div id='Project: Frontend Mentor' className="frontend-mentor max-w-5xl mx-40 py-20 border-b select-none border-slate-700">
             <h1 className="text-5xl text-center text-white">Frontend Mentor</h1>
             <h3 className='text-xl text-center text-white mt-2'>From 2022</h3>
             <br />
@@ -163,6 +163,10 @@ export default function FrontendMentor() {
                     </div>
                 </div>
             </div>
+            <div className="mt-8 text-center text-xl">
+                Want to see more? Check out my Frontend Mentor profile!
+            </div>
+            <div className="flex justify-center mt-4"><Button type="main" content="View Profile" onClick={() => window.open('https://www.frontendmentor.io/profile/yangxdev')} /></div>
         </div >
     );
 }

@@ -4,11 +4,13 @@ import Button from "./Button";
 export default function Landing() {
     const technologies = [
         "Javascript",
+        "jQuery",
         "Typescript",
-        "React",
+        "React.js",
         "Next.js",
         "Tailwind CSS",
         "Java",
+        "Agile"
     ];
 
     const landingButtons: { type: 'main'; content: string; onClick?: () => void }[] = [
@@ -21,11 +23,11 @@ export default function Landing() {
             <div className="landing-text">
                 <div className="landing-text-primary text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
-                    Full-Stack Developer with a passion for crafting exceptional front-end
+                    Software Engineer with a passion for crafting exceptional front-end
                     experiences.
                 </div>
                 <div className="landing-text-secondary mt-4 text-md font-normal">
-                    Currently based in Milan, Italy, I&apos;m a Software Engineer at{" "}
+                    Currently based in Milan, Italy, I&apos;m a Full-stack Developer at{" "}
                     <span className="text-accent font-semibold">Deloitte Digital</span>,
                     where I bring innovative solutions to life through code and
                     creativity.

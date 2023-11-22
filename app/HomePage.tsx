@@ -12,7 +12,14 @@ import CurriculumVitae from "./Projects/CurriculumVitae";
 
 export default function HomePage() {
 
-  const sections = ['Welcome', 'Biography', 'Project: Frontend Mentor', 'Project: Cover Letter Maker', 'Project: Curriculum Vitae', 'Contact Me'];
+  const sections = [
+    'Welcome', 
+    'Biography', 
+    'Project: Frontend Mentor', 
+    'Project: Curriculum Vitae', 
+    'Project: Cover Letter Maker', 
+    'Contact Me',
+  ];
 
   return (
     <div className="bg-background flex-col flex main-page h-full w-screen items-center justify-center">
