@@ -15,7 +15,7 @@ export default function Footer() {
             </div>
             <div className="footer-text-subtitle flex text-center text-sm mt-6">
                 <p>
-                    Let's talk about your project and how I can help you, or if you just want to chat about technology - shoot me a message at 
+                    Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me a message at 
                     <a className="select-text"> yangxdev@gmail.com </a>
                     or Telegram.
                 </p>
