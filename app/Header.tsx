@@ -5,12 +5,12 @@ import Button from './Button';
 export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [
         { type: 'header', content: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/yangxng/', '_blank') },
-        { type: 'header', content: 'GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
+        // { type: 'header', content: 'GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
         { type: 'header', content: 'Resume', onClick: () => window.open('https://nextjs-enl5l81qm-yangxdev.vercel.app/')},
     ];
 
     return (
-        <div className="header sticky bg-gradient-to-b from-gray-800 to-transparent backdrop-blur backdrop-opacity-10 w-full top-0 py-5 px-6">
+        <div className="header sticky bg-gradient-to-b from-gray-900 to-transparent backdrop-blur backdrop-opacity-10 w-full top-0 py-5 px-6">
             <div className="row flex flex-nowrap justify-between items-center">
                 <Button type="logo" content="YANGXDEV" onClick={() => window.location.reload()} />
                 <div className="menu flex flex-nowrap">

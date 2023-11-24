@@ -9,20 +9,18 @@ import CoverLetterMaker from "./Projects/CoverLetterMaker";
 import FrontendMentor from "./Projects/FrontendMentor";
 import { Toaster } from "react-hot-toast";
 import CurriculumVitae from "./Projects/CurriculumVitae";
+import Portfolio from "./Portfolio";
 
 export default function HomePage() {
 
   const sections = [
     'Welcome', 
-    'Biography', 
-    'Project: Frontend Mentor', 
-    'Project: Curriculum Vitae', 
-    'Project: Cover Letter Maker', 
+    'Portfolio', 
     'Contact Me',
   ];
 
   return (
-    <div className="bg-background flex-col flex main-page h-full w-screen items-center justify-center">
+    <div className="flex-col flex main-page h-full w-screen items-center justify-center">
       <div><Toaster/></div>
       <Header />
       <div className="scroll-links flex flex-col sticky top-[70px] mr-auto ml-6 cursor-pointer">
@@ -43,8 +41,9 @@ export default function HomePage() {
       </div>
       <Landing />
       <Biography />
-      <FrontendMentor />
+      <Portfolio />
       <CurriculumVitae />
+      <FrontendMentor />
       <CoverLetterMaker />
       <Footer />
     </div>

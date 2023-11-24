@@ -19,7 +19,7 @@ export default function Landing() {
     ];
 
     return (
-        <div id="Welcome" className="landing max-w-5xl mx-40 select-none pt-40 pb-20 border-b border-slate-700">
+        <div id="Welcome" className="landing max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
             <div className="landing-text">
                 <div className="landing-text-primary text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
@@ -32,7 +32,7 @@ export default function Landing() {
                     where I bring innovative solutions to life through code and
                     creativity.
                 </div>
-                <div className="landing-text-tertiary mt-4 text-md">
+                {/* <div className="landing-text-tertiary mt-4 text-md">
                     My journey involves:
                     <ul className="list-disc pl-6">
                         <li>Designing and implementing user-friendly interfaces.</li>
@@ -42,7 +42,7 @@ export default function Landing() {
                         </li>
                         <li>Staying updated with emerging web technologies and trends.</li>
                     </ul>
-                </div>
+                </div> */}
             </div>
             <div className="landing-buttons flex flex-nowrap mt-8">
                 {landingButtons.map((button, index) => (
