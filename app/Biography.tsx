@@ -12,13 +12,14 @@ export default function Biography() {
             <div className="biography-text flex flex-row">
                 <div className="biography-text-col1 text-xl mr-8">
                     <p>
-                        <strong>Academic Journey</strong>
-                        After completing my high school education in Information Technology, I pursued my passion for computers and technology and enrolled in a Computer Science program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
+                        <strong>Academic Journey</strong><br/>
+                        After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the Computer Science program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
                     </p>
                     
                     <p>
                         <br/>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At perspiciatis officiis dolores eaque, non consequuntur esse ad architecto odio incidunt quod? Ex unde quidem tempore obcaecati impedit expedita atque accusamus.
+                        <strong>Current Job</strong><br/>
+                        I am currently working as a Full-stack Developer at Deloitte Digital, where I contribute to the development of a globally used e-commerce booking platform. In this position, I have been fortunate to collaborate with a team of talented professionals, enhancing my skills in both front-end and back-end development.
                     </p>
 
                     <div className="text-base mt-4">
@@ -32,11 +33,22 @@ export default function Biography() {
 
                 </div>
                 <div className="biography-text-col2 text-sm">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe aspernatur officiis minus voluptatum repellat delectus magnam repellendus similique unde optio laboriosam neque assumenda, illo, ducimus iste expedita ratione ad adipisci.</p>
+                    <p>
+                        <strong>Learning Journey</strong><br/>
+                        One of the most significant aspects of my career as a software engineer has been the opportunity to work on various projects throughout my high school years, university and in the free time. Through these projects I have gained proficiency in technologies such as JavaScript (React.js, Next.js) and CSS (SASS, Tailwind CSS).
+                    </p>
 
-                    <p><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam corrupti ea dignissimos modi quisquam rerum aspernatur ipsum rem officia repellat, vitae nisi, enim quibusdam soluta saepe laudantium laborum ad.</p>
+                    <p>
+                        <br/>
+                        <strong>Soft Skills Development</strong><br/>
+                        In addition to technical expertise, I have also honed my soft skills throughout my career, particularly since joining Deloitte. Working in a dynamic and diverse environment has allowed me to develop effective communication and collaboration skills. I have learned the importance of stro\ng teamwork, adaptibility, and problem-solving abilities.
+                    </p>
 
-                    <p><br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam corrupti ea dignissimos modi quisquam rerum aspernatur ipsum rem officia repellat, vitae nisi, enim quibusdam soluta saepe laudantium laborum ad.</p>
+                    <p>
+                        <br/>
+                        <strong>Collaborative Environment</strong><br/>
+                        As part of a cross-functional team composed of professionals from various regions in Italy and abroad, I have learned the importance of producing code that seamlessly integrates with others'. Leveraging version control systems like Git, our team ensures smooth collaboration while maintaining code integrity. Furthermore, effective communication in English has fostered a global mindset and cultural exchange within our team.
+                    </p>
                 </div>
             </div>
         </div>
