@@ -12,10 +12,8 @@ export default function Biography() {
             <div className="biography-text flex flex-row">
                 <div className="biography-text-col1 text-xl mr-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-                        explicabo, officiis provident vel voluptas labore illum molestias,
-                        hic, dolorum sed aliquid. Perferendis, eaque eos tempora dolor
-                        provident nulla corrupti non.
+                        <strong>Academic Journey</strong>
+                        After completing my high school education in Information Technology, I pursued my passion for computers and technology and enrolled in a Computer Science program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
                     </p>
                     
                     <p>
