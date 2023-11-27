@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { FaPhone } from 'react-icons/fa';
 
 export default function Landing() {
     const technologies = [
@@ -14,7 +15,13 @@ export default function Landing() {
     ];
 
     const landingButtons: { type: 'main'; content: string; onClick?: () => void }[] = [
-        { type: 'main', content: 'Latest work on GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
+        // { type: 'main', content: 'Latest work on GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
+        // { type: 'main', content: 'Visit my LinkedIn profile', onClick: () => window.open('https://www.linkedin.com/in/yangxng', '_blank') },
+        { 
+            type: 'main', 
+            content: <>Call Me <FaPhone /></>, 
+            onClick: () => window.location.href = 'tel:+393342229699' 
+        },
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },
     ];
 
@@ -27,7 +34,7 @@ export default function Landing() {
                     experiences.
                 </div>
                 <div className="landing-text-secondary mt-4 text-md font-normal">
-                    Currently based in Milan, Italy, I&apos;m a Full-stack Developer at{" "}
+                    Currently based in <strong>Milan, Italy</strong>, I&apos;m a Full-stack Developer at{" "}
                     <span className="text-accent font-semibold">Deloitte Digital</span>,
                     where I bring innovative solutions to life through code and
                     creativity.

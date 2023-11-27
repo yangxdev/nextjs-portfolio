@@ -13,13 +13,13 @@ export default function Biography() {
                 <div className="biography-text-col1 text-xl mr-8">
                     <p>
                         <strong>Academic Journey</strong><br/>
-                        After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the Computer Science program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
+                        After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the <em>Computer Science</em> program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
                     </p>
                     
                     <p>
                         <br/>
                         <strong>Current Job</strong><br/>
-                        I am currently working as a Full-stack Developer at Deloitte Digital, where I contribute to the development of a globally used e-commerce booking platform. In this position, I have been fortunate to collaborate with a team of talented professionals, enhancing my skills in both front-end and back-end development.
+                        I am currently working as a Full-stack Developer at Deloitte Digital, where I contribute to the development of a globally used <em>e-commerce booking platform</em>. In this position, I have been fortunate to collaborate with a team of talented professionals, enhancing my skills in both front-end and back-end development.
                     </p>
 
                     <div className="text-base mt-4">
@@ -41,7 +41,7 @@ export default function Biography() {
                     <p>
                         <br/>
                         <strong>Soft Skills Development</strong><br/>
-                        In addition to technical expertise, I have also honed my soft skills throughout my career, particularly since joining Deloitte. Working in a dynamic and diverse environment has allowed me to develop effective communication and collaboration skills. I have learned the importance of stro\ng teamwork, adaptibility, and problem-solving abilities.
+                        In addition to technical expertise, I have also honed my soft skills throughout my career, particularly since joining Deloitte. Working in a dynamic and diverse environment has allowed me to develop effective communication and collaboration skills. I have learned the importance of strong teamwork, adaptibility, and problem-solving abilities.
                     </p>
 
                     <p>
