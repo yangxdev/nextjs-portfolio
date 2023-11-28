@@ -9,6 +9,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import Button from '../Button';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import Image from 'next/image';
 
 export default function FrontendMentor() {
 
@@ -19,12 +20,11 @@ export default function FrontendMentor() {
 
 
     return (
-        <div id='Frontend Mentor' className="frontend-mentor py-20 border-b select-none border-slate-700 max-w-fit mx-6
-        ">
+        <div id='Frontend Mentor' className="frontend-mentor py-20 border-b select-none border-slate-700 max-w-fit mx-6">
             <h1 className="text-3xl text-left text-white font-bold">Frontend Mentor</h1>
             <h3 className='text-lg text-left text-white mt-2'>From 2022</h3>
             <br />
-            <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I've navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development—from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
+            <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I&apos;ve navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development—from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
             <br />
 
             <div className="fm-row flex flex-col">
@@ -32,23 +32,27 @@ export default function FrontendMentor() {
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView3 ? 'hidden' : 'visible'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe2FaqAccordion.src}
                                     alt="Frontend Mentor FAQ Accordion"
-                                    width="500"
-                                    className='rounded-xl'
+                                    width={500}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
                                     draggable={false}
+                                    priority={true}
                                 />
                             </Zoom>
                         </div>
                         <div className={`img-mobile flex justify-center ${isMobileView3 ? 'visible' : 'hidden'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe2FaqAccordionMobile.src}
                                     alt="Frontend Mentor FAQ Accordion"
-                                    width="250"
-                                    className='rounded-xl'
+                                    width={250}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
                                     draggable={false}
+                                    priority={true}
                                 />
                             </Zoom>
                         </div>
@@ -56,21 +60,25 @@ export default function FrontendMentor() {
                 ) : (
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView3 ? 'hidden' : 'visible'}`}>
-                            <img
+                            <Image
                                 src={fe2FaqAccordion.src}
                                 alt="Frontend Mentor FAQ Accordion"
-                                width="500"
-                                className='rounded-xl'
+                                width={500}
+                                height={0}
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                         <div className={`img-mobile flex justify-center ${isMobileView3 ? 'visible' : 'hidden'}`}>
-                            <img
+                            <Image
                                 src={fe2FaqAccordionMobile.src}
+                                width={250}
+                                height={0}
                                 alt="Frontend Mentor FAQ Accordion"
-                                width="250"
-                                className='rounded-xl'
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                     </div>
@@ -104,23 +112,27 @@ export default function FrontendMentor() {
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView2 ? 'hidden' : 'visible'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe8RoomHomepage.src}
                                     alt="Frontend Mentor Room Homepage"
-                                    width="500"
-                                    className='rounded-xl'
+                                    width={500}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
                                     draggable={false}
+                                    priority={true}
                                 />
                             </Zoom>
                         </div>
                         <div className={`img-mobile flex justify-center ${isMobileView2 ? 'visible' : 'hidden'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe8RoomHomepageMobile.src}
                                     alt="Frontend Mentor Room Homepage"
-                                    width="250"
-                                    className='rounded-xl'
+                                    width={250}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
                                     draggable={false}
+                                    priority={true}
                                 />
                             </Zoom>
                         </div>
@@ -128,21 +140,25 @@ export default function FrontendMentor() {
                 ) : (
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView2 ? 'hidden' : 'visible'}`}>
-                            <img
+                            <Image
                                 src={fe8RoomHomepage.src}
                                 alt="Frontend Mentor Room Homepage"
-                                width="500"
-                                className='rounded-xl'
+                                width={500}
+                                height={0}
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                         <div className={`img-mobile flex justify-center ${isMobileView2 ? 'visible' : 'hidden'}`}>
-                            <img
+                            <Image
                                 src={fe8RoomHomepageMobile.src}
                                 alt="Frontend Mentor Room Homepage"
-                                width="250"
-                                className='rounded-xl'
+                                width={250}
+                                height={0}
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                     </div>
