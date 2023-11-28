@@ -18,7 +18,7 @@ export default function CurriculumVitae() {
                     <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '100vh' }} />
                 ) : (
                     <>
-                        <a href="/XIANG_CV.pdf" download={true}>
+                        <a href="/XIANG_CV.pdf" download={true} target="_blank" rel="noopener noreferrer">
                             <Button type="main" content="View CV" />
                         </a>
                         <div className="mx-2"></div>
