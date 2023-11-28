@@ -9,9 +9,9 @@ interface PortfolioElementProps {
 
 const PortfolioElement: React.FC<PortfolioElementProps> = ({ title, description, sectionId }) => (
     <Link to={sectionId} smooth={true} duration={500}>
-        <div className="portfolio-element flex items-center border my-4 p-4 px-5 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
+        <div className="portfolio-element text-sm flex items-center border my-4 p-4 px-5 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
             <div className="col">
-                <div className="text-xl font-bold">{title}</div>
+                <div className="text-lg font-bold">{title}</div>
                 {description}
             </div>
             <div className="col pl-4 mb-1 text-4xl font-extralight">

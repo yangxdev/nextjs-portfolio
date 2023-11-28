@@ -21,9 +21,7 @@ export default function Portfolio() {
         <div id='Experience' className="portfolio max-w-5xl mx-6 select-none py-20 border-b border-slate-700">
             <h1 className="text-left text-3xl text-white my-4"><strong>My experience</strong></h1>
             {experiences.map((experience, index) => (
-                <div className="text-sm">
-                    <PortfolioElement sectionId={experience.title} key={index} {...experience} />
-                </div>
+                <PortfolioElement sectionId={experience.title} key={index} {...experience} />
             ))}
         </div>
     );
