@@ -7,7 +7,7 @@ export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [
         { type: 'header', content: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/yangxng/', '_blank') },
         // { type: 'header', content: 'GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
-        { type: 'header', content: 'CV', onClick: () => window.open('https://nextjs-enl5l81qm-yangxdev.vercel.app/')},
+        { type: 'header', content: 'CV', onClick: () => window.open('/XIANG_CV.pdf')},
     ];
 
     const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
