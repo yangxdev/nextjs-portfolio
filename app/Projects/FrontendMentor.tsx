@@ -246,7 +246,7 @@ export default function FrontendMentor() {
                 <div className="fm-col1 flex-1 text-center mt-4">
                     <h2 className="mb-4 text-3xl text-white"><strong>E-commerce</strong></h2>
                     <div className="text-sm">
-                        One of the last projects I've done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
+                        One of the last projects I&apos;ve done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-center">
                         <Button type="main" content="View Code"
