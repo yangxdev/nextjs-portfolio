@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Button from './Button';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [
@@ -9,10 +10,18 @@ export default function Header() {
         { type: 'header', content: 'CV', onClick: () => window.open('https://nextjs-enl5l81qm-yangxdev.vercel.app/')},
     ];
 
+    const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+
     return (
-        <div className="header sticky bg-gradient-to-b from-gray-950 to-transparent backdrop-blur backdrop-opacity-10 w-full top-0 py-5 px-6">
+        <div className={`header sticky
+            ${isDesktop ? (
+                'bg-gradient-to-b from-gray-950 to-transparent backdrop-blur backdrop-opacity-10'
+                ) : (
+                'bg-gradient-to-b from-black to-blue backdrop-blur backdrop-opacity-10 pb-20'
+                )} 
+            w-full top-0 py-5 px-6`}>
             <div className="row flex flex-nowrap justify-between items-center">
-                <Button type="logo" content="YANGXDEV" onClick={() => window.location.reload()} />
+                <Button type="logo" content="YANGXDEV" onClick={() => { window.location.reload(); window.scrollTo(0, 0); }} />
                 <div className="menu flex flex-nowrap">
                     {menuButtons.map((button, index) => (
                         <React.Fragment key={index}>

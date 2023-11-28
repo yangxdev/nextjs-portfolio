@@ -24,7 +24,7 @@ export default function FrontendMentor() {
             <h1 className="text-3xl text-left text-white font-bold">Frontend Mentor</h1>
             <h3 className='text-lg text-left text-white mt-2'>From 2022</h3>
             <br />
-            <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I&apos;ve navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development—from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
+            <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I&apos;ve navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development — from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
             <br />
 
             <div className="fm-row flex flex-col">
@@ -85,8 +85,8 @@ export default function FrontendMentor() {
                 )}
                 <div className="fm-col1 flex-1 text-center mt-4">
                     <h2 className="mb-4 text-2xl font-bold text-white">FAQ Accordion</h2>
-                    <div className="text-justify text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia totam consectetur facilis, cum, natus assumenda culpa quae tempora tempore odit aspernatur, distinctio quod beatae temporibus est aut ad minus debitis!
+                    <div className="text-sm">
+                        One of my first projects, this FAQ accordion was built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-center">
                         <Button type="main" content="View Code"
@@ -164,8 +164,10 @@ export default function FrontendMentor() {
                     </div>
                 )}
                 <div className="fm-col1 flex-1 text-center mt-4">
-                    <h2 className="mb-4 text-2xl text-white">Room Homepage</h2>
-                    <div className="text-justify text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quod rem ullam labore soluta explicabo dolores autem fugit recusandae unde. Non repellendus perferendis cum eos. Fuga alias quae magni laudantium!</div>
+                    <h2 className="mb-4 text-2xl text-white"><strong>Room Homepage</strong></h2>
+                    <div className="text-sm">
+                        In my next projects, I prioritized seamless user experiences by enhancing responsiveness and functionality. I successfully implemented a dynamic image carousel, ensuring smooth transitions between desktop and mobile views. 
+                    </div>
                     <div className="row mt-4 flex flex-nowrap justify-center">
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/unimibYNGX/fe8-room-homepage')
@@ -234,9 +236,9 @@ export default function FrontendMentor() {
                     </div>
                 )}
                 <div className="fm-col1 flex-1 text-center mt-4">
-                    <h2 className="mb-4 text-3xl text-white">E-commerce</h2>
-                    <div className="text-justify text-sm">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quod rem ullam labore soluta explicabo dolores autem fugit recusandae unde. Non repellendus perferendis cum eos. Fuga alias quae magni laudantium!
+                    <h2 className="mb-4 text-3xl text-white"><strong>E-commerce</strong></h2>
+                    <div className="text-sm">
+                        One of the last projects I've done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-center">
                         <Button type="main" content="View Code"

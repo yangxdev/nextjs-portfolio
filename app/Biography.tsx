@@ -14,7 +14,7 @@ export default function Biography() {
             <div className="biography-text flex 
                 flex-col
                 ">
-                <div className="biography-text-col1 mr-8">
+                <div className="biography-text-col1 text-base">
                     <p>
                         <strong>Academic Journey</strong><br/>
                         After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the <em>Computer Science</em> program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies

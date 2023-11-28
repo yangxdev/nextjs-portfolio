@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
             <div className="footer-text-subsubtitle mt-16 mb-8 text-xs opacity-80 text-center">
                 <p>
-                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> +39 334 2229699
+                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy
                 </p>
             </div>
         </div>
