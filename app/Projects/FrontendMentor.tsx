@@ -192,23 +192,27 @@ export default function FrontendMentor() {
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView1 ? 'hidden' : 'visible'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe10Ecommerce.src}
                                     alt="Frontend Mentor E-Commerce"
-                                    width="500"
-                                    className='rounded-xl'
+                                    width={500}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
+                                    priority={true}
                                     draggable={false}
                                 />
                             </Zoom>
                         </div>
                         <div className={`img-mobile flex justify-end ${isMobileView1 ? 'visible' : 'hidden'}`}>
                             <Zoom>
-                                <img
+                                <Image
                                     src={fe10EcommerceMobile.src}
                                     alt="Frontend Mentor E-Commerce"
-                                    width="250"
-                                    className='rounded-xl'
+                                    width={250}
+                                    height={0}
+                                    className='w-full h-auto rounded-xl'
                                     draggable={false}
+                                    priority={true}
                                 />
                             </Zoom>
                         </div>
@@ -216,21 +220,25 @@ export default function FrontendMentor() {
                 ) : (
                     <div className="fm-col2 flex-1">
                         <div className={`img-desktop ${isMobileView1 ? 'hidden' : 'visible'}`}>
-                            <img
+                            <Image
                                 src={fe10Ecommerce.src}
                                 alt="Frontend Mentor E-Commerce"
-                                width="500"
-                                className='rounded-xl'
+                                width={500}
+                                height={0}
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                         <div className={`img-mobile flex justify-center ${isMobileView1 ? 'visible' : 'hidden'}`}>
-                            <img
+                            <Image
                                 src={fe10EcommerceMobile.src}
                                 alt="Frontend Mentor E-Commerce"
-                                width="250"
-                                className='rounded-xl'
+                                height={0}
+                                width={250}
+                                className='w-full h-auto rounded-xl'
                                 draggable={false}
+                                priority={true}
                             />
                         </div>
                     </div>
