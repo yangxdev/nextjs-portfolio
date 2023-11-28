@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({ type, content, disabled, onClick }) => 
   }
 
   return (
-    <div className={`common-button-style ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : 'cursor-pointer'}`} onClick={disabled ? undefined : onClick}>
+    <div className={`common-button-style whitespace-nowrap ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : 'cursor-pointer'}`} onClick={disabled ? undefined : onClick}>
       {content}
     </div>
   );

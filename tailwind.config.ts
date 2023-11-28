@@ -19,10 +19,10 @@ const config: Config = {
         'primary': '#fdfdfd',
         'secondary': '#212526',
         'accent': '#fdfdfd',
-       },
+      },
     },
   },
   plugins: [],
-  
+
 }
 export default config

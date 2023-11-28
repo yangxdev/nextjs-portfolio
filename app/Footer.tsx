@@ -9,8 +9,10 @@ export default function Footer() {
     ];
 
     return (
-        <div id="Contact Me" className="footer mx-40 py-20 flex items-center flex-col justify-center select-none">
-            <div className="footer-text-title text-center text-5xl font-bold">
+        <div id="Contact Me" className="footer pt-20 flex items-center flex-col justify-center select-none
+            mx-6
+        ">
+            <div className="footer-text-title text-center text-3xl font-bold">
                 GET IN TOUCH
             </div>
             <div className="footer-text-subtitle flex text-center text-sm mt-6">
@@ -40,6 +42,11 @@ export default function Footer() {
                             )}
                         </React.Fragment>
                     ))}
+            </div>
+            <div className="footer-text-subsubtitle mt-16 mb-8 text-xs opacity-80 text-center">
+                <p>
+                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> +39 334 2229699
+                </p>
             </div>
         </div>
     )

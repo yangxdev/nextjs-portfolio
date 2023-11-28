@@ -26,9 +26,15 @@ export default function Landing() {
     ];
 
     return (
-        <div id="Welcome" className="landing max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
-            <div className="landing-text">
-                <div className="landing-text-primary text-3xl">
+        <div id="Welcome" className="landing select-none py-20 border-b border-slate-700 flex flex-col
+            max-w-full 
+            ml-6 mr-6
+            sm:ml-12
+            md:ml-[8rem]
+        ">
+            <div className="landing-text 
+                ">
+                <div className="landing-text-primary text-xl lg:text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
                     Software Engineer with a passion for crafting exceptional front-end
                     experiences.
@@ -51,12 +57,12 @@ export default function Landing() {
                     </ul>
                 </div> */}
             </div>
-            <div className="landing-buttons flex flex-nowrap mt-8">
+            <div className="landing-buttons flex max-w-max flex-nowrap lg:mx-20 mt-8">
                 {landingButtons.map((button, index) => (
                     <React.Fragment key={index}>
                         {index > 0 && <span className="divider mx-2"></span>}
                         {button.content === "Email Me" ? (
-                            <div className="landing-button-email w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
+                            <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
                                 <a
                                     draggable="false"
                                     href="mailto:yangxdev@gmail.com"
@@ -73,7 +79,7 @@ export default function Landing() {
                 ))}
             </div>
 
-            <div className="landing-subtitle mt-32 text-sm opacity-70 font-light ">
+            <div className="landing-subtitle mt-32 text-sm opacity-70 font-light max-w-full flex flex-wrap">
                 {technologies.map((tech, index) => (
                     <React.Fragment key={tech}>
                         {index > 0 && <span className="divider mx-2 opacity-50">/</span>}

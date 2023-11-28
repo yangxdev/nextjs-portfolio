@@ -8,9 +8,13 @@ export default function Biography() {
     ];
 
     return (
-        <div id="Biography" className="biography max-w-5xl mx-40 py-20 h-full select-none border-b border-slate-700">
-            <div className="biography-text flex flex-row">
-                <div className="biography-text-col1 text-xl mr-8">
+        <div id="Biography" className="biography max-w-5xl py-20 h-full select-none border-b border-slate-700
+            mx-6
+        ">
+            <div className="biography-text flex 
+                flex-col
+                ">
+                <div className="biography-text-col1 mr-8">
                     <p>
                         <strong>Academic Journey</strong><br/>
                         After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the <em>Computer Science</em> program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies
@@ -22,7 +26,7 @@ export default function Biography() {
                         I am currently working as a Full-stack Developer at Deloitte Digital, where I contribute to the development of a globally used <em>e-commerce booking platform</em>. In this position, I have been fortunate to collaborate with a team of talented professionals, enhancing my skills in both front-end and back-end development.
                     </p>
 
-                    <div className="text-base mt-4">
+                    <div className="text-base my-4">
                         {biographyButtons.map((button, index) => (
                             <React.Fragment key={index}>
                                 {index > 0 && <span className="divider mx-1 opacity-50 select-none">/</span>}
