@@ -15,7 +15,7 @@ export default function HomePage() {
 
   const sections = [
     'Welcome', 
-    'Portfolio', 
+    'Experience', 
     'Contact Me',
   ];
 
@@ -30,7 +30,7 @@ export default function HomePage() {
               to={section} 
               smooth={true} 
               duration={500} 
-              offset={-120}
+              offset={-140}
               spy={true}
               activeClass="opacity-80"
             >
@@ -44,7 +44,7 @@ export default function HomePage() {
       <Portfolio />
       <CurriculumVitae />
       <FrontendMentor />
-      <CoverLetterMaker />
+      {/* <CoverLetterMaker /> */}
       <Footer />
     </div>
   );

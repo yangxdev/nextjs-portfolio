@@ -16,11 +16,11 @@ export default function FrontendMentor() {
     const [isMobileView3, setIsMobileView3] = useState(false);
 
     return (
-        <div id='Project: Frontend Mentor' className="frontend-mentor max-w-5xl mx-40 py-20 border-b select-none border-slate-700">
-            <h1 className="text-5xl text-center text-white">Frontend Mentor</h1>
-            <h3 className='text-xl text-center text-white mt-2'>From 2022</h3>
+        <div id='Frontend Mentor' className="frontend-mentor max-w-5xl mx-40 py-20 border-b select-none border-slate-700">
+            <h1 className="text-5xl text-left text-white font-bold">Frontend Mentor</h1>
+            <h3 className='text-xl text-left text-white mt-2'>From 2022</h3>
             <br />
-            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore provident quae, iusto, earum illo dignissimos, illum esse adipisci voluptate quaerat voluptatibus nostrum autem ad ut veniam quia! Maiores, ratione quia?</div>
+            <div className="text-left">From mastering vanilla JavaScript to embracing React and Next, I've navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development—from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
             <br /><br />
 
             <div className="fm-row flex">

@@ -10,7 +10,7 @@ export default function Header() {
     ];
 
     return (
-        <div className="header sticky bg-gradient-to-b from-gray-900 to-transparent backdrop-blur backdrop-opacity-10 w-full top-0 py-5 px-6">
+        <div className="header sticky bg-gradient-to-b from-gray-950 to-transparent backdrop-blur backdrop-opacity-10 w-full top-0 py-5 px-6">
             <div className="row flex flex-nowrap justify-between items-center">
                 <Button type="logo" content="YANGXDEV" onClick={() => window.location.reload()} />
                 <div className="menu flex flex-nowrap">

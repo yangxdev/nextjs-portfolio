@@ -19,7 +19,7 @@ export default function Landing() {
         // { type: 'main', content: 'Visit my LinkedIn profile', onClick: () => window.open('https://www.linkedin.com/in/yangxng', '_blank') },
         { 
             type: 'main', 
-            content: <>Call Me <FaPhone /></>, 
+            content: "Call Me",
             onClick: () => window.location.href = 'tel:+393342229699' 
         },
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },

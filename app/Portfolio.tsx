@@ -18,11 +18,11 @@ export default function Portfolio() {
     ];
 
     return (
-        <div className="portfolio max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
-            <h1 className="text-left text-4xl text-white my-4">My experience</h1>
+        <div id='Experience' className="portfolio max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
+            <h1 className="text-left text-4xl text-white my-4"><strong>My experience</strong></h1>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem atque quaerat aut molestias non esse animi accusamus! Eveniet nulla quas quod maxime, ullam inventore sequi mollitia nemo dolores impedit?
             {experiences.map((experience, index) => (
-                <PortfolioElement key={index} {...experience} />
+                <PortfolioElement sectionId={experience.title} key={index} {...experience} />
             ))}
         </div>
     );
