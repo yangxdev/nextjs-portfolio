@@ -18,17 +18,19 @@ export default function CurriculumVitae() {
                     <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '100vh' }} />
                 ) : (
                     <>
-                        <Button type="main" content="View CV" onClick={() => window.open('https://nextjs-cv-snowy.vercel.app/')} />
+                        <a href="/XIANG_CV.pdf" download={true}>
+                            <Button type="main" content="View CV" />
+                        </a>
                         <div className="mx-2"></div>
                         <Button type="main" content="View GitHub" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
                     </>
                 )}
             </div>
             {isDesktop && (
-            <div className="text-left text-md my-4 flex items-center">
-                <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
-                <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
-            </div>
+                <div className="text-left text-md my-4 flex items-center">
+                    <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
+                    <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
+                </div>
             )}
         </div>
     );
