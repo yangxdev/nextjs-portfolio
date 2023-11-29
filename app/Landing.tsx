@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { FaPhone } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 export default function Landing() {
     const technologies = [
@@ -17,11 +18,12 @@ export default function Landing() {
     const landingButtons: { type: 'main'; content: string; onClick?: () => void }[] = [
         // { type: 'main', content: 'Latest work on GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
         // { type: 'main', content: 'Visit my LinkedIn profile', onClick: () => window.open('https://www.linkedin.com/in/yangxng', '_blank') },
-        { 
-            type: 'main', 
-            content: "Call Me",
-            onClick: () => window.location.href = 'tel:+393342229699' 
-        },
+        // { 
+        //     type: 'main', 
+        //     content: "Call Me",
+        //     onClick: () => window.location.href = 'tel:+393342229699' 
+        // },
+        { type: 'main', content: "Read my journey" },
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },
     ];
 
@@ -57,36 +59,37 @@ export default function Landing() {
                     </ul>
                 </div> */}
             </div>
-            <div className="landing-buttons flex max-w-max flex-nowrap lg:mx-20 mt-8">
-                {landingButtons.map((button, index) => (
-                    <React.Fragment key={index}>
-                        {index > 0 && <span className="divider mx-2"></span>}
-                        {button.content === "Email Me" ? (
-                            <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
-                                <a
-                                    draggable="false"
-                                    href="mailto:yangxdev@gmail.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Email Me
-                                </a>
-                            </div>
-                        ) : (
-                            <Button type={button.type} content={button.content} onClick={button.onClick} />
-                        )}
-                    </React.Fragment>
-                ))}
-            </div>
+            <div className="landing-buttons flex max-w-max flex-col lg:mx-20 mt-8">
+                <div className="mb-4">
+                    <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
+                        <Button type="main" content="View my Journey" />
+                    </Link>
+                </div>
+                <div className="mb-4">
+                    <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
+                        <Button type="main" content="Read my CV" />
+                    </Link>
+                </div>
+                <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
+                    <a
+                        draggable="false"
+                        href="mailto:yangxdev@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Email Me
+                    </a>
+                </div>
 
-            <div className="landing-subtitle mt-32 text-sm opacity-70 font-light max-w-full flex flex-wrap">
-                {technologies.map((tech, index) => (
-                    <React.Fragment key={tech}>
-                        {index > 0 && <span className="divider mx-2 opacity-50">/</span>}
-                        {tech}
-                    </React.Fragment>
-                ))}
-            </div>
+                <div className="landing-subtitle mt-12 text-sm opacity-70 font-light max-w-full flex flex-wrap">
+                    {technologies.map((tech, index) => (
+                        <React.Fragment key={tech}>
+                            {index > 0 && <span className="divider mx-2 opacity-50">/</span>}
+                            {tech}
+                        </React.Fragment>
+                    ))}
+                </div>
+            </div >
         </div>
     );
 }

@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast";
 import CurriculumVitae from "./Projects/CurriculumVitae";
 import Portfolio from "./Portfolio";
 import { useMediaQuery } from "react-responsive";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 export default function HomePage() {
 
@@ -51,6 +52,7 @@ export default function HomePage() {
       <FrontendMentor />
       {/* <CoverLetterMaker /> */}
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
