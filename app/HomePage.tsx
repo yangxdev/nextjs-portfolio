@@ -12,6 +12,7 @@ import CurriculumVitae from "./Projects/CurriculumVitae";
 import Portfolio from "./Portfolio";
 import { useMediaQuery } from "react-responsive";
 import ScrollToTopButton from "./ScrollToTopButton";
+import DeloitteDigital from "./Projects/DeloitteDigital";
 
 export default function HomePage() {
 
@@ -50,6 +51,7 @@ export default function HomePage() {
       <Portfolio />
       <CurriculumVitae />
       <FrontendMentor />
+      <DeloitteDigital />
       {/* <CoverLetterMaker /> */}
       <Footer />
       <ScrollToTopButton />

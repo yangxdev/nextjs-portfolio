@@ -60,17 +60,17 @@ export default function Landing() {
                 </div> */}
             </div>
             <div className="landing-buttons flex max-w-max flex-col lg:mx-20 mt-8">
-                <div className="mb-4">
+                <div className="mb-4 max-w-fit">
                     <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
                         <Button type="main" content="View my Journey" />
                     </Link>
                 </div>
-                <div className="mb-4">
+                <div className="mb-4 max-w-fit">
                     <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
                         <Button type="main" content="Read my CV" />
                     </Link>
                 </div>
-                <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200">
+                <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit">
                     <a
                         draggable="false"
                         href="mailto:yangxdev@gmail.com"

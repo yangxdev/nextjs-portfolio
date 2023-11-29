@@ -28,7 +28,7 @@ const ScrollToTopButton = () => {
         <div className="bottom-8 sticky ml-auto mr-8 mb-8">
             <button
                 onClick={scrollToTop}
-                className={`transition-transform duration-1000 ease-in-out transform
+                className={`transition-transform duration-1000 ease-in-out transform select-none
                     ${isButtonVisible ? 'translate-y-0' : 'translate-y-52'}`}
             >
                 <div className="text-white text-3xl py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90
