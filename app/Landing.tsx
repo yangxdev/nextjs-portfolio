@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import { FaPhone } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import { useMediaQuery } from "react-responsive";
 
 export default function Landing() {
     const technologies = [
@@ -27,12 +28,15 @@ export default function Landing() {
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },
     ];
 
+    const isDesktop = useMediaQuery({ minWidth: 1024 });
+    const isMobile = useMediaQuery({ maxWidth: 767 });
+
     return (
         <div id="Welcome" className="landing select-none py-20 border-b border-slate-700 flex flex-col
-            max-w-full 
-            ml-6 mr-6
-            sm:ml-12
-            md:ml-[8rem]
+            max-w-5xl 
+            mx-6
+            md:mx-20
+            lg:mx-40
         ">
             <div className="landing-text 
                 ">
@@ -59,26 +63,28 @@ export default function Landing() {
                     </ul>
                 </div> */}
             </div>
-            <div className="landing-buttons flex max-w-max flex-col lg:mx-20 mt-8">
-                <div className="mb-4 max-w-fit">
-                    <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
-                        <Button type="main" content="View my Journey" />
-                    </Link>
-                </div>
-                <div className="mb-4 max-w-fit">
-                    <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
-                        <Button type="main" content="Read my CV" />
-                    </Link>
-                </div>
-                <div className="landing-button-email whitespace-nowrap w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit">
-                    <a
-                        draggable="false"
-                        href="mailto:yangxdev@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Email Me
-                    </a>
+            <div className="landing-buttons flex max-w-max flex-col mt-8">
+                <div className={!isMobile ? "flex" : ""}>
+                    <div className="mb-4 max-w-fit mr-4">
+                        <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
+                            <Button type="main" content="View my Journey" />
+                        </Link>
+                    </div>
+                    <div className="mb-4 max-w-fit mr-4">
+                        <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
+                            <Button type="main" content="Read my CV" />
+                        </Link>
+                    </div>
+                    <div className="landing-button-email whitespace-nowrap w-fit mb-4 py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit">
+                        <a
+                            draggable="false"
+                            href="mailto:yangxdev@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Email Me
+                        </a>
+                    </div>
                 </div>
 
                 <div className="landing-subtitle mt-12 text-sm opacity-70 font-light max-w-full flex flex-wrap">

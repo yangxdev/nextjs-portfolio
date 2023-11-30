@@ -11,6 +11,7 @@ export default function Header() {
     ];
 
     const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
     return (
         <div className={`header sticky
@@ -25,7 +26,7 @@ export default function Header() {
                 <div className="menu flex flex-nowrap">
                     {menuButtons.map((button, index) => (
                         <React.Fragment key={index}>
-                            {index > 0 && <span className="divider mx-1 opacity-50 select-none">/</span>}
+                            {index > 0 && <span className={`divider ${isMobile ? 'mx-1' : 'mx-3'} opacity-50 select-none`}>/</span>}
                             <Button type={button.type} content={button.content} onClick={button.onClick} />
                         </React.Fragment>
                     ))}

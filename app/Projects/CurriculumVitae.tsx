@@ -8,6 +8,8 @@ export default function CurriculumVitae() {
     return (
         <div id="Curriculum Vitae" className="curriculum-vitae max-w-5xl py-20 border-b select-none border-slate-700
             mx-6
+            md:mx-20
+            lg:mx-40
         ">
             <h1 className="text-3xl text-left text-white mb-4 font-bold">Curriculum Vitae</h1>
             <div className="text-left text-sm mb-4">
@@ -15,7 +17,7 @@ export default function CurriculumVitae() {
             </div>
             <div className="flex justify-start">
                 {isDesktop ? (
-                    <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '100vh' }} />
+                    <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '111.6vh' }} />
                 ) : (
                     <>
                         <Button type="main" content="View CV" onClick={() => window.open('/XIANG_CV.pdf')} />

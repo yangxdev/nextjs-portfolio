@@ -10,11 +10,16 @@ export default function Biography() {
     return (
         <div id="Biography" className="biography max-w-5xl py-20 h-full select-none border-b border-slate-700
         mx-6
+        md:mx-20
+        lg:mx-40
     ">
             <div className="biography-text flex 
             flex-col
+            md:flex-row
             ">
-                <div className="biography-text-col1 text-base">
+                <div className="biography-text-col1 text-base
+                md:mr-10
+                ">
                     <p>
                         <strong>Academic Journey</strong><br />
                         After completing my high school education in Information Technology, I pursued my passion for computers and enrolled in the <em>Computer Science</em> program at University of Milan-Bicocca. During my time there, I gained a solid foundation in programming, algorithm, and software development methodologies

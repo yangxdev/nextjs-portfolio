@@ -49,9 +49,9 @@ export default function HomePage() {
       <Landing />
       <Biography />
       <Portfolio />
-      <CurriculumVitae />
-      <FrontendMentor />
       <DeloitteDigital />
+      <FrontendMentor />
+      <CurriculumVitae />
       {/* <CoverLetterMaker /> */}
       <Footer />
       <ScrollToTopButton />

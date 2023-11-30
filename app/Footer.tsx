@@ -11,9 +11,11 @@ export default function Footer() {
     return (
         <div id="Contact Me" className="footer pt-20 flex items-center flex-col justify-center select-none
             mx-6
+            md:mx-20
+            lg:mx-40
         ">
             <div className="footer-text-title text-center text-3xl font-bold">
-                GET IN TOUCH
+                LET&apos;S GET IN TOUCH
             </div>
             <div className="footer-text-subtitle flex text-center text-sm mt-6">
                 <p>

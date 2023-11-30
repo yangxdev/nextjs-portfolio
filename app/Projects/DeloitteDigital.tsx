@@ -1,9 +1,14 @@
 export default function DeloitteDigital() {
     return (
-        <div id="Deloitte Digital" className="deloitte-digital py-20 border-b select-none border-slate-700 max-w-fit mx-6">
+        <div id="Deloitte Digital" className="deloitte-digital max-w-5xl py-20 border-b select-none border-slate-700 
+            mx-6
+            md:mx-20
+            lg:mx-40
+        ">
             <h1 className="text-3xl text-left text-white font-bold">Deloitte Digital</h1>
             <h3 className='text-lg text-left text-white mt-2'>From March 2023</h3>
             <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum harum nesciunt consequatur minus repellat exercitationem? Reiciendis, nemo nam iusto libero similique magni consectetur consequuntur veritatis, architecto laboriosam facere, magnam quisquam.
             <div className="text-sm text-left">
 
                 <div className="text-base font-bold mt-4">
