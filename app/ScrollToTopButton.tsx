@@ -21,7 +21,12 @@ const ScrollToTopButton = () => {
     }, []);
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const experienceSection = document.getElementById('Experience');
+        if (experienceSection && (window.scrollY-500) > (experienceSection.offsetTop - 500)) {
+            window.scrollTo({ top: experienceSection.offsetTop - 50, behavior: 'smooth' }); }
+        else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     };
 
     return (
