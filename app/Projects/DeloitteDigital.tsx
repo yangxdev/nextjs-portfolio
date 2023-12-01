@@ -8,7 +8,7 @@ export default function DeloitteDigital() {
             <h1 className="text-3xl text-left text-white font-bold">Deloitte Digital</h1>
             <h3 className='text-lg text-left text-white mt-2'>From March 2023</h3>
             <br />
-            I was fortunate to work with Deloitte Digital, the digital transformation division of the leading Big4 firm, on a significant project involving a Booking Platform. This experience allowed me to thrive in a vibrant environment where technology, creativity, and business strategy intersect. During my time there, I played a key role in developing innovative solutions, contributing substantially to Deloitte's digital transformation efforts.
+            I was fortunate to work with Deloitte Digital, the digital transformation division of the leading Big4 firm, on a significant project involving a Booking Platform. This experience allowed me to thrive in a vibrant environment where technology, creativity, and business strategy intersect. During my time there, I played a key role in developing innovative solutions, contributing substantially to Deloitte&apos;s digital transformation efforts.
             <div className="text-sm text-left">
 
                 <div className="text-base font-bold mt-4">
