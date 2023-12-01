@@ -50,7 +50,7 @@ export default function Education() {
                     <hr className="mt-4 border-slate-400" />
                     <li>
                         <div className="text-base font-bold mt-4">
-                            ITTS "Belluzzi - Da Vinci", Rimini, Italy
+                            ITTS &quot;Belluzzi - Da Vinci&quot;, Rimini, Italy
                         </div>
                         <div className="text-base font-bold mt-4">
                             Degree:
