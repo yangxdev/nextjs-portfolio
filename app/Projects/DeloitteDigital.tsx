@@ -8,33 +8,35 @@ export default function DeloitteDigital() {
             <h1 className="text-3xl text-left text-white font-bold">Deloitte Digital</h1>
             <h3 className='text-lg text-left text-white mt-2'>From March 2023</h3>
             <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum harum nesciunt consequatur minus repellat exercitationem? Reiciendis, nemo nam iusto libero similique magni consectetur consequuntur veritatis, architecto laboriosam facere, magnam quisquam.
+            I was fortunate to work with Deloitte Digital, the digital transformation division of the leading Big4 firm, on a significant project involving a Booking Platform. This experience allowed me to thrive in a vibrant environment where technology, creativity, and business strategy intersect. During my time there, I played a key role in developing innovative solutions, contributing substantially to Deloitte's digital transformation efforts.
             <div className="text-sm text-left">
 
                 <div className="text-base font-bold mt-4">
                     Project:
                 </div>
-                <ul style={{listStyleType: 'disc'}} className="ml-6">
+                <ul style={{ listStyleType: 'disc' }} className="ml-6">
                     <li>Booking Platform ( <strong>B2B</strong>, B2C )</li>
                     <li>Used by travel agencies in 40+ countries</li>
                     <li>Annual revenue exceeding 4 billion</li>
                 </ul>
 
                 <div className="text-base font-bold mt-4">Technologies: </div>
-                <ul style={{listStyleType: 'disc'}} className="ml-6">
+                <ul style={{ listStyleType: 'disc' }} className="ml-6">
                     <li><strong>JavaScript</strong> ( jQuery, HandleBars.js )</li>
                     <li><strong>CSS</strong> ( Bootstrap )</li>
                     <li><strong>Java</strong> ( JSP, JSTL )</li>
+                    <li><strong>SQL</strong></li>
                     <li><strong>Git</strong> ( GitLab )</li>
                     <li><strong>Agile</strong> ( Jira, Confluence )</li>
-                    <li><strong>SQL</strong></li>
                 </ul>
 
-                <div className="text-base font-bold mt-4">Team:</div>
-                <ul style={{listStyleType: 'disc'}} className="ml-6">
-                    <li>Agile Scrum</li>
-                    <li>Team of 9 ( 2 functional, 7 technical )</li>
-
+                <div className="text-base font-bold mt-4">Details:</div>
+                <ul style={{ listStyleType: 'disc' }} className="ml-6">
+                    <li>Collaborated in an Agile Scrum environment.</li>
+                    <li>Contributed to a cross-functional team of 9, consisting of 2 functional and 7 technical members.</li>
+                    <li>Collaborated closely with the UI/UX team to ensure a seamless user experience.</li>
+                    <li>Worked in conjunction with an external testing team to validate and enhance product quality.</li>
+                    <li>Maintained daily communication with the Technical Project Manager for project coordination and progress updates.</li>
                 </ul>
 
             </div>

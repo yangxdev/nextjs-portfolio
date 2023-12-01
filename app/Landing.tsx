@@ -67,7 +67,7 @@ export default function Landing() {
                 <div className={!isMobile ? "flex" : ""}>
                     <div className="mb-4 max-w-fit mr-4">
                         <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
-                            <Button type="main" content="View my Journey" />
+                            <Button type="main" content="Read my Experience" />
                         </Link>
                     </div>
                     <div className="mb-4 max-w-fit mr-4">
