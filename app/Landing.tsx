@@ -64,7 +64,7 @@ export default function Landing() {
                 </div> */}
             </div>
             <div className="landing-buttons flex max-w-max flex-col mt-8">
-                <div className={!isMobile ? "flex" : "block"}>
+                <div style={{ display: isMobile ? "block" : "flex" }}>
                     <div className="mb-4 max-w-fit mr-4">
                         <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
                             <Button type="main" content="Read my Experience" />
