@@ -4,12 +4,12 @@ import PortfolioElement from './PortfolioElement';
 export default function Portfolio() {
     const experiences = [
         {
-            title: 'Deloitte Digital',
-            description: 'My first job as a Software Engineer. Here I learned how to work in a team and how to deliver high-quality software solutions.',
+            title: 'Education',
+            description: 'Studied Computer Science at the University of Milan. Here I learned the fundamentals of computer science and how to think like a software engineer.',
         },
         {
-            title: 'University',
-            description: 'Studied Computer Science at the University of Milan. Here I learned the fundamentals of computer science and how to think like a software engineer.',
+            title: 'Deloitte Digital',
+            description: 'My first job as a Software Engineer. Here I learned how to work in a team and how to deliver high-quality software solutions.',
         },
         {
             title: 'Frontend Mentor',

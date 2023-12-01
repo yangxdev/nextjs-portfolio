@@ -16,8 +16,8 @@ export default function DeloitteDigital() {
                 </div>
                 <ul style={{ listStyleType: 'disc' }} className="ml-6">
                     <li>Booking Platform ( <strong>B2B</strong>, B2C )</li>
-                    <li>Used by travel agencies in 40+ countries</li>
-                    <li>Annual revenue exceeding 4 billion</li>
+                    <li>Used by travel agencies in <strong>40+ countries</strong></li>
+                    <li>Annual revenue exceeding <strong>4 billion</strong></li>
                 </ul>
 
                 <div className="text-base font-bold mt-4">Technologies: </div>
