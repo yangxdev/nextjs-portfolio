@@ -15,6 +15,10 @@ export default function Portfolio() {
             title: 'Frontend Mentor',
             description: 'Where design meets code. Here I honed my frontend development skills by bringing thought-provoking website designs to life.',
         },
+        {
+            title: 'University Projects',
+            description: 'lorem'
+        },
     ];
 
     return (

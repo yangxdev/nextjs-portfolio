@@ -14,6 +14,7 @@ import { useMediaQuery } from "react-responsive";
 import ScrollToTopButton from "./ScrollToTopButton";
 import DeloitteDigital from "./Projects/DeloitteDigital";
 import Education from "./Projects/Education";
+import UniversityProjects from "./Projects/UniversityProjects";
 
 export default function HomePage() {
 
@@ -54,6 +55,7 @@ export default function HomePage() {
       <Education />
       <DeloitteDigital />
       <FrontendMentor />
+      <UniversityProjects />
       {/* <CoverLetterMaker /> */}
       <Footer />
       <ScrollToTopButton />
