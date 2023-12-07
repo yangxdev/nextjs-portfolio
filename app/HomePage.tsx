@@ -55,7 +55,7 @@ export default function HomePage() {
       <Education />
       <DeloitteDigital />
       <FrontendMentor />
-      {/* <UniversityProjects /> */}
+      <UniversityProjects />
       {/* <CoverLetterMaker /> */}
       <Footer />
       <ScrollToTopButton />

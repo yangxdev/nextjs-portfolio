@@ -20,9 +20,9 @@ export default function UniversityProjects() {
             <h1 className="text-3xl text-left text-white font-bold">University Projects</h1>
             {/* <h3 className='text-lg text-left text-white mt-2'>From September 2020 to July 2023</h3> */}
             <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum sapiente quam facilis, ipsum voluptas dicta error illo, dolorum et, voluptates minus! Eos libero illum deleniti facere! Assumenda officia facilis inventore.
-            <br/>
-            <br/>
+            Having enrolled in a Computer Science degree at the University of Milan-Bicocca, I had the opportunity to work on some interesting projects. Here are the most relevant ones:
+            <br />
+            <br />
 
             <div className="fm-row flex flex-col">
                 <div className="fm-col2 flex-1 flex justify-center">
@@ -37,6 +37,7 @@ export default function UniversityProjects() {
                                 draggable={false}
                                 priority={true}
                             /> */}
+
                         </div>
                     ) : (
                         <div className={`img-mobile max-w-full`}>
@@ -58,7 +59,15 @@ export default function UniversityProjects() {
                     </h2>
                     <h3 className="mb-4 text-lg text-white">June 2022</h3>
                     <div className="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione modi quo quisquam ullam sed, molestiae dolorem, voluptatum rerum obcaecati autem, maiores doloribus numquam doloremque culpa iure dicta dolores minima explicabo?
+                        For the Distributed Systems course, our task was to develop a website that would allow users to manage their bank accounts. The website had to be developed using the Flask framework and had to be able to communicate with a server-side API and a database. The website had to be able to perform the following operations:
+                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
+                            <li>Search a user by ID</li>
+                            <li>View user balance</li>
+                            <li>View user transactions</li>
+                            <li>Make a deposit</li>
+                            <li>Make a withdrawal</li>
+                            <li>Make a transfer to another user</li>
+                        </ul>
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-left">
                         <Button type="main" content="View Code"
@@ -107,7 +116,7 @@ export default function UniversityProjects() {
                     </h2>
                     <h3 className="mb-4 text-lg text-white">August 2022 to September 2022</h3>
                     <div className="text-sm">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione modi quo quisquam ullam sed, molestiae dolorem, voluptatum rerum obcaecati autem, maiores doloribus numquam doloremque culpa iure dicta dolores minima explicabo?
+                        For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. 
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-left">
                         <Button type="main" content="View Code"

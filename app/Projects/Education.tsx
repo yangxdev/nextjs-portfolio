@@ -37,7 +37,7 @@ export default function Education() {
                             </ul>
                             <li><strong>Distributed Systems</strong></li>
                             <ul style={{ listStyleType: 'circle' }} className="ml-6">
-                                <li>Developed the front-end side of a Python Flask website</li>
+                                <li>Developed the front-end side of a Python Flask website in a team of 2</li>
                                 <li>Managed server-side data (REST) and frontend-backend communication</li>
                             </ul>
                         </ul>
