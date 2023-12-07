@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button";
+import Image from "next/image";
+import LogoSmall from '../public/logo_small_gray.jpg';
 
 export default function Footer() {
 
@@ -45,10 +47,20 @@ export default function Footer() {
                         </React.Fragment>
                     ))}
             </div>
-            <div className="footer-text-subsubtitle mt-16 mb-8 text-xs opacity-80 text-center">
+            <div className="footer-text-subsubtitle relative mt-16 mb-8 text-xs opacity-80 text-center">
                 <p>
-                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy
+                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy -{">"} What's next?
                 </p>
+                <Image
+                    src={LogoSmall.src}
+                    alt="YX Logo"
+                    width={100}
+                    height={100}
+                    className='w-full h-auto rounded-xl -mt-5 -z-50 absolute cursor-pointer'
+                    draggable={false}
+                    priority={true}
+                    onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                />
             </div>
         </div>
     )

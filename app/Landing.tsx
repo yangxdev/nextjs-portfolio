@@ -3,7 +3,8 @@ import Button from "./Button";
 import { FaPhone } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { useMediaQuery } from "react-responsive";
-import logoSmall from '../public/logo_small.png';
+import LogoSmall from '../public/logo_small_gray.jpg';
+import Image from "next/image";
 
 export default function Landing() {
     const technologies = [
@@ -33,24 +34,21 @@ export default function Landing() {
     const isMobile = useMediaQuery({ maxWidth: 767 });
 
     return (
-        <div id="Welcome" className="landing select-none py-20 border-b border-slate-700 flex flex-col
+        <div id="Welcome" className="landing relative select-none py-20 border-b border-slate-700 flex flex-col
             max-w-5xl 
             mx-6
             md:mx-20
             lg:mx-40
         ">
-            <div className="absolute">
                 <Image
-                    src={logoSmall.src}
-                    alt="Logo"
-                    width={5000}
+                    src={LogoSmall.src}
+                    alt="YX Logo"
+                    width={1280}
                     height={0}
-                    className='w-full h-auto rounded-xl'
+                    className='absolute w-[7rem] place-self-center -left-[35px] -top-[10px] h-auto rounded-xl -z-50 opacity-95'
                     draggable={false}
-                    priority={true}/>
-            </div>
-            <div className="landing-text 
-                ">
+                />
+            <div className="landing-text z-1">
                 <div className="landing-text-primary text-xl lg:text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
                     Software Engineer with a passion for crafting exceptional front-end
