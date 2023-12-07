@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Button from '../Button';
+import React from 'react';
+import Image from 'next/image';
+import SDIndex800 from '../../public/SD_index_800.gif';
+import SDIndex600 from '../../public/SD_index_600.gif';
+import SDTransfer800 from '../../public/SD_transfer_800.gif';
+import SDTransfer600 from '../../public/SD_transfer_600.gif';
+import PDMSmooviePreview from '../../public/PDM_smoovie_preview.png';
+import PDMSmoovieDocumentation from '../../public/PDM_smoovie_documentation.png';
+
 
 export default function UniversityProjects() {
 
@@ -26,30 +35,47 @@ export default function UniversityProjects() {
 
             <div className="fm-row flex flex-col">
                 <div className="fm-col2 flex-1 flex justify-center">
-                    {!isMobile ? (
+                    {!isMobile ? ( //desktop
                         <div className={`img-desktop max-w-2xl`}>
-                            {/* <Image
-                                src={}
-                                alt="Frontend Mentor FAQ Accordion"
+                            <Image
+                                src={SDIndex800.src}
+                                alt="Distributed Systems Home Demo GIF 800px"
                                 width={5000}
                                 height={0}
                                 className='w-full h-auto rounded-xl'
                                 draggable={false}
                                 priority={true}
-                            /> */}
-
+                            />
+                            <Image
+                                src={SDTransfer800.src}
+                                alt="Disitributed Systems Transfer Demo GIF 800px"
+                                width={5000}
+                                height={0}
+                                className='w-full h-auto rounded-xl mt-6'
+                                draggable={false}
+                                priority={true}
+                            />
                         </div>
-                    ) : (
+                    ) : ( //mobile
                         <div className={`img-mobile max-w-full`}>
-                            {/* <Image
-                                src={}
+                            <Image
+                                src={SDIndex600.src}
+                                alt="Distributed Systems Home Demo GIF 600px"
                                 width={5000}
                                 height={0}
-                                alt="Frontend Mentor FAQ Accordion"
                                 className='w-full h-auto rounded-xl'
                                 draggable={false}
                                 priority={true}
-                            /> */}
+                            />
+                            <Image
+                                src={SDTransfer600.src}
+                                alt="Disitributed Systems Transfer Demo GIF 600px"
+                                width={5000}
+                                height={0}
+                                className='w-full h-auto rounded-xl mt-6'
+                                draggable={false}
+                                priority={true}
+                            />
                         </div>
                     )}
                 </div>
@@ -86,15 +112,15 @@ export default function UniversityProjects() {
                 <div className="fm-col2 flex-1 flex justify-center">
                     {!isMobile ? (
                         <div className={`img-desktop max-w-2xl`}>
-                            {/* <Image
-                                src={}
-                                alt="Frontend Mentor FAQ Accordion"
+                            <Image
+                                src={PDMSmooviePreview.src}
+                                alt="PDM Smoovie Preview"
                                 width={5000}
                                 height={0}
                                 className='w-full h-auto rounded-xl'
                                 draggable={false}
                                 priority={true}
-                            /> */}
+                            />
                         </div>
                     ) : (
                         <div className={`img-mobile max-w-full`}>
@@ -116,86 +142,25 @@ export default function UniversityProjects() {
                     </h2>
                     <h3 className="mb-4 text-lg text-white">August 2022 to September 2022</h3>
                     <div className="text-sm">
-                        For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. 
+                        For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. The application had to be able to perform the following operations:
+                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
+                            <li>Search for movies according to user's criteria</li>
+                            <li>Real-time information gathering thanks to TMDB's API</li>
+                            <li>Local saving of user's favorite movies</li>
+                            <li>Authentication and account management</li>
+                        </ul>
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-left">
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/Enkosz/smoovie')
                             } />
                         <div className="mx-2"></div>
-                        <Button type="main" content="Preview PDF (Italian)"
-                            onClick={() => window.open('https://pdfhost.io/v/CxM7lb3n2_Smoovie')}
+                        <Button type="main" content="View Documentation (Italian)"
+                            onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
                         />
                     </div>
                 </div>
             </div>
-
-            {/* <div className="text-sm text-left">
-                <ul style={{ listStyleType: 'square' }} className="ml-6">
-                    <li>
-                        <div className="text-base font-bold mt-4">
-                            University of Milan-Bicocca, Milan, Italy
-                        </div>
-                        <div className="text-base font-bold mt-4">
-                            Degree:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>BSc in <strong>Computer Science</strong></li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Time period:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>September 2020 - July 2023</li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">Projects: </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li><strong>Mobile Devices Programming</strong></li>
-                            <ul style={{ listStyleType: 'circle' }} className="ml-6">
-                                <li>Developed, managed the front-end side of an Android application in a team of 4</li>
-                                <li>Android Studio (Java)</li>
-                                <li>Version Control (GitHub)</li>
-                            </ul>
-                            <li><strong>Distributed Systems</strong></li>
-                            <ul style={{ listStyleType: 'circle' }} className="ml-6">
-                                <li>Developed the front-end side of a Python Flask website</li>
-                                <li>Managed server-side data (REST) and frontend-backend communication</li>
-                            </ul>
-                        </ul>
-                        <div className="text-base font-bold mt-4">Certifications:</div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li><strong>Open Badge Bbetween English</strong>: C1</li>
-                            <li><strong>OLS (Erasmus+ English Test)</strong>: C1</li>
-                        </ul>
-                    </li>
-                    <hr className="mt-4 border-slate-400" />
-                    <li>
-                        <div className="text-base font-bold mt-4">
-                            ITTS &quot;Belluzzi - Da Vinci&quot;, Rimini, Italy
-                        </div>
-                        <div className="text-base font-bold mt-4">
-                            Degree:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>High School Diploma in <strong>Information Technology</strong></li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Time period:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>September 2015 - July 2020</li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Relevant courses:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>Web Technology</li>
-                            <li>Computer Networking</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div> */}
-            <br />
         </div>
     );
 }

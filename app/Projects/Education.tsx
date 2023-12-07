@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Education() {
     return (
         <div id="Education" className="education max-w-5xl py-20 border-b select-none border-slate-700 

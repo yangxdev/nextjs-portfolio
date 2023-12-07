@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function DeloitteDigital() {
     return (
         <div id="Deloitte Digital" className="deloitte-digital max-w-5xl py-20 border-b select-none border-slate-700 

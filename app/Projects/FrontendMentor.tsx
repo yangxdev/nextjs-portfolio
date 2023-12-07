@@ -10,8 +10,10 @@ import Button from '../Button';
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
+import React from 'react';
 
 export default function FrontendMentor() {
+
 
     const isDesktop = useMediaQuery({ minWidth: 1024 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });

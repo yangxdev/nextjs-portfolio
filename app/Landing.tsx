@@ -3,6 +3,7 @@ import Button from "./Button";
 import { FaPhone } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { useMediaQuery } from "react-responsive";
+import logoSmall from '../public/logo_small.png';
 
 export default function Landing() {
     const technologies = [
@@ -38,6 +39,16 @@ export default function Landing() {
             md:mx-20
             lg:mx-40
         ">
+            <div className="absolute">
+                <Image
+                    src={logoSmall.src}
+                    alt="Logo"
+                    width={5000}
+                    height={0}
+                    className='w-full h-auto rounded-xl'
+                    draggable={false}
+                    priority={true}/>
+            </div>
             <div className="landing-text 
                 ">
                 <div className="landing-text-primary text-xl lg:text-3xl">
