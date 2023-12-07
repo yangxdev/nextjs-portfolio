@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
             <div className="footer-text-subsubtitle relative mt-16 mb-8 text-xs opacity-80 text-center">
                 <p>
-                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy -{">"} What's next?
+                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy -{">"} What&apos;s next?
                 </p>
                 <Image
                     src={LogoSmall.src}

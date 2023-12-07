@@ -144,9 +144,9 @@ export default function UniversityProjects() {
                     <div className="text-sm">
                         For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. The application had to be able to perform the following operations:
                         <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>Search for movies according to user's criteria</li>
-                            <li>Real-time information gathering thanks to TMDB's API</li>
-                            <li>Local saving of user's favorite movies</li>
+                            <li>Search for movies according to user&apos;s criteria</li>
+                            <li>Real-time information gathering thanks to TMDB&apos;s API</li>
+                            <li>Local saving of user&apos;s favorite movies</li>
                             <li>Authentication and account management</li>
                         </ul>
                     </div>
