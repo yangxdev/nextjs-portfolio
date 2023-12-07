@@ -8,7 +8,7 @@ import SDIndex600 from '../../public/SD_index_600.gif';
 import SDTransfer800 from '../../public/SD_transfer_800.gif';
 import SDTransfer600 from '../../public/SD_transfer_600.gif';
 import PDMSmooviePreview from '../../public/PDM_smoovie_preview.png';
-import PDMSmoovieDocumentation from '../../public/PDM_smoovie_documentation.png';
+import PDMSmooviePreviewMobile from '../../public/PDM_smoovie_preview_mobile.png';
 
 
 export default function UniversityProjects() {
@@ -124,15 +124,15 @@ export default function UniversityProjects() {
                         </div>
                     ) : (
                         <div className={`img-mobile max-w-full`}>
-                            {/* <Image
-                                src={}
+                            <Image
+                                src={PDMSmooviePreviewMobile.src}
+                                alt="PDM Smoovie Preview"
                                 width={5000}
                                 height={0}
-                                alt="Frontend Mentor FAQ Accordion"
                                 className='w-full h-auto rounded-xl'
                                 draggable={false}
                                 priority={true}
-                            /> */}
+                            />
                         </div>
                     )}
                 </div>

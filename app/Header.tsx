@@ -22,7 +22,10 @@ export default function Header() {
                 )} 
             w-full top-0 py-5 px-6`}>
             <div className="row flex flex-nowrap justify-between items-center">
-                <Button type="logo" content="YANGXDEV" onClick={() => { window.location.reload(); window.scrollTo(0, 0); }} />
+                <Button type="logo" content="YANGXDEV" onClick={() => { 
+                    // window.location.reload(); window.scrollTo(0, 0); 
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }} />
                 <div className="menu flex flex-nowrap">
                     {menuButtons.map((button, index) => (
                         <React.Fragment key={index}>

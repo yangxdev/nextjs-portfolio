@@ -42,7 +42,6 @@ export default function DeloitteDigital() {
                 </ul>
 
             </div>
-            <br />
         </div>
     );
 }

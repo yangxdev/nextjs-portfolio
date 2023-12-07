@@ -76,7 +76,6 @@ export default function Education() {
                     </li>
                 </ul>
             </div>
-            <br />
         </div>
     );
 }
