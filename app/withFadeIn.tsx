@@ -21,7 +21,7 @@ const withFadeIn = (WrappedComponent: ComponentType<any>) => {
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
-                    transition: 'opacity 0.5s, transform 0.5s',
+                    transition: 'opacity 0.8s, transform 0.8s',
                     position: 'relative',
                     zIndex: 1,
                 }}

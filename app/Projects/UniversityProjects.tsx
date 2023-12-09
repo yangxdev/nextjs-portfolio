@@ -124,7 +124,7 @@ function UniversityProjects() {
                             />
                         </div>
                     ) : (
-                        <div className={`img-mobile max-w-full`}>
+                        <div className={`img-mobile max-w-screen`}>
                             <Image
                                 src={PDMSmooviePreviewMobile.src}
                                 alt="PDM Smoovie Preview"
@@ -151,12 +151,12 @@ function UniversityProjects() {
                             <li>Authentication and account management</li>
                         </ul>
                     </div>
-                    <div className="row mt-4 flex flex-nowrap justify-left">
+                    <div className="row mt-4 flex flex-wrap  justify-left">
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/Enkosz/smoovie')
                             } />
                         <div className="mx-2"></div>
-                        <Button type="main" content="View Documentation (Italian)"
+                        <Button type="main" content="View Documentation (IT)"
                             onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
                         />
                     </div>
