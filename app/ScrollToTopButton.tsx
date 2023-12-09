@@ -1,15 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 
 const ScrollToTopButton = () => {
     const [isButtonVisible, setIsButtonVisible] = useState(false);
+    let targetYPos = useRef(0);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const handleScroll = () => {
-            const biographySection = document.getElementById('Biography');
-            if (biographySection) {
-                const isScrolledPastBiography = window.scrollY >= (biographySection.offsetTop - 500);
-                setIsButtonVisible(isScrolledPastBiography);
+            let landingYPos = window.pageYOffset + document.getElementById('Welcome')?.getBoundingClientRect().top - 128;
+            let experienceYPos = window.pageYOffset + document.getElementById('Experience')?.getBoundingClientRect().top - 128;
+
+            if (window.scrollY > 500) {
+                setIsButtonVisible(true);
+            } else {
+                setIsButtonVisible(false);
             }
+
+            if (experienceYPos && window.scrollY > experienceYPos) {
+                targetYPos.current = experienceYPos;
+            } else {
+                targetYPos.current = landingYPos;
+            }
+
+            console.clear();
+            console.log("L: " + landingYPos);
+            console.log("E: " + experienceYPos);
+            console.log("Final: " + targetYPos.current);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -21,12 +36,7 @@ const ScrollToTopButton = () => {
     }, []);
 
     const scrollToTop = () => {
-        const experienceSection = document.getElementById('Experience');
-        if (experienceSection && (window.scrollY-500) > (experienceSection.offsetTop - 500)) {
-            window.scrollTo({ top: experienceSection.offsetTop - 50, behavior: 'smooth' }); }
-        else {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+        window.scrollTo({ top: targetYPos.current, behavior: 'smooth' });
     };
 
     return (

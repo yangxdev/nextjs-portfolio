@@ -38,5 +38,5 @@ function CurriculumVitae() {
     );
 }
 
-// export default withFadeIn(CurriculumVitae);
-export default CurriculumVitae;
+export default withFadeIn(CurriculumVitae);
+// export default CurriculumVitae;
