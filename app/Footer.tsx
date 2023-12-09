@@ -48,8 +48,8 @@ function Footer() {
                         </React.Fragment>
                     ))}
             </div>
-            <div className="footer-text-subsubtitle relative mt-16 mb-8 text-xs opacity-80 text-center">
-                <p>
+            <div className="footer-text-subsubtitle relative mt-16 mb-8 text-xs opacity-100 text-center">
+                <p className="opacity-80">
                     © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy -{">"} What&apos;s next?
                 </p>
                 <Image
@@ -57,7 +57,7 @@ function Footer() {
                     alt="YX Logo"
                     width={100}
                     height={100}
-                    className='w-full h-auto rounded-xl -mt-5 -z-50 absolute cursor-pointer'
+                    className='w-full h-auto rounded-xl -mt-5 -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
                     draggable={false}
                     priority={true}
                     onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
