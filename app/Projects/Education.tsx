@@ -1,6 +1,7 @@
 import React from "react";
+import withFadeIn from "../withFadeIn";
 
-export default function Education() {
+function Education() {
     return (
         <div id="Education" className="education max-w-5xl py-20 border-b select-none border-slate-700 
             mx-6
@@ -79,3 +80,5 @@ export default function Education() {
         </div>
     );
 }
+
+export default withFadeIn(Education);

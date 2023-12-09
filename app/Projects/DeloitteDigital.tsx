@@ -1,6 +1,7 @@
 import React from "react";
+import withFadeIn from "../withFadeIn";
 
-export default function DeloitteDigital() {
+function DeloitteDigital() {
     return (
         <div id="Deloitte Digital" className="deloitte-digital max-w-5xl py-20 border-b select-none border-slate-700 
             mx-6
@@ -45,3 +46,5 @@ export default function DeloitteDigital() {
         </div>
     );
 }
+
+export default withFadeIn(DeloitteDigital);

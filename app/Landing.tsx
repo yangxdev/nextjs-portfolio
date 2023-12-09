@@ -1,12 +1,12 @@
 import React from "react";
 import Button from "./Button";
-import { FaPhone } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { useMediaQuery } from "react-responsive";
 import LogoSmall from '../public/logo_small_gray.jpg';
 import Image from "next/image";
+import withFadeIn from "./withFadeIn";
 
-export default function Landing() {
+function Landing() {
     const technologies = [
         "Javascript",
         "jQuery",
@@ -108,3 +108,6 @@ export default function Landing() {
         </div>
     );
 }
+
+// export default withFadeIn(Landing);
+export default Landing;

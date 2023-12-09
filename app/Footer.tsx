@@ -2,8 +2,9 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import LogoSmall from '../public/logo_small_gray.jpg';
+import withFadeIn from "./withFadeIn";
 
-export default function Footer() {
+function Footer() {
 
     const footerButtons = [
         { type: 'main', content: 'Email Me', onClick: () => window.open('mailto:yangxdev@gmail.com') },
@@ -65,3 +66,5 @@ export default function Footer() {
         </div>
     )
 }
+
+export default withFadeIn(Footer);

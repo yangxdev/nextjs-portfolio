@@ -1,7 +1,8 @@
 import React from "react";
 import Button from "./Button";
+import withFadeIn from "./withFadeIn";
 
-export default function Biography() {
+function Biography() {
 
     const biographyButtons: { type: 'main'; content: string; onClick?: () => void }[] = [
         { type: 'main', content: 'LinkedIn Profile', onClick: () => window.open('https://www.linkedin.com/in/yangxng/', '_blank') },
@@ -63,3 +64,6 @@ export default function Biography() {
         </div>
     );
 }
+
+export default withFadeIn(Biography);
+// export default Biography;

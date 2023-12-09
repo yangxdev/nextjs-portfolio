@@ -20,7 +20,7 @@ export default function Header() {
                 ) : (
                 'bg-gradient-to-b from-black to-blue backdrop-blur backdrop-opacity-10 pb-20'
                 )} 
-            w-full top-0 py-5 px-6`}>
+            w-full top-0 py-5 px-6 z-10`}>
             <div className="row flex flex-nowrap justify-between items-center">
                 <Button type="logo" content="YANGXDEV" onClick={() => { 
                     // window.location.reload(); window.scrollTo(0, 0); 

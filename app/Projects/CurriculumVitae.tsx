@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../Button";
 import { useMediaQuery } from "react-responsive";
+import withFadeIn from "../withFadeIn";
 
-export default function CurriculumVitae() {
+function CurriculumVitae() {
 
     const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
 
@@ -36,3 +37,6 @@ export default function CurriculumVitae() {
         </div>
     );
 }
+
+// export default withFadeIn(CurriculumVitae);
+export default CurriculumVitae;

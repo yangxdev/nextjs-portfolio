@@ -9,9 +9,10 @@ import SDTransfer800 from '../../public/SD_transfer_800.gif';
 import SDTransfer600 from '../../public/SD_transfer_600.gif';
 import PDMSmooviePreview from '../../public/PDM_smoovie_preview.png';
 import PDMSmooviePreviewMobile from '../../public/PDM_smoovie_preview_mobile.png';
+import withFadeIn from '../withFadeIn';
 
 
-export default function UniversityProjects() {
+function UniversityProjects() {
 
     const isDesktop = useMediaQuery({ minWidth: 1024 });
     const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
@@ -164,3 +165,5 @@ export default function UniversityProjects() {
         </div>
     );
 }
+
+export default withFadeIn(UniversityProjects);

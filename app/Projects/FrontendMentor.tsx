@@ -11,8 +11,9 @@ import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import React from 'react';
+import withFadeIn from '../withFadeIn';
 
-export default function FrontendMentor() {
+function FrontendMentor() {
 
 
     const isDesktop = useMediaQuery({ minWidth: 1024 });
@@ -212,3 +213,5 @@ export default function FrontendMentor() {
         </div >
     );
 }
+
+export default withFadeIn(FrontendMentor);
