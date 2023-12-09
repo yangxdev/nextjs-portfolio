@@ -2,37 +2,25 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 
 const ScrollToTopButton = () => {
     const [isButtonVisible, setIsButtonVisible] = useState(false);
-    let targetYPos = useRef(0);
+    const targetYPos = useRef(0);
 
     useLayoutEffect(() => {
         const handleScroll = () => {
-            let landingYPos = window.pageYOffset + document.getElementById('Welcome')?.getBoundingClientRect().top - 128;
-            let experienceYPos = window.pageYOffset + document.getElementById('Experience')?.getBoundingClientRect().top - 128;
+            const landingElement = document.getElementById('Welcome');
+            const experienceElement = document.getElementById('Experience');
 
-            if (window.scrollY > 500) {
-                setIsButtonVisible(true);
-            } else {
-                setIsButtonVisible(false);
-            }
+            if (!landingElement || !experienceElement) return;
 
-            if (experienceYPos && window.scrollY > experienceYPos) {
-                targetYPos.current = experienceYPos;
-            } else {
-                targetYPos.current = landingYPos;
-            }
+            const landingYPos = window.pageYOffset + landingElement.getBoundingClientRect().top ;
+            const experienceYPos = window.pageYOffset + experienceElement.getBoundingClientRect().top;
 
-            console.clear();
-            console.log("L: " + landingYPos);
-            console.log("E: " + experienceYPos);
-            console.log("Final: " + targetYPos.current);
+            setIsButtonVisible(window.scrollY > 500);
+            targetYPos.current = experienceYPos && window.scrollY > experienceYPos ? experienceYPos - 128 : landingYPos - 128;
         };
 
         window.addEventListener('scroll', handleScroll);
 
-        return () => {
-            // Cleanup: remove the scroll event listener when the component is unmounted
-            window.removeEventListener('scroll', handleScroll);
-        };
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const scrollToTop = () => {
@@ -44,10 +32,9 @@ const ScrollToTopButton = () => {
             <button
                 onClick={scrollToTop}
                 className={`transition-transform duration-1000 ease-in-out transform select-none
-                    ${isButtonVisible ? 'translate-y-0' : 'translate-y-52'}`}
+            ${isButtonVisible ? 'translate-y-0' : 'translate-y-52'}`}
             >
-                <div className="text-white text-3xl md:text-4xl lg:text-5xl py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90
-                ">▲</div>
+                <div className="text-white text-3xl md:text-4xl lg:text-5xl py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90">▲</div>
             </button>
         </div>
     );
