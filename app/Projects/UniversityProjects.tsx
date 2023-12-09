@@ -156,7 +156,7 @@ function UniversityProjects() {
                             onClick={() => window.open('https://github.com/Enkosz/smoovie')
                             } />
                         <div className="mx-2"></div>
-                        <Button type="main" content="View Documentation (IT)"
+                        <Button type="main" content="View Docs (IT)"
                             onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
                         />
                     </div>
