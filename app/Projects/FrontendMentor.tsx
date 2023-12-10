@@ -22,7 +22,8 @@ function FrontendMentor() {
     const [isMobileView1, setIsMobileView1] = useState(isMobile);
     const [isMobileView2, setIsMobileView2] = useState(isMobile);
     const [isMobileView3, setIsMobileView3] = useState(isMobile);
-
+    const textDirection = 'text-center';
+    const buttonDirection = 'justify-center';
 
     return (
         <div id='Frontend Mentor' className="frontend-mentor py-20 border-b select-none border-slate-700 max-w-5xl
@@ -64,12 +65,12 @@ function FrontendMentor() {
                         </div>
                     )}
                 </div>
-                <div className="fm-col1 flex-1 text-center mt-4">
+                <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-2xl font-bold text-white">FAQ Accordion</h2>
                     <div className="text-sm">
                         One of my first projects, this FAQ accordion was built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
                     </div>
-                    <div className="row mt-4 flex flex-nowrap justify-center">
+                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/yangxdev/fe2-faq-accordion')
                             } />
@@ -120,12 +121,12 @@ function FrontendMentor() {
                         </div>
                     )}
                 </div>
-                <div className="fm-col1 flex-1 text-center mt-4">
+                <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-2xl text-white"><strong>Room Homepage</strong></h2>
                     <div className="text-sm">
                         In my next projects, I prioritized seamless user experiences by enhancing responsiveness and functionality. I successfully implemented a dynamic image carousel, ensuring smooth transitions between desktop and mobile views.
                     </div>
-                    <div className="row mt-4 flex flex-nowrap justify-center">
+                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/unimibYNGX/fe8-room-homepage')
                             } />
@@ -176,12 +177,12 @@ function FrontendMentor() {
                         </div>
                     )}
                 </div>
-                <div className="fm-col1 flex-1 text-center mt-4">
+                <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-3xl text-white"><strong>E-commerce</strong></h2>
                     <div className="text-sm">
                         One of the last projects I&apos;ve done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>
-                    <div className="row mt-4 flex flex-nowrap justify-center">
+                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
                         <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/unimibYNGX/fe10-ecommerce')
                             } />

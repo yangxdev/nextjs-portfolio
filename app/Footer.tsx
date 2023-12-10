@@ -8,6 +8,8 @@ function Footer() {
 
     const footerButtons = [
         { type: 'main', content: 'Email Me', onClick: () => window.open('mailto:yangxdev@gmail.com') },
+        { type: 'main', content: 'Message Me', onClick: () => window.location.href = 'sms:+393342229699' },
+        { type: 'main', content: 'Call Me', onClick: () => window.location.href = 'tel:+393342229699' },
         { type: 'main', content: 'Telegram', onClick: () => window.open('https://telegram.me/yangxng') },
     ];
 
@@ -22,9 +24,7 @@ function Footer() {
             </div>
             <div className="footer-text-subtitle flex text-center text-sm mt-6">
                 <p>
-                    Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me a message at 
-                    <a className="select-text"> yangxdev@gmail.com </a>
-                    or Telegram.
+                    Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me a message or call me using these buttons below!
                 </p>
             </div>
             <div className="footer-text-buttons flex text-sm mt-8">
@@ -50,7 +50,12 @@ function Footer() {
             </div>
             <div className="footer-text-subsubtitle relative mt-16 mb-8 text-xs opacity-100 text-center">
                 <p className="opacity-80">
-                    © 2023 YANGXDEV <br /> yangxdev@gmail.com <br /> Milan, Italy -{">"} What&apos;s next?
+                    © 2023 YANGXDEV 
+                    <br /> 
+                    yangxdev@gmail.com 
+                    <br /> 
+                    Milan, Italy -{">"} What&apos;s next?
+                    <br />
                 </p>
                 <Image
                     src={LogoSmall.src}

@@ -31,7 +31,7 @@ export default function HomePage() {
       <div><Toaster /></div>
       <Header />
       {isDesktop && (
-        <div className="scroll-links flex flex-col sticky top-[70px] mr-auto ml-6 cursor-pointer">
+        <div className="scroll-links flex flex-col sticky top-[70px] mr-auto ml-6 cursor-pointer z-10">
           {sections.map((section, index) => (
             <div className="hover:opacity-80" key={index}>
               <ScrollLink

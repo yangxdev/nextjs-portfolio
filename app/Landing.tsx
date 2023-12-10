@@ -15,7 +15,9 @@ function Landing() {
         "Next.js",
         "Tailwind CSS",
         "Java",
-        "Agile"
+        "Agile",
+        "UX", 
+        "UI"
     ];
 
     const landingButtons: { type: 'main'; content: string; onClick?: () => void }[] = [
