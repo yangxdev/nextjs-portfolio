@@ -60,7 +60,7 @@ function Footer() {
                     <br />
                     yangxdev@gmail.com
                     <br />
-                    Milan, Italy -{">"} What&apos;s next?
+                    Milan, Italy → What&apos;s next?
                     <br />
                 </p>
                 <Image
