@@ -15,6 +15,7 @@ import ScrollToTopButton from "./ScrollToTopButton";
 import DeloitteDigital from "./Projects/DeloitteDigital";
 import Education from "./Projects/Education";
 import UniversityProjects from "./Projects/UniversityProjects";
+import { useIsDesktop } from "./useIsDesktop";
 
 export default function HomePage() {
 
@@ -24,7 +25,8 @@ export default function HomePage() {
     'Contact Me',
   ];
 
-  const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+  // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+  const isDesktop = useIsDesktop();
 
   return (
     <div className="flex-col flex main-page h-full w-screen items-center justify-center">

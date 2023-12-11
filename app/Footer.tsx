@@ -4,10 +4,9 @@ import Image from "next/image";
 import LogoSmall from '../public/logo_small_gray.jpg';
 import withFadeIn from "./withFadeIn";
 import { useMediaQuery } from 'react-responsive';
+import { useIsMobile } from "./useIsMobile";
 
 function Footer() {
-
-    const isMobile = useMediaQuery({ maxWidth: 767 });
 
     const footerButtons = [
         { type: 'main', content: 'Message Me', onClick: () => window.location.href = 'sms:+393342229699' },
@@ -15,6 +14,8 @@ function Footer() {
         { type: 'main', content: 'Call Me', onClick: () => window.location.href = 'tel:+393342229699' },
         { type: 'main', content: 'Telegram', onClick: () => window.open('https://telegram.me/yangxng') },
     ];
+
+    const isMobile = useIsMobile();
 
     return (
         <div id="Contact Me" className="footer pt-20 flex items-center flex-col justify-center select-none

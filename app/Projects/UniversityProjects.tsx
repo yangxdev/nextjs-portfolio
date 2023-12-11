@@ -10,23 +10,22 @@ import SDTransfer600 from '../../public/SD_transfer_600.gif';
 import PDMSmooviePreview from '../../public/PDM_smoovie_preview.png';
 import PDMSmooviePreviewMobile from '../../public/PDM_smoovie_preview_mobile.png';
 import withFadeIn from '../withFadeIn';
+import { useIsMobile } from '../useIsMobile';
 
 
 function UniversityProjects() {
 
-    const isDesktop = useMediaQuery({ minWidth: 1024 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-    const isMobile = useMediaQuery({ maxWidth: 767 });
-    const [isMobileView1, setIsMobileView1] = useState(isMobile);
-    const [isMobileView2, setIsMobileView2] = useState(isMobile);
-    const [isMobileView3, setIsMobileView3] = useState(isMobile);
+    // const isDesktop = useMediaQuery({ minWidth: 1024 });
+    // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+    // const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobile = useIsMobile();
 
     return (
         <div id="University Projects" className="university-projects max-w-5xl py-20 border-b select-none border-slate-700 
             mx-6
             md:mx-20
             lg:mx-40
-        ">
+            ">
             <h1 className="text-3xl text-left text-white font-bold">University Projects</h1>
             {/* <h3 className='text-lg text-left text-white mt-2'>From September 2020 to July 2023</h3> */}
             <br />
@@ -151,14 +150,18 @@ function UniversityProjects() {
                             <li>Authentication and account management</li>
                         </ul>
                     </div>
-                    <div className="row mt-4 flex flex-wrap  justify-left">
-                        <Button type="main" content="View Code"
-                            onClick={() => window.open('https://github.com/Enkosz/smoovie')
-                            } />
-                        <div className="mx-2"></div>
-                        <Button type="main" content="View Docs (IT)"
-                            onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
-                        />
+                    <div className="row mt-4 flex flex-wrap justify-left">
+                        <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
+                            <Button type="main" content="View Code"
+                                onClick={() => window.open('https://github.com/Enkosz/smoovie')
+                                } />
+                        </div>
+                        <div className={`mx-2`}></div>
+                        <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
+                            <Button type="main" content="View Docs (IT)"
+                                onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>

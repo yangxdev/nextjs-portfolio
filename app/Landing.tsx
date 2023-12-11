@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import LogoSmall from '../public/logo_small_gray.jpg';
 import Image from "next/image";
 import withFadeIn from "./withFadeIn";
+import { useIsMobile } from "./useIsMobile";
+
 
 function Landing() {
     const technologies = [
@@ -32,8 +34,9 @@ function Landing() {
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },
     ];
 
-    const isDesktop = useMediaQuery({ minWidth: 1024 });
-    const isMobile = useMediaQuery({ maxWidth: 767 });
+    // const isDesktop = useMediaQuery({ minWidth: 1024 });
+    // const isMobile = useMediaQuery({ maxWidth: 767 });
+    const isMobile = useIsMobile();
 
     return (
         <div id="Welcome" className="landing relative select-none py-20 border-b border-slate-700 flex flex-col
@@ -74,8 +77,8 @@ function Landing() {
                     </ul>
                 </div> */}
             </div>
-            <div className="landing-buttons flex max-w-max flex-col mt-8">
-                <div className={`block`}>
+            <div className={`landing-buttons flex max-w-max flex-col mt-8`}>
+                <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>
                     <div className="mb-4 max-w-fit mr-4">
                         <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
                             <Button type="main" content="Read my Experience" />

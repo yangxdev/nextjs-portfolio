@@ -2,6 +2,8 @@
 import React from 'react';
 import Button from './Button';
 import { useMediaQuery } from 'react-responsive';
+import { useIsMobile } from './useIsMobile';
+import { useIsDesktop } from './useIsDesktop';
 
 export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [
@@ -10,8 +12,11 @@ export default function Header() {
         { type: 'header', content: 'CV', onClick: () => window.open('/XIANG_CV.pdf')},
     ];
 
-    const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
-    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+    // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+    // const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
+    const isMobile = useIsMobile();
+    const isDesktop = useIsDesktop();
 
     return (
         <div className={`header sticky
@@ -29,7 +34,7 @@ export default function Header() {
                 <div className="menu flex flex-nowrap">
                     {menuButtons.map((button, index) => (
                         <React.Fragment key={index}>
-                            {index > 0 && <span className={`divider ${isMobile ? 'mx-1' : 'mx-3'} opacity-50 select-none`}>/</span>}
+                            {index > 0 && <span className={`divider opacity-50 select-none`}>/</span>}
                             <Button type={button.type} content={button.content} onClick={button.onClick} />
                         </React.Fragment>
                     ))}

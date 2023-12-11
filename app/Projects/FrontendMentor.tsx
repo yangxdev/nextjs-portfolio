@@ -7,21 +7,22 @@ import fe10EcommerceMobile from '../../public/fe10-ecommerce-mobile.jpg';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import Button from '../Button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import React from 'react';
 import withFadeIn from '../withFadeIn';
+import { useIsMobile } from '../useIsMobile';
 
 function FrontendMentor() {
 
 
-    const isDesktop = useMediaQuery({ minWidth: 1024 });
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-    const isMobile = useMediaQuery({ maxWidth: 767 });
-    const [isMobileView1, setIsMobileView1] = useState(isMobile);
-    const [isMobileView2, setIsMobileView2] = useState(isMobile);
-    const [isMobileView3, setIsMobileView3] = useState(isMobile);
+    // const isDesktop = useMediaQuery({ minWidth: 1024 });
+    // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+    // const isMobile = useMediaQuery({ maxWidth: 767 });
+
+    const isMobile = useIsMobile();
+
     const textDirection = 'text-center';
     const buttonDirection = 'justify-center';
 

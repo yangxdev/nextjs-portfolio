@@ -2,10 +2,12 @@ import React from "react";
 import Button from "../Button";
 import { useMediaQuery } from "react-responsive";
 import withFadeIn from "../withFadeIn";
+import { useIsDesktop } from "../useIsDesktop";
 
 function CurriculumVitae() {
 
-    const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+    // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
+    const isDesktop = useIsDesktop();
 
     return (
         <div id="Curriculum Vitae" className="curriculum-vitae max-w-5xl py-20 border-b select-none border-slate-700
