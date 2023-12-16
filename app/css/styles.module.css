@@ -1,29 +1,29 @@
 .hidden {
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .logo-button {
-    @apply text-text text-xl font-bold text-center select-none cursor-pointer hover:opacity-80
+  @apply text-text text-xl font-bold text-center select-none cursor-pointer hover:opacity-80
 }
 
 .begin-button {
-    @apply text-text text-lg font-medium text-center select-none underline underline-offset-1 cursor-pointer hover:opacity-80
+  @apply text-text text-lg font-medium text-center select-none underline underline-offset-1 cursor-pointer hover:opacity-80
 }
 
 .header-button {
-    @apply text-text font-light text-center select-none cursor-pointer hover:opacity-80
+  @apply text-text font-light text-center select-none cursor-pointer hover:opacity-80
 }
 
 .main-button {
-    @apply text-text w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200
+  @apply text-text w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200
 }
 
 .send-button {
-    @apply text-text w-fit mt-4 py-2 px-4 font-light border border-slate-500 hover:bg-accent hover:text-background ease-in-out duration-200
+  @apply text-text w-fit mt-4 py-2 px-4 font-light border border-slate-500 hover:bg-accent hover:text-background ease-in-out duration-200
 }
 
 .copy-button {
-    @apply text-text w-fit ml-4 mt-4 py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200
+  @apply text-text w-fit ml-4 mt-4 py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200
 }
