@@ -11,6 +11,9 @@ function Footer() {
     const footerButtons = [
         { type: 'main', content: 'Email Me', onClick: () => window.open('mailto:yangxdev@gmail.com') },
         { type: 'main', content: 'Telegram', onClick: () => window.open('https://telegram.me/yangxng') },
+        {
+            type: 'main', content: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/yangxng/')
+        }
     ];
 
     const isMobile = useIsMobile();
@@ -26,7 +29,7 @@ function Footer() {
             </div>
             <div className="footer-text-subtitle flex text-center text-sm mt-6">
                 <p>
-                    Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me a message or call me using these buttons below!
+                    Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me an email, text me on Telegram, or write me on LinkedIn!
                 </p>
             </div>
             <div className={`footer-text-buttons flex text-sm mt-8 ${isMobile ? 'flex-col items-center' : ''}`}>
