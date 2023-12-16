@@ -9,7 +9,7 @@ function Biography() {
     ];
 
     return (
-        <div id="Biography" className="biography max-w-5xl py-20 h-full select-none border-b border-slate-700
+        <div data-testid="Biography" id="Biography" className="biography max-w-5xl py-20 h-full select-none border-b border-slate-700
         mx-6
         md:mx-20
         lg:mx-40
