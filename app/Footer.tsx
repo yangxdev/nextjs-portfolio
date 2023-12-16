@@ -9,9 +9,7 @@ import { useIsMobile } from "./useIsMobile";
 function Footer() {
 
     const footerButtons = [
-        { type: 'main', content: 'Message Me', onClick: () => window.location.href = 'sms:+393342229699' },
         { type: 'main', content: 'Email Me', onClick: () => window.open('mailto:yangxdev@gmail.com') },
-        { type: 'main', content: 'Call Me', onClick: () => window.location.href = 'tel:+393342229699' },
         { type: 'main', content: 'Telegram', onClick: () => window.open('https://telegram.me/yangxng') },
     ];
 

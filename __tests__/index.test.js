@@ -90,7 +90,6 @@ jest.mock('../app/useIsMobile')
 
 describe('Footer', () => {
     beforeEach(() => {
-        // Reset mocks and set default behavior
         jest.clearAllMocks();
         jest.resetModules();
     });
@@ -100,5 +99,14 @@ describe('Footer', () => {
         const footerElement = screen.getByText("LET'S GET IN TOUCH");
         expect(footerElement).toBeInTheDocument();
     });
+
+    test('renders button contents', () => {
+        render(<Footer />);
+        const emailButton = screen.getByText('Email Me');
+        const telegramButton = screen.getByText('Telegram');
+
+        expect(emailButton).toBeInTheDocument();
+        expect(telegramButton).toBeInTheDocument();
+    })
 });
 
