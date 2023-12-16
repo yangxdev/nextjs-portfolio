@@ -9,7 +9,7 @@ export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [
         { type: 'header', content: 'LinkedIn', onClick: () => window.open('https://www.linkedin.com/in/yangxng/', '_blank') },
         // { type: 'header', content: 'GitHub', onClick: () => window.open('https://github.com/yangxdev', '_blank') },
-        { type: 'header', content: 'CV', onClick: () => window.open('/XIANG_CV.pdf')},
+        { type: 'header', content: 'CV', onClick: () => window.open('/XIANG_CV.pdf') },
     ];
 
     // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
@@ -22,12 +22,12 @@ export default function Header() {
         <div className={`header sticky
             ${isDesktop ? (
                 'bg-gradient-to-b from-gray-950 to-transparent backdrop-blur backdrop-opacity-10'
-                ) : (
+            ) : (
                 'bg-gradient-to-b from-black to-blue backdrop-blur backdrop-opacity-10 pb-20'
-                )} 
+            )} 
             w-full top-0 py-5 px-6 z-10`}>
             <div className="row flex flex-nowrap justify-between items-center">
-                <Button type="logo" content="YANGXDEV" onClick={() => { 
+                <Button type="logo" content="YANGXDEV" onClick={() => {
                     // window.location.reload(); window.scrollTo(0, 0); 
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }} />

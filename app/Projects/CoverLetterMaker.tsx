@@ -59,10 +59,10 @@ export default function CoverLetterMaker() {
     const dependencies = inputRefs.map((ref) => ref.current?.value);
 
     useEffect(() => {
-            const inputs = clmRef.current?.querySelectorAll('input');
-            let status = allElemsAreEmpty(inputs);
-            setIsButtonDisabled(status);
-        }, [...dependencies]
+        const inputs = clmRef.current?.querySelectorAll('input');
+        let status = allElemsAreEmpty(inputs);
+        setIsButtonDisabled(status);
+    }, [...dependencies]
     );
 
     const handleInputChange = () => {
@@ -79,9 +79,9 @@ export default function CoverLetterMaker() {
             <p className="text-center text-white">Fill in the fields below and click on Generate to create your own cover letter!</p>
             <br /> <br />
             <div className="flex justify-center max-w-6l flex-wrap">
-                <input type="text" className={inputField} ref={inputName} placeholder="Enter your name" onChange={handleInputChange} defaultValue={'Yang'}/>
-                <input type="text" className={inputField} ref={inputCompany} placeholder="Enter company name" onChange={handleInputChange} defaultValue={'Deloitte'}/>
-                <input type="text" className={inputField} ref={inputRole} placeholder="Enter role" onChange={handleInputChange} defaultValue={'Software Engineer'}/>
+                <input type="text" className={inputField} ref={inputName} placeholder="Enter your name" onChange={handleInputChange} defaultValue={'Yang'} />
+                <input type="text" className={inputField} ref={inputCompany} placeholder="Enter company name" onChange={handleInputChange} defaultValue={'Deloitte'} />
+                <input type="text" className={inputField} ref={inputRole} placeholder="Enter role" onChange={handleInputChange} defaultValue={'Software Engineer'} />
                 {/* <input type="text" className={inputField} ref={inputDegree} placeholder="Enter your degree" onChange={handleInputChange} /> */}
                 {/* <input type="text" className={inputField} ref={inputCourse} placeholder="Enter your course" onChange={handleInputChange} /> */}
                 {/* <input type="text" className={inputField} ref={inputSchool} placeholder="Enter your school" onChange={handleInputChange} /> */}
@@ -89,21 +89,21 @@ export default function CoverLetterMaker() {
                 {/* <input type="text" className={inputField} ref={inputExperience2} placeholder="Enter your 2nd experience" onChange={handleInputChange} /> */}
             </div>
             <div className="flex justify-center mt-4">
-                <Button type="generate" content="Generate" onClick={getCvText} disabled={isButtonDisabled}/>
+                <Button type="generate" content="Generate" onClick={getCvText} disabled={isButtonDisabled} />
                 <Button type="copy" content="Copy" onClick={() => {
-                        navigator.clipboard.writeText(cvTextRef.current?.innerText || '')
-                        toast("Cover letter copied!",
-                            {
-                                icon: '📝',
-                                duration: 2000,
-                                style: {
-                                    borderRadius: '10px',
-                                    background: '#333',
-                                    color: '#fff',
-                                },
-                            }
-                        );      
-                    }}
+                    navigator.clipboard.writeText(cvTextRef.current?.innerText || '')
+                    toast("Cover letter copied!",
+                        {
+                            icon: '📝',
+                            duration: 2000,
+                            style: {
+                                borderRadius: '10px',
+                                background: '#333',
+                                color: '#fff',
+                            },
+                        }
+                    );
+                }}
                     disabled={isButtonDisabled} />
             </div>
             <br /> <br />

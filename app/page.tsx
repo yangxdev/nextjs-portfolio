@@ -5,11 +5,11 @@ import HomePage from "./HomePage";
 import ProgressBar from "./ProgressBar";
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      {/* <SliderContainer username="yangxdev" /> */}
-      <ProgressBar />
-      <HomePage />
-    </main>
-  );
+    return (
+        <main className="flex min-h-screen flex-col items-center justify-center">
+            {/* <SliderContainer username="yangxdev" /> */}
+            <ProgressBar />
+            <HomePage />
+        </main>
+    );
 }

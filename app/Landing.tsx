@@ -18,7 +18,7 @@ function Landing() {
         "Tailwind CSS",
         "Java",
         "Agile",
-        "UX", 
+        "UX",
         "UI"
     ];
 
@@ -45,14 +45,14 @@ function Landing() {
             md:mx-20
             lg:mx-40
         ">
-                <Image
-                    src={LogoSmall.src}
-                    alt="YX Logo"
-                    width={1280}
-                    height={0}
-                    className='absolute w-[7rem] place-self-center -left-[35px] -top-[10px] h-auto rounded-xl -z-50 opacity-95'
-                    draggable={false}
-                />
+            <Image
+                src={LogoSmall.src}
+                alt="YX Logo"
+                width={1280}
+                height={0}
+                className='absolute w-[7rem] place-self-center -left-[35px] -top-[10px] h-auto rounded-xl -z-50 opacity-95'
+                draggable={false}
+            />
             <div className="landing-text z-1">
                 <div className="landing-text-primary text-xl lg:text-3xl">
                     Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a

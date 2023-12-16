@@ -7,22 +7,22 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "YANGXDEV",
-  description: "Portfolio Website, made by Yang // yangxdev",
+    title: "YANGXDEV",
+    description: "Portfolio Website, made by Yang // yangxdev",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>
-        <SpeedInsights />
-        {children}
-        <Analytics />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="dark">
+            <body className={inter.className}>
+                <SpeedInsights />
+                {children}
+                <Analytics />
+            </body>
+        </html>
+    );
 }

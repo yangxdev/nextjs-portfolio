@@ -11,7 +11,7 @@ const ScrollToTopButton = () => {
 
             if (!landingElement || !experienceElement) return;
 
-            const landingYPos = window.pageYOffset + landingElement.getBoundingClientRect().top ;
+            const landingYPos = window.pageYOffset + landingElement.getBoundingClientRect().top;
             const experienceYPos = window.pageYOffset + experienceElement.getBoundingClientRect().top;
 
             setIsButtonVisible(window.scrollY > 500);

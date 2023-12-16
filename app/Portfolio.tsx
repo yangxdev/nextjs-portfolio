@@ -28,10 +28,10 @@ function Portfolio() {
             md:mx-20
             lg:mx-40
         ">
-                <h1 className="text-left text-3xl text-white my-4"><strong>My experience</strong></h1>
-                {experiences.map((experience, index) => (
-                    <PortfolioElement sectionId={experience.title} key={index} {...experience} />
-                ))}
+            <h1 className="text-left text-3xl text-white my-4"><strong>My experience</strong></h1>
+            {experiences.map((experience, index) => (
+                <PortfolioElement sectionId={experience.title} key={index} {...experience} />
+            ))}
         </div>
     );
 }
