@@ -26,7 +26,7 @@ describe('Footer', () => {
 
     it('should render the button contents', () => {
         render(<Footer />);
-        const emailButton = screen.getByText('Email M');
+        const emailButton = screen.getByText('Email Me');
         const telegramButton = screen.getByText('Telegram');
         const linkedinButton = screen.getByText('LinkedIn');
 
