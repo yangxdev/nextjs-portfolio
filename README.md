@@ -104,10 +104,48 @@ To access the dashboard:
 #### Updating the Deployment:
 For any updates or changes to the project, simply push the changes to the connected branch. Vercel will automatically trigger a new deployment.
 
-## Screenshots
+### Screenshots
 ![Website Desktop Landing Section Screenshot](/public/readme/desktop_landing.png)
 ![Website Desktop Footer Section Screenshot](/public/readme/desktop_footer.png)
 <div class="flex">
     <img src="/public/readme/mobile_portfolio.png" alt="Website Mobile Portfolio Section Screenshot" width="400">&nbsp;&nbsp;
     <img src="/public/readme/mobile_frontendmentor.png" alt="Website Mobile FrontendMentor Section Screenshot" width="400">
 </div>
+
+### License
+MIT License
+
+Copyright (c) 2023 yangxdev
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+### Contact
+Feel free to reach out if you have any questions, suggestions, or just want to connect! You can contact me via:
+
+- Email: yangxdev@gmail.com
+- LinkedIn: [Yang Xiang](https://www.linkedin.com/in/yangxng/)
+- Telegram: [yang.xng](https://t.me/yangxng)
+- GitHub: [yangxdev](https://github.com/yangxdev)
+- Personal Website: [yangxdev.com](https://www.yangxdev.com)
+
+I'm open to collaboration, feedback, and discussions about software engineering, frontend development, or anything related to the projects showcased in this portfolio.
+
+Looking forward to hearing from you!
+
+ <img src="/public/logos/logo_small_gray.jpg" alt="End of Document - Personal Logo" width="100">
