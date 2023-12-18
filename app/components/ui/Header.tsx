@@ -12,9 +12,6 @@ export default function Header() {
         { type: 'header', content: 'CV', onClick: () => window.open('cv/XIANG_CV.pdf') },
     ];
 
-    // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
-    // const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
-
     const isMobile = useIsMobile();
     const isDesktop = useIsDesktop();
 

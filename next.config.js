@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
 const path = require('path');
+const withImages = require('next-images');
+
+module.exports = withImages({
+    esModule: true,
+    webpack(config, options) {
+        return config
+    }
+})
 
 module.exports = {
     compress: true,

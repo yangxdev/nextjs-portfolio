@@ -14,9 +14,6 @@ import PDMSmooviePreviewMobile from '@university/PDM_smoovie_preview_mobile.png'
 
 function UniversityProjects() {
 
-    // const isDesktop = useMediaQuery({ minWidth: 1024 });
-    // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-    // const isMobile = useMediaQuery({ maxWidth: 767 });
     const isMobile = useIsMobile();
 
     return (
@@ -28,9 +25,9 @@ function UniversityProjects() {
             <h1 className="text-3xl text-left text-white font-bold">University Projects</h1>
             {/* <h3 className='text-lg text-left text-white mt-2'>From September 2020 to July 2023</h3> */}
             <br />
-            Having enrolled in a Computer Science degree at the University of Milan-Bicocca, I had the opportunity to work on some interesting projects. Here are the most relevant ones:
+            {/* Having enrolled in a Computer Science degree at the University of Milan-Bicocca, I had the opportunity to work on some interesting projects. Here are the most relevant ones:
             <br />
-            <br />
+            <br /> */}
 
             <div className="fm-row flex flex-col">
                 <div className="fm-col2 flex-1 flex justify-center">

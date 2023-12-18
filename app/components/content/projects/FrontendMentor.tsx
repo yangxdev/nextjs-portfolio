@@ -16,10 +16,6 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function FrontendMentor() {
 
-    // const isDesktop = useMediaQuery({ minWidth: 1024 });
-    // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-    // const isMobile = useMediaQuery({ maxWidth: 767 });
-
     const isMobile = useIsMobile();
 
     const textDirection = 'text-center';
@@ -34,8 +30,8 @@ function FrontendMentor() {
             <h1 className="text-3xl text-left text-white font-bold">Frontend Mentor</h1>
             <h3 className='text-lg text-left text-white mt-2'>From 2022</h3>
             <br />
-            <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I&apos;ve navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development — from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
-            <br />
+            {/* <div className="text-sm text-left">From mastering vanilla JavaScript to embracing React and Next, I&apos;ve navigated the evolution of web design. Fueled by academic insights, I prioritize clean code and holistic development — from frontend responsiveness to seamless backend communication. My approach integrates UI/UX principles, ensuring each project is not just functional but an engaging digital journey. Explore my portfolio for a glimpse into my commitment to creating captivating web experiences.</div>
+            <br /> */}
 
             <div className="fm-row flex flex-col">
                 <div className="fm-col2 flex-1 flex justify-center">
@@ -68,7 +64,7 @@ function FrontendMentor() {
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-2xl font-bold text-white">FAQ Accordion</h2>
                     <div className="text-sm">
-                        One of my first projects, this FAQ accordion was built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
+                        One of my first projects, built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
                     </div>
                     <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
                         <Button type="main" content="View Code"
