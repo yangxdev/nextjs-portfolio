@@ -35,6 +35,7 @@
             "@cv/*": ["public/cv/*"],
             "@logos/*": ["public/logos/*"],
             "@personal/*": ["public/personal/*"],
+            "@readme/*": ["public/readme/*"],
             "@university/*": ["public/university/*"],
         }
     },
