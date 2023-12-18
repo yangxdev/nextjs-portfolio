@@ -1,8 +1,8 @@
 # YANGXDEV
-
 ## Portfolio Website
 `nextjs-portfolio` is a website that showcases my projects, educational background, and contact information, providing a comprehensive overview of my skills and experiences in the realm of software engineering and development.
 
+---
 ### Contents
 - [Overview](#overview)
 - [Technologies](#technologies)
@@ -12,16 +12,19 @@
 - [Screenshots](#screenshots)
 - [License](#license)
 - [Contact](#contact)
+---
 
 ### Overview
 Welcome to my Next.js Portfolio, a dynamic and interactive platform designed to go beyond the traditional resume. This portfolio is not just a static representation but a living showcase of my journey in the world of software engineering.
+
+---
 
 ### Technologies
 - [Next.js](https://nextjs.org/), a React-based framework that enables functionality like server-side rendering and generating static websites for React-based web applications. 
 - [Tailwind CSS](https://tailwindcss.com/), a utility-first CSS framework that provides low-level utility classes to build designs directly in your markup. It's highly customizable and efficient.
 - [Jest](https://jestjs.io/), a JavaScript testing framework with a focus on simplicity and flexibility. It works with projects using Babel, TypeScript, Node.js, React, Angular, and more.
 - [Vercel](https://vercel.com), a cloud platform for static sites and serverless functions. It allows for seamless deployment of web projects with features like automatic deployments from Git and serverless functions.
-
+---
 ### Installation
 To get this project up and running on your local machine, follow these steps:
 
@@ -54,7 +57,7 @@ To get this project up and running on your local machine, follow these steps:
 5. **Open in Your Browser:**
     Once the development server is running, open your browser and go to http://localhost:3000 to see the project in action.
     Now you have the project set up locally, and you can explore it, make modifications, and test it in your development environment.
-
+---
 ### Structure
 The project is organized into the following key directories, each serving a specific purpose:
 - `app`
@@ -75,7 +78,7 @@ The project is organized into the following key directories, each serving a spec
 - **Styles**: Centralized styling is maintained in the app/css directory through the styles.module.css file, ensuring a consistent and organized approach to styling.
 
 - **Resource Storage**: The public directory serves as a centralized location for static assets, including the CV, project logos, and images related to both personal and university projects.
-
+---
 ### Deployment
 This project is currently deployed on Vercel for personal use. If you wish to deploy a similar project, follow these steps:
 
@@ -104,6 +107,7 @@ To access the dashboard:
 #### Updating the Deployment:
 For any updates or changes to the project, simply push the changes to the connected branch. Vercel will automatically trigger a new deployment.
 
+---
 ### Screenshots
 ![Website Desktop Landing Section Screenshot](/public/readme/desktop_landing.png)
 ![Website Desktop Footer Section Screenshot](/public/readme/desktop_footer.png)
@@ -112,6 +116,7 @@ For any updates or changes to the project, simply push the changes to the connec
     <img src="/public/readme/mobile_frontendmentor.png" alt="Website Mobile FrontendMentor Section Screenshot" width="400">
 </div>
 
+---
 ### License
 MIT License
 
@@ -135,6 +140,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+---
 ### Contact
 Feel free to reach out if you have any questions, suggestions, or just want to connect! You can contact me via:
 
@@ -149,3 +155,5 @@ I'm open to collaboration, feedback, and discussions about software engineering,
 Looking forward to hearing from you!
 
  <img src="/public/logos/logo_small_gray.jpg" alt="End of Document - Personal Logo" width="100">
+
+ ---

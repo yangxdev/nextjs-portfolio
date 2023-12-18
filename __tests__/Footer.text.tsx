@@ -12,7 +12,7 @@ import LogoSmall from '../public/logo_small_gray.jpg';
 jest.mock('react-intersection-observer');
 
 describe('Footer', () => {
-    useInView.mockImplementation(() => [null, true]);
+    (useInView as jest.Mock).mockImplementation(() => [null, true]);
     beforeEach(() => {
         jest.clearAllMocks();
         jest.resetModules();
@@ -64,24 +64,21 @@ describe('Footer', () => {
     });
 
     it('should render the Footer section correctly', () => {
-        const { getByTestId, getByAltText } = render(<Footer />); // Replace 'Footer' with the actual name of your Footer component
-    
-        // Check if the text content is present
+        const { getByTestId, getByAltText } = render(<Footer />);
+
         expect(getByTestId('footer-copyright')).toBeInTheDocument();
         expect(getByTestId('footer-email')).toBeInTheDocument();
         expect(getByTestId('footer-location')).toBeInTheDocument();
-    
-        // Check if the image is present with the correct alt text
+
         const logoImage = getByAltText('YX Logo') as HTMLImageElement;
         expect(logoImage).toBeInTheDocument();
         // expect(logoImage.src).toEqual(LogoSmall.src);
-    
-        // Simulate a click on the logo image and check if the scroll function is called
+
         const scrollToMock = jest.fn();
         global.scrollTo = scrollToMock;
-    
+
         fireEvent.click(logoImage);
-    
+
         expect(scrollToMock).toHaveBeenCalledWith({ top: 0, behavior: 'smooth' });
     });
 
@@ -101,6 +98,6 @@ describe('Footer', () => {
         waitFor(() => {
             expect(footerTextButtons).toHaveClass('flex-col items-center'); // mobile
         });
-        
+
     });
 })
