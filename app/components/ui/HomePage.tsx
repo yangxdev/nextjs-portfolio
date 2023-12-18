@@ -25,7 +25,6 @@ export default function HomePage() {
         'Contact Me',
     ];
 
-    // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
     const isDesktop = useIsDesktop();
 
     return (

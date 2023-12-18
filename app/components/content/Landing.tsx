@@ -33,12 +33,10 @@ function Landing() {
         { type: 'main', content: 'Email Me', onClick: () => window.location.href = 'mailto:yangxdev@gmail.com' },
     ];
 
-    // const isDesktop = useMediaQuery({ minWidth: 1024 });
-    // const isMobile = useMediaQuery({ maxWidth: 767 });
     const isMobile = useIsMobile();
 
     return (
-        <div id="Welcome" className="landing relative select-none py-20 border-b border-slate-700 flex flex-col
+        <div data-testid="Landing" id="Welcome" className="landing relative select-none py-20 border-b border-slate-700 flex flex-col
             max-w-5xl 
             mx-6
             md:mx-20
@@ -64,17 +62,6 @@ function Landing() {
                     where I bring innovative solutions to life through code and
                     creativity.
                 </div>
-                {/* <div className="landing-text-tertiary mt-4 text-md">
-                    My journey involves:
-                    <ul className="list-disc pl-6">
-                        <li>Designing and implementing user-friendly interfaces.</li>
-                        <li>
-                            Collaborating with cross-functional teams to deliver high-quality
-                            software solutions.
-                        </li>
-                        <li>Staying updated with emerging web technologies and trends.</li>
-                    </ul>
-                </div> */}
             </div>
             <div className={`landing-buttons flex max-w-max flex-col mt-8`}>
                 <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>

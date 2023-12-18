@@ -11,7 +11,7 @@ function Education() {
             <h1 className="text-3xl text-left text-white font-bold">Education</h1>
             <h3 className='text-lg text-left text-white mt-2'>From 2015</h3>
             <br />
-            My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career. Here are the highlights of my academic pursuits:
+            My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career.
             <div className="text-sm text-left">
                 <ul style={{ listStyleType: 'square' }} className="ml-6">
                     <li>

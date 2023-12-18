@@ -6,7 +6,6 @@ import { useIsDesktop } from '@functional/useIsDesktop';
 
 function CurriculumVitae() {
 
-    // const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' });
     const isDesktop = useIsDesktop();
 
     return (
@@ -17,7 +16,7 @@ function CurriculumVitae() {
         ">
             <h1 className="text-3xl text-left text-white mb-4 font-bold">Curriculum Vitae</h1>
             <div className="text-left text-sm mb-4">
-                Having the need to make a CV to land my first internships, I quickly grew frustrated with the limited options provided by online resume makers, so I took matters into my own hands. Determined to create a unique and personalized CV, I embarked on the journey of learning React and Next.js. This allowed me to develop a curriculum vitae maker from scratch, tailored specifically to my needs and preferences. The process was challenging yet fulfilling, as I gained valuable skills and created a tool that perfectly showcases my qualifications and experiences.
+                Not satisfied with online resume makers, I taught myself React and Next.js to craft a personalized CV tailored to my needs. The challenging yet fulfilling process not only enhanced my skills but also resulted in a unique tool showcasing my qualifications and experiences.
             </div>
             <div className="flex justify-start">
                 {isDesktop ? (
