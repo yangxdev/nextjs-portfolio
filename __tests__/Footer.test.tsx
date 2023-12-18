@@ -56,10 +56,10 @@ describe('Footer', () => {
 
         expect(onClickMock).toHaveBeenCalled();
     }
-    test('should test the Telegram button', () => {
+    it('should test the Telegram button', () => {
         testButtonClick('Telegram');
     });
-    test('should test the LinkedIn button', () => {
+    it('should test the LinkedIn button', () => {
         testButtonClick('LinkedIn');
     });
 
