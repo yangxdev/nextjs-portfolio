@@ -1,8 +1,8 @@
 import '@testing-library/jest-dom'
-import { render, screen, fireEvent } from '@testing-library/react'
-import Button from '../app/Button'
 import { useInView } from 'react-intersection-observer'
-import { useIsMobile } from '../app/components/functional/useIsMobile'
+import { render, screen, fireEvent } from '@testing-library/react'
+import { useIsMobile } from '@functional/useIsMobile'
+import Button from '@ui/Button'
 
 jest.mock('react-intersection-observer');
 

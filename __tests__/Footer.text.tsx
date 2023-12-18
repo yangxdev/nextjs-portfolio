@@ -1,12 +1,12 @@
 // Footer.test.js
 import React from 'react';
-import { screen, render, fireEvent, waitFor } from '@testing-library/react';
-import Footer from '../app/components/ui/Footer'
-import { useInView } from 'react-intersection-observer'
-import LogoSmall from '../public/logo_small_gray.jpg';
-import Button from '../app/Button';
 import '@testing-library/jest-dom'
 import { act } from 'react-dom/test-utils';
+import { screen, render, fireEvent, waitFor } from '@testing-library/react';
+import { useInView } from 'react-intersection-observer'
+import Footer from '@ui/Footer'
+import Button from '@ui/Button';
+import LogoSmall from '../public/logo_small_gray.jpg';
 
 
 jest.mock('react-intersection-observer');

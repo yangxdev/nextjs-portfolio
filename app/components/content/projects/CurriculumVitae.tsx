@@ -24,9 +24,9 @@ function CurriculumVitae() {
                     <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '111.6vh' }} />
                 ) : (
                     <>
-                        <Button type="main" content="View CV" onClick={() => window.open('/XIANG_CV.pdf')} />
+                        <Button type="main" content="View CV" onClick={() => window.open('cv/XIANG_CV.pdf')} />
                         <div className="mx-2"></div>
-                        <Button type="main" content="View GitHub" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
+                        <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
                     </>
                 )}
             </div>
