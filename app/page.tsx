@@ -1,8 +1,8 @@
-"use client";
-import Image from "next/image";
-import SliderContainer from "./SliderContainer";
-import HomePage from "./HomePage";
-import ProgressBar from "./ProgressBar";
+'use client';
+import Image from 'next/image';
+import HomePage from '@ui/HomePage';
+import ProgressBar from '@ui/ProgressBar';
+import SliderContainer from '@ui/SliderContainer';
 
 export default function Home() {
     return (

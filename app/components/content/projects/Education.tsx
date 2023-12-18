@@ -1,5 +1,5 @@
-import React from "react";
-import withFadeIn from "../withFadeIn";
+import React from 'react';
+import withFadeIn from '@functional/withFadeIn';
 
 function Education() {
     return (

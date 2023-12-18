@@ -1,8 +1,8 @@
-import React from "react";
-import Button from "../Button";
-import { useMediaQuery } from "react-responsive";
-import withFadeIn from "../withFadeIn";
-import { useIsDesktop } from "../useIsDesktop";
+import React from 'react';
+import Button from '@ui/Button';
+import { useMediaQuery } from 'react-responsive';
+import withFadeIn from '@functional/withFadeIn';
+import { useIsDesktop } from '@functional/useIsDesktop';
 
 function CurriculumVitae() {
 

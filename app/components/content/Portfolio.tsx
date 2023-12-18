@@ -1,6 +1,6 @@
 import React from 'react';
-import PortfolioElement from './PortfolioElement';
-import withFadeIn from './withFadeIn';
+import withFadeIn from '@functional/withFadeIn';
+import PortfolioElement from '@ui/PortfolioElement';
 
 function Portfolio() {
     const experiences = [

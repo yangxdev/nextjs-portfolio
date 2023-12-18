@@ -2,7 +2,7 @@ import '@testing-library/jest-dom'
 import { render, screen, fireEvent } from '@testing-library/react'
 import Biography from '../app/Biography'
 import { useInView } from 'react-intersection-observer'
-import { useIsMobile } from '../app/useIsMobile'
+import { useIsMobile } from '../app/components/functional/useIsMobile'
 
 jest.mock('react-intersection-observer');
 

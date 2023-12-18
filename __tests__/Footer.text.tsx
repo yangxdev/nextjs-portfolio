@@ -1,7 +1,7 @@
 // Footer.test.js
 import React from 'react';
 import { screen, render, fireEvent, waitFor } from '@testing-library/react';
-import Footer from '../app/Footer'
+import Footer from '../app/components/ui/Footer'
 import { useInView } from 'react-intersection-observer'
 import LogoSmall from '../public/logo_small_gray.jpg';
 import Button from '../app/Button';

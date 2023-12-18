@@ -1,21 +1,21 @@
-"use client";
-import React from "react";
-import { Link as ScrollLink } from "react-scroll";
-import Header from "./Header";
-import Landing from "./Landing";
-import Biography from "./Biography";
-import Footer from "./Footer";
-import CoverLetterMaker from "./Projects/CoverLetterMaker";
-import FrontendMentor from "./Projects/FrontendMentor";
-import { Toaster } from "react-hot-toast";
-import CurriculumVitae from "./Projects/CurriculumVitae";
-import Portfolio from "./Portfolio";
-import { useMediaQuery } from "react-responsive";
-import ScrollToTopButton from "./ScrollToTopButton";
-import DeloitteDigital from "./Projects/DeloitteDigital";
-import Education from "./Projects/Education";
-import UniversityProjects from "./Projects/UniversityProjects";
-import { useIsDesktop } from "./useIsDesktop";
+'use client';
+import React from 'react';
+import { useMediaQuery } from 'react-responsive';
+import { Toaster } from 'react-hot-toast';
+import { Link as ScrollLink } from 'react-scroll';
+import { useIsDesktop } from '../functional/useIsDesktop';
+import Biography from '@content/Biography';
+import Landing from '@content/Landing';
+import Portfolio from '@content/Portfolio';
+import CoverLetterMaker from '@projects/CoverLetterMaker';
+import CurriculumVitae from '@projects/CurriculumVitae';
+import DeloitteDigital from '@projects/DeloitteDigital';
+import Education from '@projects/Education';
+import FrontendMentor from '@projects/FrontendMentor';
+import UniversityProjects from '@projects/UniversityProjects';
+import Footer from '@ui/Footer';
+import Header from '@ui/Header';
+import ScrollToTopButton from '@ui/ScrollToTopButton';
 
 export default function HomePage() {
 

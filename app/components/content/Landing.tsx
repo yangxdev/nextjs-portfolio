@@ -1,12 +1,11 @@
-import React from "react";
-import Button from "./Button";
+import React from 'react';
+import Image from 'next/image';
 import { Link } from 'react-scroll';
-import { useMediaQuery } from "react-responsive";
-import LogoSmall from '../public/logo_small_gray.jpg';
-import Image from "next/image";
-import withFadeIn from "./withFadeIn";
-import { useIsMobile } from "./useIsMobile";
-
+import { useMediaQuery } from 'react-responsive';
+import withFadeIn from '@functional/withFadeIn';
+import { useIsMobile } from '@functional/useIsMobile';
+import Button from '@ui/Button';
+import LogoSmall from '@logos/logo_small_gray.jpg';
 
 function Landing() {
     const technologies = [

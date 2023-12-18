@@ -22,10 +22,20 @@
                 "name": "next"
             }
         ],
+        "baseUrl": ".",
         "paths": {
             "@/*": [
                 "./*"
-            ]
+            ],
+            "@components/*": ["app/components/*"],
+            "@content/*": ["app/components/content/*"],
+            "@projects/*": ["app/components/content/projects/*"],
+            "@functional/*": ["app/components/functional/*"],
+            "@ui/*": ["app/components/ui/*"],
+            "@cv/*": ["public/cv/*"],
+            "@logos/*": ["public/logos/*"],
+            "@personal/*": ["public/personal/*"],
+            "@university/*": ["public/university/*"],
         }
     },
     "include": [

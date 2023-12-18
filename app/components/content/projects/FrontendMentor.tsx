@@ -1,21 +1,20 @@
-import fe2FaqAccordion from '../../public/fe2-faq-accordion-desktop.jpg';
-import fe2FaqAccordionMobile from '../../public/fe2-faq-accordion-mobile.jpg';
-import fe8RoomHomepage from '../../public/fe8-room-homepage-desktop.jpg';
-import fe8RoomHomepageMobile from '../../public/fe8-room-homepage-mobile.jpg';
-import fe10Ecommerce from '../../public/fe10-ecommerce-desktop.jpg';
-import fe10EcommerceMobile from '../../public/fe10-ecommerce-mobile.jpg';
+import React from 'react';
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
+import withFadeIn from '@functional/withFadeIn';
+import { useIsMobile } from '@functional/useIsMobile';
+import Button from '@ui/Button';
+import fe2FaqAccordion from '@personal/fe2-faq-accordion-desktop.jpg';
+import fe2FaqAccordionMobile from '@personal/fe2-faq-accordion-mobile.jpg';
+import fe8RoomHomepage from '@personal/fe8-room-homepage-desktop.jpg';
+import fe8RoomHomepageMobile from '@personal/fe8-room-homepage-mobile.jpg';
+import fe10Ecommerce from '@personal/fe10-ecommerce-desktop.jpg';
+import fe10EcommerceMobile from '@personal/fe10-ecommerce-mobile.jpg';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
-import Button from '../Button';
-import { useEffect, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import Image from 'next/image';
-import React from 'react';
-import withFadeIn from '../withFadeIn';
-import { useIsMobile } from '../useIsMobile';
 
 function FrontendMentor() {
-
 
     // const isDesktop = useMediaQuery({ minWidth: 1024 });
     // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });

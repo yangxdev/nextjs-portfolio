@@ -1,6 +1,6 @@
-import React from "react";
-import Button from "./Button";
-import withFadeIn from "./withFadeIn";
+import React from 'react';
+import withFadeIn from '@functional/withFadeIn';
+import Button from '@ui/Button';
 
 function Biography() {
 

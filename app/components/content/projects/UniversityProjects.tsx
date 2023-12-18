@@ -1,17 +1,16 @@
-import { useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import Button from '../Button';
 import React from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
-import SDIndex800 from '../../public/SD_index_800.gif';
-import SDIndex600 from '../../public/SD_index_600.gif';
-import SDTransfer800 from '../../public/SD_transfer_800.gif';
-import SDTransfer600 from '../../public/SD_transfer_600.gif';
-import PDMSmooviePreview from '../../public/PDM_smoovie_preview.png';
-import PDMSmooviePreviewMobile from '../../public/PDM_smoovie_preview_mobile.png';
-import withFadeIn from '../withFadeIn';
-import { useIsMobile } from '../useIsMobile';
-
+import { useMediaQuery } from 'react-responsive';
+import withFadeIn from '@functional/withFadeIn';
+import { useIsMobile } from '@functional/useIsMobile';
+import Button from '@ui/Button';
+import SDIndex800 from '@university/SD_index_800.gif';
+import SDIndex600 from '@university/SD_index_600.gif';
+import SDTransfer800 from '@university/SD_transfer_800.gif';
+import SDTransfer600 from '@university/SD_transfer_600.gif';
+import PDMSmooviePreview from '@university/PDM_smoovie_preview.png';
+import PDMSmooviePreviewMobile from '@university/PDM_smoovie_preview_mobile.png';
 
 function UniversityProjects() {
 

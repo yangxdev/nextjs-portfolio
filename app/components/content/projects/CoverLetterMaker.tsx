@@ -1,7 +1,7 @@
-import { useRef, useState, useEffect } from "react";
-import Button from "../Button";
-import React from "react";
-import toast from "react-hot-toast";
+import { useRef, useState, useEffect } from 'react';
+import Button from '@ui/Button';
+import React from 'react';
+import toast from 'react-hot-toast';
 
 export default function CoverLetterMaker() {
     const inputField = "text-white bg-transparent focus:outline-none border-r border-slate-500 mt-4 text-center";

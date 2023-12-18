@@ -1,9 +1,9 @@
-"use client";
+'use client';
 import React from 'react';
-import Button from './Button';
 import { useMediaQuery } from 'react-responsive';
-import { useIsMobile } from './useIsMobile';
-import { useIsDesktop } from './useIsDesktop';
+import { useIsMobile } from '@functional/useIsMobile';
+import { useIsDesktop } from '@functional/useIsDesktop';
+import Button from '@ui/Button';
 
 export default function Header() {
     const menuButtons: { type: 'header' | 'begin' | 'logo'; content: string; onClick?: () => void }[] = [

@@ -1,10 +1,10 @@
-import React from "react";
-import Button from "./Button";
-import Image from "next/image";
-import LogoSmall from '../public/logo_small_gray.jpg';
-import withFadeIn from "./withFadeIn";
+import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { useIsMobile } from "./useIsMobile";
+import Image from 'next/image';
+import withFadeIn from '@functional/withFadeIn';
+import { useIsMobile } from '@functional/useIsMobile';
+import Button from '@ui/Button';
+import LogoSmall from '@logos/logo_small_gray.jpg';
 
 function Footer() {
 

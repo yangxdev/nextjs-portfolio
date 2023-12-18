@@ -1,7 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
-import styles from "./css/styles.module.css";
-import Button from "./Button";
+'use client';
+import { useEffect, useState } from 'react';
+import styles from '@css/styles.module.css';
+import Button from '@ui/Button';
 
 type SliderContainerProps = {
     username: string;
@@ -22,8 +22,7 @@ export default function SliderContainer({ username }: SliderContainerProps) {
 
     return (
         <div
-            className={`flex bg-black opening-slider-container absolute items-center justify-center w-screen h-screen 
-      ${isVisible ? "" : styles["hidden"]}`}
+            className={`flex bg-black opening-slider-container absolute items-center justify-center w-screen h-screen ${isVisible ? "" : styles["hidden"]}`}
         >
             <div className={`opening-slider-text text-text`}>
                 <div className="text-xl font-bold text-center cursor-default select-none">
