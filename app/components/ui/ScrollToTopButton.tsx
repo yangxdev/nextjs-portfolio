@@ -30,6 +30,7 @@ const ScrollToTopButton = () => {
     return (
         <div className="bottom-8 sticky ml-auto mr-8 mb-8 z-10">
             <button
+                id='scroll-to-top-button'
                 onClick={scrollToTop}
                 className={`transition-transform duration-1000 ease-in-out transform select-none
             ${isButtonVisible ? 'translate-y-0' : 'translate-y-52'}`}
