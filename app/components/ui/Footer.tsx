@@ -4,7 +4,8 @@ import Image from 'next/image';
 import withFadeIn from '@functional/withFadeIn';
 import { useIsMobile } from '@functional/useIsMobile';
 import Button from '@ui/Button';
-import LogoSmall from '@logos/logo_small_gray.jpg';
+// import LogoSmall from '@logos/logo_small_gray.jpg';
+import Logo from '@logos/logo_transparent.png';
 
 function Footer() {
 
@@ -62,11 +63,11 @@ function Footer() {
                     <div data-testid="footer-location" className="mb-1">Milan, Italy → What&apos;s next?</div>
                 </div>
                 <Image
-                    src={LogoSmall.src}
+                    src={Logo.src}
                     alt="YX Logo"
-                    width={100}
-                    height={100}
-                    className='w-full h-auto rounded-xl -mt-5 -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
+                    width={1000}
+                    height={0}
+                    className='w-[6rem] h-auto rounded-xl top-[7rem] bottom-0 p-6 left-0 right-0 m-auto -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
                     draggable={false}
                     priority={true}
                     onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}

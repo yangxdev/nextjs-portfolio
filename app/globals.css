@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --palette-darkest: #101010;
+    --palette-darkest: #0a0a0a;
     --palette-darker: #111111;
     --palette-white: #fdfdfd;
 }

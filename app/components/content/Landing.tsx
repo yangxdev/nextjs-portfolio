@@ -5,7 +5,8 @@ import { useMediaQuery } from 'react-responsive';
 import withFadeIn from '@functional/withFadeIn';
 import { useIsMobile } from '@functional/useIsMobile';
 import Button from '@ui/Button';
-import LogoSmall from '@logos/logo_small_gray.jpg';
+// import LogoSmall from '@logos/logo_small_gray.jpg';
+import Logo from '@logos/logo_transparent.png';
 
 function Landing() {
     const technologies = [
@@ -43,11 +44,11 @@ function Landing() {
             lg:mx-40
         ">
             <Image
-                src={LogoSmall.src}
+                src={Logo.src}
                 alt="YX Logo"
-                width={1280}
+                width={1000}
                 height={0}
-                className='absolute w-[7rem] place-self-center -left-[35px] -top-[10px] h-auto rounded-xl -z-50 opacity-95'
+                className='absolute w-[3rem] place-self-center -left-[0px] -top-[-30px] h-auto rounded-xl -z-50 opacity-95'
                 draggable={false}
             />
             <div className="landing-text z-1">
