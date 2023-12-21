@@ -24,7 +24,7 @@ test.describe('Header component test', () => {
         await linkedInButton.click();
         const newPage = await context.waitForEvent('page');
         const linkedinPageTitle = await newPage.title();
-        console.log(linkedinPageTitle);
+        // console.log(linkedinPageTitle);
         expect(linkedinPageTitle).toContain('LinkedIn')
     });
 

@@ -42,7 +42,7 @@ function Biography() {
                     </div>
 
                 </div>
-                <div className="biography-text-col2 text-sm">
+                {/* <div className="biography-text-col2 text-sm">
                     <p>
                         <strong>Learning Journey</strong><br />
                         One of the most significant aspects of my career as a software engineer has been the opportunity to work on various projects throughout my high school years, university and in the free time. Through these projects I have gained proficiency in technologies such as JavaScript (React.js, Next.js) and CSS (SASS, Tailwind CSS).
@@ -59,7 +59,7 @@ function Biography() {
                         <strong>Collaborative Environment</strong><br />
                         As part of a cross-functional team composed of professionals from various regions in Italy and abroad, I have learned the importance of producing code that seamlessly integrates with others&apos;. Leveraging version control systems like Git, our team ensures smooth collaboration while maintaining code integrity. Furthermore, effective communication in English has fostered a global mindset and cultural exchange within our team.
                     </p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

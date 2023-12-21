@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 test.describe('scroll button visibility', () => {
     test('scroll button not visible at start', async ({ page }) => {
-        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.goto('http://localhost:3000/');
+        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.waitForSelector('#scroll-to-top-button');
         const viewportHeight = await page.evaluate(() => { return window.innerHeight; });
 
@@ -18,8 +18,8 @@ test.describe('scroll button visibility', () => {
     });
 
     test('scroll button visible after scrolling', async ({ page }) => {
-        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.goto('http://localhost:3000/');
+        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.waitForSelector('#scroll-to-top-button');
         const viewportHeight = await page.evaluate(() => { return window.innerHeight; });
 
@@ -41,8 +41,8 @@ test.describe('scroll button visibility', () => {
 
 test.describe('scroll button functionality', () => {
     test('scroll button scrolls to top', async ({ page }) => {
-        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.goto('http://localhost:3000/');
+        await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.waitForSelector('#scroll-to-top-button');
 
         // scroll down to the bottom of the page
@@ -66,7 +66,7 @@ test.describe('scroll button functionality', () => {
         await page.waitForTimeout(1000);
         const viewportY3 = await page.evaluate(() => { return window.scrollY; });
 
-        console.log(viewportY, viewportY2, viewportY3);
+        // console.log(viewportY, viewportY2, viewportY3);
 
         expect(viewportY).toBeGreaterThan(viewportY2);
         expect(viewportY2).toBeGreaterThan(viewportY3);
