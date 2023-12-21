@@ -40,7 +40,7 @@ test.describe('scroll button visibility', () => {
 });
 
 test.describe('scroll button functionality', () => {
-    test.only('scroll button scrolls to top', async ({ page }) => {
+    test('scroll button scrolls to top', async ({ page }) => {
         await page.evaluate(() => { window.scrollTo(0, 0); })
         await page.goto('http://localhost:3000/');
         await page.waitForSelector('#scroll-to-top-button');
