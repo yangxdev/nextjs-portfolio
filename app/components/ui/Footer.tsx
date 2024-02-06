@@ -39,7 +39,7 @@ function Footer() {
                         {index > 0 && <span className="divider mx-2"></span>}
                         <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
                             {button.content === "Email Me" ? (
-                                <div data-testid="Email Me" className={`footer-button-email w-fit py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200}`}>
+                                <div data-testid="Email Me" className={`footer-button-email w-fit py-2 px-4 font-light border border-slate-500 hover:bg-accent hover:text-background ease-in-out duration-200}`}>
                                     <a
                                         draggable="false"
                                         href="mailto:yangxdev@gmail.com"
@@ -67,7 +67,7 @@ function Footer() {
                     alt="YX Logo"
                     width={1000}
                     height={0}
-                    className='w-[6rem] h-auto rounded-xl p-6 left-0 right-0 m-auto -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
+                    className='footer-logo w-[6rem] h-auto rounded-xl p-6 left-0 right-0 m-auto -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
                     draggable={false}
                     priority={true}
                     onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
