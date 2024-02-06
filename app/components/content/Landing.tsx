@@ -76,7 +76,7 @@ function Landing() {
                             <Button type="main" content="Read my CV" />
                         </Link>
                     </div>
-                    <div className="landing-button-email whitespace-nowrap w-fit mb-4 py-2 px-4 font-light border border-slate-500 cursor-pointer hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit">
+                    <div className="landing-button-email whitespace-nowrap w-fit mb-4 py-2 px-4 font-light border border-slate-500 hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit">
                         <a
                             draggable="false"
                             href="mailto:yangxdev@gmail.com"
