@@ -20,7 +20,6 @@ export default function RootLayout({
     return (
         <html lang="en" className="dark">
             <body className={inter.className}>
-            {!(typeof window !== 'undefined' && 'ontouchstart' in window) && (
                 <AnimatedCursor
                     color='240, 240, 240'
                     clickables={[
@@ -32,7 +31,6 @@ export default function RootLayout({
                         '#scroll-to-top-button *'
                     ]}
                 />
-            )}
                 <SpeedInsights />
                 {children}
                 <Analytics />
