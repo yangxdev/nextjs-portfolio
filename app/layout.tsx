@@ -18,21 +18,21 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="dark">
+        <html lang="en" className="dark cursor-none">
             <body className={inter.className}>
-            {!(typeof window !== 'undefined' && 'ontouchstart' in window) && (
-                <AnimatedCursor
-                    color='240, 240, 240'
-                    clickables={[
-                        'a',
-                        '.common-button-style',
-                        '.landing-button-email',
-                        '.footer-button-email',
-                        '.footer-logo',
-                        '#scroll-to-top-button *'
-                    ]}
-                />
-            )}
+                {!(typeof window !== 'undefined' && 'ontouchstart' in window) && (
+                    <AnimatedCursor
+                        color='240, 240, 240'
+                        clickables={[
+                            'a',
+                            '.common-button-style',
+                            '.landing-button-email',
+                            '.footer-button-email',
+                            '.footer-logo',
+                            '#scroll-to-top-button *'
+                        ]}
+                    />
+                )}
                 <SpeedInsights />
                 {children}
                 <Analytics />
