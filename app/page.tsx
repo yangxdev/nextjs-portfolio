@@ -8,16 +8,17 @@ import { useEffect, useState } from 'react';
 
 export default function Home() {
 
-    function isTouchPointer() {
+    const [isTouch, setIsTouch] = useState(false);
+
+    useEffect(() => {
         if (typeof window !== 'undefined') {
-            return window.matchMedia("(pointer: coarse)").matches;
+            setIsTouch(window.matchMedia("(pointer: coarse)").matches);
         }
-        return false;
-    }
+    }, []);
 
     return (
         <>
-            <div className={isTouchPointer() ? 'hidden' : ''}>
+            <div className={isTouch ? 'hidden' : ''}>
                 <AnimatedCursor
                     color='240, 240, 240'
                     clickables={[
