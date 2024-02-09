@@ -16,7 +16,7 @@ function CurriculumVitae() {
         ">
             <h1 className="text-3xl text-left text-white mb-4 font-bold">Curriculum Vitae</h1>
             <div className="text-left text-sm mb-4">
-                Not satisfied with online resume makers, I taught myself React and Next.js to craft a personalized CV tailored to my needs. The challenging yet fulfilling process not only enhanced my skills but also resulted in a unique tool showcasing my qualifications and experiences.
+                Not satisfied with online resume makers, I taught myself React.js and Next.js to craft a personalized CV tailored to my needs. The challenging yet fulfilling process not only enhanced my skills but also resulted in a unique tool showcasing my qualifications and experiences.
             </div>
             <div className="flex justify-start">
                 {isDesktop ? (
