@@ -32,7 +32,7 @@ function CurriculumVitae() {
             {isDesktop && (
                 <div className="text-left text-md my-4 flex items-center">
                     <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
-                    <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
+                    <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/')} />
                 </div>
             )}
         </div>

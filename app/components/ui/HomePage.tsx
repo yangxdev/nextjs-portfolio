@@ -28,7 +28,7 @@ export default function HomePage() {
     const isDesktop = useIsDesktop();
 
     return (
-        <div className="flex-col flex main-page h-full w-screen items-center justify-center">
+        <div className="flex-col flex main-page h-full w-full items-center justify-center">
             <div><Toaster /></div>
             <Header />
             {isDesktop && (
