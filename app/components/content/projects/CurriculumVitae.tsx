@@ -20,7 +20,7 @@ function CurriculumVitae() {
             </div>
             <div className="flex justify-start">
                 {isDesktop ? (
-                    <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '90vw', height: '111.6vh' }} />
+                    <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '100%', height: '111.6vh' }} />
                 ) : (
                     <>
                         <Button type="main" content="View CV" onClick={() => window.open('cv/XIANG_CV.pdf')} />
