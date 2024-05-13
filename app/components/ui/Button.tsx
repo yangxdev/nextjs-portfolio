@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({ testid, type, content, disabled, onClic
     }
 
     return (
-        <div data-testid={testid} className={`common-button-style transition-all whitespace-nowrap ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : ''}`} onClick={disabled ? undefined : onClick}>
+        <div data-testid={testid} className={`common-button-style rounded-xl transition-all whitespace-nowrap font-[400px] ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : ''}`} onClick={disabled ? undefined : onClick}>
             {content}
         </div>
     );
