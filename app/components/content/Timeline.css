@@ -11,3 +11,9 @@
 .load-more:hover {
     scale: 1.2;
 }
+
+@media screen and (min-width: 1170px) {
+    .load-more+.vertical-timeline-element-content {
+        display: none;
+    }
+}
