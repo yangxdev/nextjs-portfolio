@@ -17,7 +17,7 @@ function Portfolio() {
         {
             emoji: "🚀",
             title: "Personal Projects & Freelance",
-            description: "While gaining experience in the industry, I worked on personal projects and freelance gigs to ",
+            description: "While gaining experience in the industry, I worked on personal projects and freelance gigs to further develop my skills and knowledge.",
         },
         {
             emoji: "🎨",
