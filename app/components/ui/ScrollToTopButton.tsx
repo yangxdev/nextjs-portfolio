@@ -35,7 +35,7 @@ const ScrollToTopButton = () => {
                 className={`transition-transform duration-1000 ease-in-out transform select-none
             ${isButtonVisible ? 'translate-y-0' : 'translate-y-52'}`}
             >
-                <div className="text-white text-3xl md:text-4xl lg:text-5xl py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90">▲</div>
+                <div className="text-[#f0f0f0] text-3xl md:text-4xl lg:text-5xl py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90">▲</div>
             </button>
         </div>
     );

@@ -40,7 +40,7 @@ function Portfolio() {
             lg:mx-40
         "
         >
-            <h1 className="text-left text-3xl text-white my-4">
+            <h1 className="text-left text-3xl text-[#f0f0f0] my-4">
                 <strong>My experience</strong>
             </h1>
             {experiences.map((experience, index) => (

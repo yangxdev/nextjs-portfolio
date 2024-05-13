@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --palette-darkest: #0e0e0e;
+    --palette-darkest: #0f0f0f;
     --palette-darker: #111111;
     --palette-white: #fdfdfd;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 [data-rmiz-modal-overlay="visible"] {
-    background-color: black !important;
+    background-color: var(--palette-darkest) !important;
 }
 
 [data-rmiz-modal-img] {

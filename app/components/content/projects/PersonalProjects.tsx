@@ -35,8 +35,8 @@ function PersonalProjects() {
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-left text-white font-bold">Personal Projects & Freelance</h1>
-            <h3 className="text-lg text-left text-white mt-2">From 2023</h3>
+            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2023</h3>
             <br />
 
             <div className="fm-row flex flex-col">
@@ -53,7 +53,7 @@ function PersonalProjects() {
                     </div>
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className="mb-4 text-2xl font-bold text-white">💸 Budget Buddy</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-[#f0f0f0]">💸 Budget Buddy</h2>
                     <div className="text-sm">
                         Budget Buddy is a web app that helps individuals manage their personal finances and budget effectively. It is built using Next.js, a React-based framework that enables server-side rendering and generates static websites for React-based web applications. The project utilizes
                         Tailwind CSS for efficient and customizable styling.
@@ -81,7 +81,7 @@ function PersonalProjects() {
                     </div>
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className="mb-4 text-2xl text-white">
+                    <h2 className="mb-4 text-2xl text-[#f0f0f0]">
                         <strong>🌷 Flower Manager</strong>
                     </h2>
                     <div className="text-sm">
@@ -110,7 +110,7 @@ function PersonalProjects() {
                     )}
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className="mb-4 text-3xl text-white">
+                    <h2 className="mb-4 text-3xl text-[#f0f0f0]">
                         <strong>E-commerce</strong>
                     </h2>
                     <div className="text-sm">

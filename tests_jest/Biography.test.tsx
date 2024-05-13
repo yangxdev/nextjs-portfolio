@@ -2,15 +2,15 @@ import '@testing-library/jest-dom'
 import { useInView } from 'react-intersection-observer'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { useIsMobile } from '@functional/useIsMobile'
-import Biography from '@content/Biography'
+import Timeline from '@content/Timeline'
 
 jest.mock('react-intersection-observer');
 
-xdescribe('Biography', () => {
+xdescribe('Timeline', () => {
     (useInView as jest.Mock).mockImplementation(() => [null, true]);
     test('renders the component', () => {
-        render(<Biography />)
-        const sectionElement = screen.getByTestId('Biography')
+        render(<Timeline />)
+        const sectionElement = screen.getByTestId('Timeline')
         expect(sectionElement).toBeInTheDocument()
     })
 
@@ -24,7 +24,7 @@ xdescribe('Biography', () => {
 
     testCases.forEach(({ label, key }) => {
         test(`renders ${label} information`, () => {
-            render(<Biography />);
+            render(<Timeline />);
             const element = screen.getByText(label);
             expect(element).toBeInTheDocument();
         });

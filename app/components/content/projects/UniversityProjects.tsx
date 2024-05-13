@@ -22,8 +22,8 @@ function UniversityProjects() {
             md:mx-20
             lg:mx-40
             ">
-            <h1 className="text-3xl text-left text-white font-bold">University Projects</h1>
-            {/* <h3 className='text-lg text-left text-white mt-2'>From September 2020 to July 2023</h3> */}
+            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">University Projects</h1>
+            {/* <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From September 2020 to July 2023</h3> */}
             <br />
             {/* Having enrolled in a Computer Science degree at the University of Milan-Bicocca, I had the opportunity to work on some interesting projects. Here are the most relevant ones:
             <br />
@@ -76,10 +76,10 @@ function UniversityProjects() {
                     )}
                 </div>
                 <div className="fm-col1 flex-1 text-start mt-4">
-                    <h2 className="mb-1 text-2xl font-bold text-white">
+                    <h2 className="mb-1 text-2xl font-bold text-[#f0f0f0]">
                         Distributed Systems Course Project: Flask Banking System
                     </h2>
-                    <h3 className="mb-4 text-lg text-white">June 2022</h3>
+                    <h3 className="mb-4 text-lg text-[#f0f0f0]">June 2022</h3>
                     <div className="text-sm">
                         For the Distributed Systems course, our task was to develop a website that would allow users to manage their bank accounts. The website had to be developed using the Flask framework and had to be able to communicate with a server-side API and a database. The website had to be able to perform the following operations:
                         <ul style={{ listStyleType: 'disc' }} className="ml-6">
@@ -133,10 +133,10 @@ function UniversityProjects() {
                     )}
                 </div>
                 <div className="fm-col1 flex-1 text-start mt-4">
-                    <h2 className="mb-1 text-2xl font-bold text-white">
+                    <h2 className="mb-1 text-2xl font-bold text-[#f0f0f0]">
                         Mobile Devices Programming Project: Smoovie
                     </h2>
-                    <h3 className="mb-4 text-lg text-white">August 2022 to September 2022</h3>
+                    <h3 className="mb-4 text-lg text-[#f0f0f0]">August 2022 to September 2022</h3>
                     <div className="text-sm">
                         For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. The application had to be able to perform the following operations:
                         <ul style={{ listStyleType: 'disc' }} className="ml-6">

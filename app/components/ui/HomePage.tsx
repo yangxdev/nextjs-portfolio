@@ -4,7 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Toaster } from 'react-hot-toast';
 import { Link as ScrollLink } from 'react-scroll';
 import { useIsDesktop } from '../functional/useIsDesktop';
-import Biography from '@content/Biography';
+import Timeline from '@content/Timeline';
 import Landing from '@content/Landing';
 import Portfolio from '@content/Portfolio';
 import CoverLetterMaker from '@projects/CoverLetterMaker';
@@ -51,7 +51,7 @@ export default function HomePage() {
                 </div>
             )}
             <Landing />
-            <Biography />
+            <Timeline />
             <Portfolio />
             <CurriculumVitae />
             <Education />

@@ -18,6 +18,7 @@ const withFadeIn = (WrappedComponent: ComponentType<any>) => {
         return (
             <div
                 ref={ref}
+                className='flex flex-row justify-center items-center w-full'
                 style={{
                     opacity: isVisible ? 1 : 0,
                     transform: isVisible ? 'translateY(0)' : 'translateY(20px)',

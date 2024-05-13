@@ -53,8 +53,8 @@ function Landing() {
                 draggable={false}
             />
             <div className="landing-text z-1">
-                <div className="landing-text-primary text-xl lg:text-3xl">
-                    Hi, I&apos;m <span className="text-primary font-bold">Yang</span>, a
+                <div className="landing-text-[#f0f0f0] text-xl lg:text-3xl">
+                    Hi, I&apos;m <span className="text-[#f0f0f0] font-bold">Yang</span>, a
                     Software Engineer with a passion for crafting exceptional front-end
                     experiences.
                 </div>
@@ -66,14 +66,14 @@ function Landing() {
                 </div>
             </div>
             <div className={`landing-buttons flex max-w-max flex-col mt-8`}>
-                <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>
-                    <div className="mb-4 max-w-fit mr-4">
+                <div className={`flex ${isMobile ? 'flex-col gap-4 h-[200px]' : 'flex-row items-center h-[100px]'}`}>
+                    <div className="max-w-fit mr-4">
                         <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
                             {/* <Button type="main" content="Read my Experience" /> */}
                             <NewButton label="✨ Read my Experience" />
                         </Link>
                     </div>
-                    <div className="mb-4 max-w-fit mr-4">
+                    <div className="max-w-fit mr-4">
                         <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
                             <NewButton label="📄 Read my CV" />
                         </Link>

@@ -3,13 +3,10 @@ import withFadeIn from '@functional/withFadeIn';
 
 function DeloitteDigital() {
     return (
-        <div id="Deloitte Digital" className="deloitte-digital max-w-5xl py-20 border-b select-none border-slate-700 
-            mx-6
-            md:mx-20
-            lg:mx-40
+        <div id="Deloitte Digital" className="deloitte-digital w-full max-w-5xl py-20 border-b select-none border-slate-700 
         ">
-            <h1 className="text-3xl text-left text-white font-bold">Deloitte Digital</h1>
-            <h3 className='text-lg text-left text-white mt-2'>From March 2023</h3>
+            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Deloitte Digital</h1>
+            <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From March 2023</h3>
             <div className="text-sm text-left">
 
                 <div className="text-base font-bold mt-4">

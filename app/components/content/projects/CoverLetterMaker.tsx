@@ -4,7 +4,7 @@ import React from 'react';
 import toast from 'react-hot-toast';
 
 export default function CoverLetterMaker() {
-    const inputField = "text-white bg-transparent focus:outline-none border-r border-slate-500 mt-4 text-center";
+    const inputField = "text-[#f0f0f0] bg-transparent focus:outline-none border-r border-slate-500 mt-4 text-center";
 
     const [cvText, setCvText] = useState("");
     const inputName = useRef<HTMLInputElement>(null);
@@ -74,9 +74,9 @@ export default function CoverLetterMaker() {
     const cvTextRef = useRef<HTMLElement>(null);
     return (
         <div id="Project: Cover Letter Maker" ref={clmRef as React.RefObject<HTMLDivElement>} className="clm max-w-5xl mx-40 select-none py-20 border-b border-slate-700">
-            <h1 className="text-5xl text-center text-white">Cover Letter Maker</h1>
+            <h1 className="text-5xl text-center text-[#f0f0f0]">Cover Letter Maker</h1>
             <br />
-            <p className="text-center text-white">Fill in the fields below and click on Generate to create your own cover letter!</p>
+            <p className="text-center text-[#f0f0f0]">Fill in the fields below and click on Generate to create your own cover letter!</p>
             <br /> <br />
             <div className="flex justify-center max-w-6l flex-wrap">
                 <input type="text" className={inputField} ref={inputName} placeholder="Enter your name" onChange={handleInputChange} defaultValue={'Yang'} />
