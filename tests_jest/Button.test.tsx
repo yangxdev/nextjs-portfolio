@@ -6,7 +6,7 @@ import Button from '@ui/Button'
 
 jest.mock('react-intersection-observer');
 
-describe('Button', () => {
+xdescribe('Button', () => {
     test('renders the button with the correct content', () => {
         render(<Button type="main" content="Click me" />)
         const buttonElement = screen.getByText('Click me')

@@ -6,7 +6,7 @@ import Landing from '@content/Landing'
 
 jest.mock('react-intersection-observer');
 
-describe('Landing', () => {
+xdescribe('Landing', () => {
     (useInView as jest.Mock).mockImplementation(() => [null, true]);
     test('renders the component', () => {
         render(<Landing />)

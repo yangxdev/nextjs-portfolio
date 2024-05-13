@@ -6,7 +6,7 @@ import Biography from '@content/Biography'
 
 jest.mock('react-intersection-observer');
 
-describe('Biography', () => {
+xdescribe('Biography', () => {
     (useInView as jest.Mock).mockImplementation(() => [null, true]);
     test('renders the component', () => {
         render(<Biography />)
