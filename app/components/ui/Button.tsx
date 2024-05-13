@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import styles from '@css/styles.module.css';
 
 type ButtonProps = {
     testid?: string;
+    icon?: ReactElement;
     type: "begin" | "header" | "logo" | "main" | "generate" | "copy";
     content: string;
     disabled?: boolean;
     onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({ testid, type, content, disabled, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ testid, icon, type, content, disabled, onClick }) => {
     let buttonStyle = "";
 
     switch (type) {
@@ -37,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({ testid, type, content, disabled, onClic
 
     return (
         <div data-testid={testid} className={`common-button-style rounded-xl transition-all whitespace-nowrap font-[400px] ${buttonStyle} ${disabled ? 'opacity-50 select-none hover:none cursor-default pointer-events-none' : ''}`} onClick={disabled ? undefined : onClick}>
-            {content}
+            {icon}{content}
         </div>
     );
 };

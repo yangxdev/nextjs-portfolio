@@ -7,6 +7,7 @@ import { useIsMobile } from '@functional/useIsMobile';
 import Button from '@ui/Button';
 // import LogoSmall from '@logos/logo_small_gray.jpg';
 import Logo from '@logos/logo_transparent.png';
+import NewButton from '../ui/NewButton';
 
 function Landing() {
     const technologies = [
@@ -58,7 +59,7 @@ function Landing() {
                     experiences.
                 </div>
                 <div className="landing-text-secondary mt-4 text-md font-normal">
-                    Currently based in <strong>Milan, Italy</strong>, I&apos;m a Full-stack Developer at{" "}
+                    Currently based in <strong>Italy</strong>, I&apos;m a Full-stack Developer at{" "}
                     <span className="text-accent font-semibold">Deloitte Digital</span>,
                     where I bring innovative solutions to life through code and
                     creativity.
@@ -68,22 +69,23 @@ function Landing() {
                 <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'}`}>
                     <div className="mb-4 max-w-fit mr-4">
                         <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
-                            <Button type="main" content="Read my Experience" />
+                            {/* <Button type="main" content="Read my Experience" /> */}
+                            <NewButton label="✨ Read my Experience" />
                         </Link>
                     </div>
                     <div className="mb-4 max-w-fit mr-4">
                         <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
-                            <Button type="main" content="Read my CV" />
+                            <NewButton label="📄 Read my CV" />
                         </Link>
                     </div>
-                    <div className="landing-button-email whitespace-nowrap w-fit mb-4 py-2 px-4 border border-slate-500 hover:bg-accent hover:text-background ease-in-out duration-200 max-w-fit rounded-xl font-[400px]">
+                    <div className="landing-button-email">
                         <a
                             draggable="false"
                             href="mailto:yangxdev@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Email Me
+                            <NewButton label="📧 Email Me" />
                         </a>
                     </div>
                 </div>

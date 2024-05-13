@@ -27,7 +27,8 @@ export default function Home() {
                         '.landing-button-email',
                         '.footer-button-email',
                         '.footer-logo',
-                        '#scroll-to-top-button *'
+                        '#scroll-to-top-button *',
+                        '.animated-cursor',
                     ]}
                 /></div>
             <main className="flex min-h-screen flex-col items-center justify-center">
