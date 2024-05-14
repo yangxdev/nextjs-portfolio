@@ -150,3 +150,5 @@ function Timeline() {
 }
 
 export default withFadeIn(Timeline);
+
+// TODO: change to light boxes

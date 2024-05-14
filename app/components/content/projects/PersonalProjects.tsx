@@ -19,6 +19,8 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import NewButton from "../../ui/NewButton";
+import GithubIcon from "@/public/icons/githubIcon";
 
 function PersonalProjects() {
     const isMobile = useIsMobile();
@@ -36,7 +38,7 @@ function PersonalProjects() {
         "
         >
             <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
-            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2024</h3>
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">🚀 From 2024</h3>
             <br />
 
             <div className="fm-row flex flex-col">
@@ -59,8 +61,10 @@ function PersonalProjects() {
                         Tailwind CSS for efficient and customizable styling.
                     </div>
                     <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
-                        <Button type="main" content="View GitHub Repository" onClick={() => window.open("https://github.com/yangxdev/nextjs-budget-buddy")} />
-                        <div className="mx-2"></div>
+                        {/* <Button type="main" content="View GitHub Repository" onClick={() => window.open("https://github.com/yangxdev/nextjs-budget-buddy")} /> */}
+                        <NewButton url="https://github.com/yangxdev/nextjs-budget-buddy" label="GitHub Repository" icon={<GithubIcon />} />
+
+                        {/* <div className="mx-2"></div> */}
                         {/* <Button type="main" content="Preview Site" onClick={() => window.open("https://yangxdev.github.io/fe2-faq-accordion/")} /> */}
                     </div>
                 </div>
@@ -89,8 +93,9 @@ function PersonalProjects() {
                         value to a business.{" "}
                     </div>
                     <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
-                        <Button type="main" content="View GitHub Repository" onClick={() => window.open("https://github.com/yangxdev/nextjs-flower-manager")} />
-                        <div className="mx-2"></div>
+                        {/* <Button type="main" content="View GitHub Repository" onClick={() => window.open("https://github.com/yangxdev/nextjs-flower-manager")} /> */}
+                        <NewButton url="https://github.com/yangxdev/nextjs-flower-manager" label="GitHub Repository" icon={<GithubIcon />} />
+                        {/* <div className="mx-2"></div> */}
                         {/* <Button type="main" content="Preview Site" onClick={() => window.open("https://yangxdev.github.io/fe8-room-homepage/")} /> */}
                     </div>
                 </div>
@@ -128,7 +133,8 @@ function PersonalProjects() {
                 Want to see more? Check out my <strong>GitHub</strong>!
             </div>
             <div className="flex justify-center mt-4">
-                <Button type="main" content="View GitHub" onClick={() => window.open("https://github.com/yangxdev")} />
+                {/* <Button type="main" content="View GitHub" onClick={() => window.open("https://github.com/yangxdev")} /> */}
+                <NewButton url="https://github.com/yangxdev" label="GitHub" icon={<GithubIcon />} />
             </div>
         </div>
     );
