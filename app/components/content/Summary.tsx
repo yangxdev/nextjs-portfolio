@@ -1,8 +1,8 @@
 import React from "react";
 import withFadeIn from "@functional/withFadeIn";
-import PortfolioElement from "@ui/PortfolioElement";
+import SummaryElement from "@ui/SummaryElement";
 
-function Portfolio() {
+function Summary() {
     const experiences = [
         {
             emoji: "🎓",
@@ -34,7 +34,7 @@ function Portfolio() {
     return (
         <div
             id="Experience"
-            className="portfolio max-w-5xl select-none py-20 border-b border-slate-700
+            className="summary max-w-5xl select-none py-20 border-b border-slate-700
             mx-6
             md:mx-20
             lg:mx-40
@@ -44,10 +44,10 @@ function Portfolio() {
                 <strong>My experience</strong>
             </h1>
             {experiences.map((experience, index) => (
-                <PortfolioElement emoji={experience.emoji} sectionId={experience.title} key={index} title={experience.title} description={experience.description} />
+                <SummaryElement emoji={experience.emoji} sectionId={experience.title} key={index} title={experience.title} description={experience.description} />
             ))}
         </div>
     );
 }
 
-export default withFadeIn(Portfolio);
+export default withFadeIn(Summary);

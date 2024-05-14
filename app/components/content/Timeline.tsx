@@ -10,9 +10,10 @@ import { MdWorkOutline } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import { PiEggCrack } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa6";
-import "@/app/components/content/Timeline.css";
-
+import { IoBookOutline, IoSchoolOutline } from "react-icons/io5";
+import { LuSchool } from "react-icons/lu";
 import { MdOutlineViewInAr } from "react-icons/md";
+import './Timeline.css';
 
 const data = [
     {
@@ -50,19 +51,62 @@ const data = [
             contentStyle: { background: "#111", border: "1px solid #fdfdfd", color: "#fdfdfd" },
             contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
             iconStyle: { background: "#0f0f0f", color: "#fdfdfd" },
-            icon: <PiEggCrack />,
+            icon: <IoBookOutline />,
         },
         title: "Jr. Full-stack Developer",
         subtitle: "DecHit S.p.A.",
         location: "Milan, MI / Full Remote",
         content: "3-month intensive course focused on full-stack development.",
     },
+    {
+        props: {
+            date: "September 2020 - July - 2023",
+            className: "vertical-timeline-element--work text-[#f0f0f0]",
+            contentStyle: { background: "#111", border: "1px solid #fdfdfd", color: "#fdfdfd" },
+            contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
+
+            iconStyle: { background: "#0f0f0f", color: "#fdfdfd" },
+            icon: <IoSchoolOutline />,
+        },
+        title: "Bachelor's Degree in Computer Science",
+        subtitle: "University of Milan-Bicocca",
+        location: "Milan, MI",
+        content: "Thesis: 'The transition from monolithic to microservices architecture in e-commerce platforms'.",
+    },
+    {
+        props: {
+            date: "May 2019 - June 2019",
+            className: "vertical-timeline-element--work text-[#f0f0f0]",
+            contentStyle: { background: "#111", border: "1px solid #fdfdfd", color: "#fdfdfd" },
+            contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
+            iconStyle: { background: "#0f0f0f", color: "#fdfdfd" },
+            icon: <PiEggCrack />,
+        },
+        title: "Jr. Web Developer",
+        subtitle: "iperbooking",
+        location: "Rimini, RN",
+        content: "Website and Database management of a Booking Engine for Hotels and B&Bs.",
+    },
+    {
+        props: {
+            date: "September 2015 - July 2020",
+            className: "vertical-timeline-element--work text-[#f0f0f0]",
+            contentStyle: { background: "#111", border: "1px solid #fdfdfd", color: "#fdfdfd" },
+            contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
+            iconStyle: { background: "#0f0f0f", color: "#fdfdfd" },
+            icon: <LuSchool />,
+        },
+        title: "High School Diploma in Information Technology",
+        subtitle: "ITTS Belluzzi - Da Vinci",
+        location: "Rimini, RN",
+        content: "Fundamental knowledge of computer science and programming languages.",
+    },
 ];
 
 function Timeline() {
-    const [elements, setElements] = useState(data.slice(0, 1));
-    console.log("elements", elements.length)
-    console.log("data", data.length)
+    const [elements, setElements] = useState(data.slice(0, 2));
+    console.log("elements", elements.length);
+    console.log("data", data.length);
 
     useEffect(() => {
         loadMore();

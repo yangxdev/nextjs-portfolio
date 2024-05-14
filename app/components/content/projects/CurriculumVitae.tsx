@@ -36,9 +36,9 @@ function CurriculumVitae() {
                 )}
             </div>
             {isDesktop && (
-                <div className="text-left text-md my-4 flex items-center">
+                <div className="text-left text-md my-4 flex items-center h-[55px]">
                     <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
-                    <Button type="main" content="View GitHub Repository" onClick={() => window.open("https://github.com/yangxdev/nextjs-cv/")} />
+                    <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
                 </div>
             )}
         </div>

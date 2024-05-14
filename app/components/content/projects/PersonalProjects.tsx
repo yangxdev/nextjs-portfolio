@@ -36,7 +36,7 @@ function PersonalProjects() {
         "
         >
             <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
-            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2023</h3>
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2024</h3>
             <br />
 
             <div className="fm-row flex flex-col">

@@ -1,81 +1,116 @@
-import React from 'react';
-import withFadeIn from '@functional/withFadeIn';
+import React from "react";
+import withFadeIn from "@functional/withFadeIn";
+import NewButton from "../../ui/NewButton";
+import { IoIosShareAlt } from "react-icons/io";
+import { FaArrowDown } from "react-icons/fa6";
+import Badge from "../../ui/Badge";
 
 function Education() {
     return (
-        <div id="Education" className="education max-w-5xl py-20 border-b select-none border-slate-700 
+        <div
+            id="Education"
+            className="education max-w-5xl py-20 border-b select-none border-slate-700 
             mx-6
             md:mx-20
             lg:mx-40
-        ">
-            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Education</h1>
-            <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From 2015</h3>
+        "
+        >
+            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Education 📚</h1>
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2015</h3>
             <br />
             My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career.
-            <div className="text-sm text-left">
-                <ul style={{ listStyleType: 'square' }} className="ml-6">
-                    <li>
-                        <div className="text-base font-bold mt-4">
-                            University of Milan-Bicocca, Milan, Italy
+            <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
+                <div className="gap-3 flex flex-col">
+                    <div className="flex flex-row justify-between items-center h-[40px]">
+                        <div className="font-bold">🎓 University of Milan-Bicocca, Milan, Italy</div>
+                        <NewButton url="https://www.unimib.it/" icon={<IoIosShareAlt />} label="Visit website" light />
+                    </div>
+                    <div className="flex flex-row gap-2">
+                        <div className="font-bold">Degree: </div>
+                        <div>BSc in Computer Science</div>
+                    </div>
+                    <div className="flex flex-row gap-2">
+                        <div className="font-bold">Time period: </div>
+                        <div>September 2020 - July 2023</div>
+                    </div>
+                    <div className="font-bold">Projects: </div>
+                    <div className="ml-6">
+                        <div className="border p-2 rounded-lg">
+                            <div className="font-bold">Mobile Devices Programming</div>
+                            <div>Developed, managed the front-end side of an Android application in a team of 4.</div>
+                            <div className="badges h-fit items-center my-2 flex flex-row flex-wrap gap-2">
+                                <Badge label="Android Studio" bgColor="#A4C639" />
+                                <Badge label="Java" bgColor="#E11E22" />
+                                <Badge label="GitHub" bgColor="#2b3137" />
+                                <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="distributedSystemsProject" />
+                            </div>
+                            <div className="flex items-center"></div>
                         </div>
-                        <div className="text-base font-bold mt-4">
-                            Degree:
+                        <div className="border p-2 rounded-lg mt-2">
+                            <div className="font-bold">Distributed Systems</div>
+                            <div>Developed the front-end side of a Python Flask website in a team of 2.</div>
+                            <div className="badges h-fit items-center my-2 flex flex-row flex-wrap gap-2">
+                                <Badge label="Python" bgColor="#3776ab" />
+                                <Badge label="Flask" bgColor="#367E8E" />
+                                <Badge label="GitHub" bgColor="#2b3137" />
+                                <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="mobileDevicesProgrammingProject" />
+                            </div>
                         </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>BSc in <strong>Computer Science</strong></li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Time period:
+                    </div>
+                    <div className="font-bold">Thesis:</div>
+                    <div className="ml-6">
+                        <div className="border p-2 rounded-lg">
+                            <div className="font-bold">The transition from monolithic to microservices architecture</div>
+                            <div>Investigated the advantages of microservices architecture over monolithic architecture, with a case study in the tourism sector of a e-commerce platform.</div>
+                            <div className="badges h-fit items-center my-2 flex flex-row gap-2 flex-wrap">
+                                {/* <Badge label="Monolithic architecture" bgColor="#2b3137" /> */}
+                                <Badge label="E-commerce" bgColor="#FFA500" />
+                                <Badge label="Microservices" bgColor="#069AF3" />
+                                <NewButton label="Go to thesis" url="university/Thesis.pdf" icon={<IoIosShareAlt />} light small />
+                                {/* <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" /> */}
+                            </div>
                         </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>September 2020 - July 2023</li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">Projects: </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li><strong>Mobile Devices Programming</strong></li>
-                            <ul style={{ listStyleType: 'circle' }} className="ml-6">
-                                <li>Developed, managed the front-end side of an Android application in a team of 4</li>
-                                <li>Android Studio (Java)</li>
-                                <li>Version Control (GitHub)</li>
-                            </ul>
-                            <li><strong>Distributed Systems</strong></li>
-                            <ul style={{ listStyleType: 'circle' }} className="ml-6">
-                                <li>Developed the front-end side of a Python Flask website in a team of 2</li>
-                                <li>Managed server-side data (REST) and frontend-backend communication</li>
-                            </ul>
-                        </ul>
-                        <div className="text-base font-bold mt-4">Certifications:</div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li><strong>Open Badge Bbetween English</strong>: C1</li>
-                            <li><strong>OLS (Erasmus+ English Test)</strong>: C1</li>
-                        </ul>
-                    </li>
-                    <hr className="mt-4 border-slate-400" />
-                    <li>
-                        <div className="text-base font-bold mt-4">
-                            ITTS &quot;Belluzzi - Da Vinci&quot;, Rimini, Italy
+                    </div>
+                    <div className="font-bold">Certifications:</div>
+                    <div className="ml-6">
+                        <Badge label="Open Badge Bbetween English: C1" bgColor="#A71E3B" />
+                    </div>
+                </div>
+            </div>
+            <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
+                <div className="gap-3 flex flex-col">
+                    <div className="flex flex-row justify-between items-center h-[40px]">
+                        <div className="font-bold">🎓 ITTS "Belluzzi - Da Vinci", Rimini, Italy</div>
+                        <NewButton url="https://www.ittsrimini.edu.it/" icon={<IoIosShareAlt />} label="Visit website" light />
+                    </div>
+                    <div className="flex flex-row gap-2">
+                        <div className="font-bold">Degree: </div>
+                        <div>High School Diploma in Information Technology</div>
+                    </div>
+                    <div className="flex flex-row gap-2">
+                        <div className="font-bold">Time period: </div>
+                        <div>September 2015 - July 2020</div>
+                    </div>
+                    <div className="font-bold">Relevant courses:</div>
+                    <div className="ml-6">
+                        <div className="border p-2 rounded-lg">
+                            <div className="font-bold">Web Technology</div>
+                            <div>Learned the basics of web development, including HTML, CSS, and JavaScript.</div>
                         </div>
-                        <div className="text-base font-bold mt-4">
-                            Degree:
+                        <div className="border p-2 rounded-lg mt-2">
+                            <div className="font-bold">Computer Networking</div>
+                            <div>Studied the principles of computer networking and network security.</div>
                         </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>High School Diploma in <strong>Information Technology</strong></li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Time period:
+                        <div className="border p-2 rounded-lg mt-2">
+                            <div className="font-bold">Programming</div>
+                            <div>Developed Windows Forms applications in C#.</div>
                         </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>September 2015 - July 2020</li>
-                        </ul>
-                        <div className="text-base font-bold mt-4">
-                            Relevant courses:
-                        </div>
-                        <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                            <li>Web Technology</li>
-                            <li>Computer Networking</li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                    <div className="font-bold">Certifications:</div>
+                    <div className="ml-6">
+                        <Badge label="OLS (Erasmus+ English Test): C1" bgColor="#003399" />
+                    </div>
+                </div>
             </div>
         </div>
     );

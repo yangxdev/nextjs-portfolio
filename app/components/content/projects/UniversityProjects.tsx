@@ -24,12 +24,13 @@ function UniversityProjects() {
             ">
             <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">University Projects</h1>
             {/* <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From September 2020 to July 2023</h3> */}
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From 2022</h3>
             <br />
             {/* Having enrolled in a Computer Science degree at the University of Milan-Bicocca, I had the opportunity to work on some interesting projects. Here are the most relevant ones:
             <br />
             <br /> */}
 
-            <div className="fm-row flex flex-col">
+            <div className="fm-row flex flex-col" id='distributedSystemsProject'>
                 <div className="fm-col2 flex-1 flex justify-center">
                     {!isMobile ? ( //desktop
                         <div className={`img-desktop max-w-2xl`}>
@@ -104,7 +105,7 @@ function UniversityProjects() {
             </div>
             <br /><br />
 
-            <div className="fm-row flex flex-col">
+            <div className="fm-row flex flex-col" id='mobileDevicesProgrammingProject'>
                 <div className="fm-col2 flex-1 flex justify-center">
                     {!isMobile ? (
                         <div className={`img-desktop max-w-2xl`}>

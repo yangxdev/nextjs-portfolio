@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { useIsDesktop } from '../functional/useIsDesktop';
 import Timeline from '@content/Timeline';
 import Landing from '@content/Landing';
-import Portfolio from '@content/Portfolio';
+import Summary from '@content/Summary';
 import CoverLetterMaker from '@projects/CoverLetterMaker';
 import CurriculumVitae from '@projects/CurriculumVitae';
 import DeloitteDigital from '@projects/DeloitteDigital';
@@ -51,8 +51,8 @@ export default function HomePage() {
                 </div>
             )}
             <Landing />
+            <Summary />
             <Timeline />
-            <Portfolio />
             <CurriculumVitae />
             <Education />
             <DeloitteDigital />
