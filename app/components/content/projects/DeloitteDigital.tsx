@@ -1,42 +1,71 @@
 import React from 'react';
 import withFadeIn from '@functional/withFadeIn';
+import NewButton from '../../ui/NewButton';
+import { IoIosShareAlt } from 'react-icons/io';
+import Badge from '../../ui/Badge';
+import { FaArrowDown } from 'react-icons/fa6';
 
 function DeloitteDigital() {
     return (
-        <div id="Deloitte Digital" className="deloitte-digital w-full max-w-5xl py-20 border-b select-none border-slate-700 mx-6 md:mx-20 lg:mx-40
-        ">
-            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Deloitte Digital</h1>
-            <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From March 2023</h3>
-            <div className="text-sm text-left">
-
-                <div className="text-base font-bold mt-4">
-                    Project:
+        <div id="Deloitte Digital" className="deloitte-digital w-full max-w-5xl py-20 border-b select-none border-slate-700 mx-6 md:mx-20 lg:mx-40">
+            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Work</h1>
+            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">From March 2023</h3>
+            <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
+                <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
+                    <div className="gap-2 flex flex-col">
+                        <div className="flex flex-row justify-between items-center flex-wrap gap-2">
+                            <div className="font-bold text-xl">Deloitte Digital</div>
+                            <div className="border rounded-xl">
+                                <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} label={`Visit website`} light />
+                            </div>
+                        </div>
+                        <div className="flex flex-row gap-3">
+                            <div className="font-bold">Role: </div>
+                            <div>Full-stack Developer</div>
+                        </div>
+                        <div className="flex flex-row gap-3">
+                            <div className="font-bold">Time: </div>
+                            <div>March 2023 - Present</div>
+                        </div>
+                        <div className="font-bold">Project: </div>
+                        <div className="md:ml-6 ">
+                            <div className="border p-3 rounded-lg">
+                                <div className="font-bold">B2B Booking E-Commerce Platform</div>
+                                <ul className="list-disc ml-6">
+                                    <li>Released graphical and functional updates to entire sections of the booking flow, used by 2000+ agencies worldwide to serve 1 million+ clients annually </li>
+                                    <li>Communication with clients, PMs, UI/UX design and testing teams to understand requirements, provide feedback and propose solutions</li>
+                                    <li>Planning, review and implementation of new designs, features, functionalities and bug fixes</li>
+                                    <li>Ticket and incidents handling with ServiceNow</li>
+                                    <li>Communication in English and Italian</li>
+                                </ul>
+                                <div className='badges flex flex-row gap-2 mt-2 flex-wrap'>
+                                    <Badge label="JavaScript" bgColor='#f7df1e' />
+                                    <Badge label="jQuery" bgColor='#0768AC' />
+                                    <Badge label="Bootstrap" bgColor='#7A43B6' />
+                                    <Badge label="Java" bgColor='#E11E22' />
+                                    <Badge label="SQL" bgColor='#F29111' />
+                                    <Badge label="GitLab" bgColor='#fc6d26' />
+                                    <Badge label="ServiceNow" bgColor='#0072C6' />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="font-bold">Team:</div>
+                        <div className="md:ml-6 ">
+                            <div className="border p-3 rounded-lg">
+                                <div className="font-bold">Deloitte</div>
+                                <div className="text-sm">3 functional, 8 technical, 1 Scrum Master, 1 UX/UI</div>
+                                <div className="font-bold">Client</div>
+                                <div className="text-sm">1 PM, 2 testers</div>
+                                <div className="badges flex flex-row gap-2 mt-2 flex-wrap">
+                                    <Badge label="Agile Scrum" bgColor='#61DAFB' />
+                                    <Badge label="Jira" bgColor='#0052CC' />
+                                    <Badge label="Confluence" bgColor='#0052CC' />
+                                    <Badge label="Figma" bgColor='#F24E1E' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                    <li>Booking Platform ( <strong>B2B</strong>, B2C )</li>
-                    <li>Used by travel agencies in <strong>40+ countries</strong></li>
-                    <li>Annual revenue exceeding <strong>4 billion</strong></li>
-                </ul>
-
-                <div className="text-base font-bold mt-4">Technologies: </div>
-                <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                    <li><strong>JavaScript</strong> ( jQuery, HandleBars.js )</li>
-                    <li><strong>CSS</strong> ( Bootstrap )</li>
-                    <li><strong>Java</strong> ( JSP, JSTL )</li>
-                    <li><strong>SQL</strong></li>
-                    <li><strong>Git</strong> ( GitLab )</li>
-                    <li><strong>Agile</strong> ( Jira, Confluence )</li>
-                </ul>
-
-                <div className="text-base font-bold mt-4">Details:</div>
-                <ul style={{ listStyleType: 'disc' }} className="ml-6">
-                    <li>Collaborated in an Agile Scrum environment.</li>
-                    <li>Contributed to a cross-functional team of 9, consisting of 2 functional and 7 technical members.</li>
-                    <li>Collaborated closely with the UI/UX team to ensure a seamless user experience.</li>
-                    <li>Worked in conjunction with an external testing team to validate and enhance product quality.</li>
-                    <li>Maintained daily communication with the Technical Project Manager for project coordination and progress updates.</li>
-                </ul>
-
             </div>
         </div>
     );

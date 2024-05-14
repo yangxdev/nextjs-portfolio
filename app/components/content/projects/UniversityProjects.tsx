@@ -11,6 +11,9 @@ import SDTransfer800 from '@university/SD_transfer_800.gif';
 import SDTransfer600 from '@university/SD_transfer_600.gif';
 import PDMSmooviePreview from '@university/PDM_smoovie_preview.png';
 import PDMSmooviePreviewMobile from '@university/PDM_smoovie_preview_mobile.png';
+import NewButton from '../../ui/NewButton';
+import { IoIosShareAlt } from 'react-icons/io';
+import GithubIcon from '@/public/icons/githubIcon';
 
 function UniversityProjects() {
 
@@ -93,9 +96,10 @@ function UniversityProjects() {
                         </ul>
                     </div>
                     <div className="row mt-4 flex flex-nowrap justify-left">
-                        <Button type="main" content="View Code"
+                        {/* <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/washedDragonyx/flask-banking-system')
-                            } />
+                            } /> */}
+                            <NewButton url="https://github.com/washedDragonyx/flask-banking-system" icon={<GithubIcon />} label="GitHub Repository" />
                         {/* <div className="mx-2"></div>
                         <Button type="main" content="Preview Site"
                             onClick={() => window.open('https://yangxdev.github.io/fe2-faq-accordion/')}
@@ -147,17 +151,19 @@ function UniversityProjects() {
                             <li>Authentication and account management</li>
                         </ul>
                     </div>
-                    <div className="row mt-4 flex flex-wrap justify-left">
+                    <div className="row mt-4 flex flex-wrap justify-left h-[45px]">
                         <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
-                            <Button type="main" content="View Code"
+                            {/* <Button type="main" content="View Code"
                                 onClick={() => window.open('https://github.com/Enkosz/smoovie')
-                                } />
+                                } /> */}
+                            <NewButton url="https://github.com/Enkosz/smoovie" icon={<GithubIcon />} label="GitHub Repository" />
                         </div>
                         <div className={`mx-2`}></div>
                         <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
-                            <Button type="main" content="View Docs (IT)"
+                            {/* <Button type="main" content="View Documentation"
                                 onClick={() => window.open("/PDM_smoovie_documentation.pdf/")}
-                            />
+                            /> */}
+                            <NewButton url="/PDM_smoovie_documentation.pdf" icon={<IoIosShareAlt />} label="View Documentation" />
                         </div>
                     </div>
                 </div>

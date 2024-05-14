@@ -180,7 +180,7 @@ function FrontendMentor() {
                     <div className="text-sm">
                         One of the last projects I&apos;ve done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>
-                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
+                    <div className={`row mt-4 flex flex-nowrap h-[45px] ${buttonDirection}`}>
                         <NewButton icon={<GithubIcon />} label="GitHub Repository" url='https://github.com/unimibYNGX/fe10-ecommerce' />
                         <div className="mx-2"></div>
                         <NewButton icon={<IoIosShareAlt />} label="View Site" url='https://yangxdev.github.io/fe10-ecommerce/' />

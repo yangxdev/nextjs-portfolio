@@ -17,8 +17,8 @@ function Education() {
         >
             <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Education</h1>
             <h3 className="text-lg text-left text-[#f0f0f0] mt-2">📚 From 2015</h3>
-            <br />
-            My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career.
+            {/* <br />
+            My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career. */}
             <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
                 <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
                     <div className="gap-2 flex flex-col">
