@@ -21,17 +21,19 @@ function Education() {
             My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career.
             <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
                 <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
-                    <div className="gap-3 flex flex-col">
-                        <div className="flex flex-row justify-between items-center h-[40px]">
+                    <div className="gap-2 flex flex-col">
+                        <div className="flex flex-row justify-between items-center flex-wrap gap-2">
                             <div className="font-bold">🎓 University of Milan-Bicocca, Milan, Italy</div>
-                            <NewButton url="https://www.unimib.it/" icon={<IoIosShareAlt />} label="Visit website" light />
+                            <div className="border rounded-xl">
+                                <NewButton url="https://www.unimib.it/" icon={<IoIosShareAlt />} label={`Visit website`} light />
+                            </div>
                         </div>
                         <div className="flex flex-row gap-3">
                             <div className="font-bold">Degree: </div>
                             <div>BSc in Computer Science</div>
                         </div>
                         <div className="flex flex-row gap-3">
-                            <div className="font-bold">Time period: </div>
+                            <div className="font-bold">Time: </div>
                             <div>September 2020 - July 2023</div>
                         </div>
                         <div className="font-bold">Projects: </div>
@@ -52,7 +54,8 @@ function Education() {
                                 <div>Developed the front-end side of a Python Flask website in a team of 2.</div>
                                 <div className="badges h-fit items-center my-2 flex flex-row flex-wrap gap-3">
                                     <Badge label="Python" bgColor="#3776ab" />
-                                    <Badge label="Flask" bgColor="#367E8E" />
+                                    {/* <Badge label="Flask" bgColor="#367E8E" /> */}
+                                    <Badge label="Javascript" bgColor="#f7df1e" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
                                     <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="mobileDevicesProgrammingProject" />
                                 </div>
@@ -80,16 +83,18 @@ function Education() {
                 </div>
                 <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
                     <div className="gap-3 flex flex-col">
-                        <div className="flex flex-row justify-between items-center h-[40px]">
+                        <div className="flex flex-row justify-between items-center flex-wrap gap-2">
                             <div className="font-bold">🏫 ITTS "Belluzzi - Da Vinci", Rimini, Italy</div>
-                            <NewButton url="https://www.ittsrimini.edu.it/" icon={<IoIosShareAlt />} label="Visit website" light />
+                            <div className="border rounded-xl">
+                                <NewButton url="https://www.ittsrimini.edu.it/" icon={<IoIosShareAlt />} label="Visit website" light />
+                            </div>
                         </div>
                         <div className="flex flex-row gap-3">
                             <div className="font-bold">Degree: </div>
                             <div>High School Diploma in Information Technology</div>
                         </div>
                         <div className="flex flex-row gap-3">
-                            <div className="font-bold">Time period: </div>
+                            <div className="font-bold">Time: </div>
                             <div>September 2015 - July 2020</div>
                         </div>
                         <div className="font-bold">Relevant courses:</div>

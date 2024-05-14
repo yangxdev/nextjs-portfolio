@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { MdWorkOutline } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
 import { PiEggCrack } from "react-icons/pi";
-import { FaPlus } from "react-icons/fa6";
+import { FaArrowDown, FaPlus } from "react-icons/fa6";
 import { IoBookOutline, IoSchoolOutline } from "react-icons/io5";
 import { LuSchool } from "react-icons/lu";
 import { MdOutlineViewInAr } from "react-icons/md";
@@ -29,6 +29,7 @@ const data = [
         subtitle: "Freelance",
         location: "Full Remote",
         content: "Crafting exceptional front-end products for clients, specializing in React.js and Next.js.",
+        button: <NewButton label="Go to projects" scrollTo="Personal Projects & Freelance" icon={<FaArrowDown />} />,
     },
     {
         props: {
@@ -43,6 +44,7 @@ const data = [
         subtitle: "Deloitte Digital",
         location: "Milan, MI / Full Remote",
         content: "Contributing to the development of a globally used e-commerce booking platform.",
+        button: <NewButton label="Go to details" scrollTo="Deloitte Digital" icon={<FaArrowDown />} />,
     },
     {
         props: {
@@ -72,6 +74,7 @@ const data = [
         subtitle: "University of Milan-Bicocca",
         location: "Milan, MI",
         content: "Thesis: 'The transition from monolithic to microservices architecture in e-commerce platforms'.",
+        button: <NewButton label="Go to details" scrollTo="Education" icon={<FaArrowDown />} />,
     },
     {
         props: {
@@ -108,12 +111,13 @@ function Timeline() {
     console.log("elements", elements.length);
     console.log("data", data.length);
 
-    useEffect(() => {
-        loadMore();
-    }, []);
+    // useEffect(() => {
+    //     loadMore();
+    // }, []);
 
     const loadMore = () => {
-        setElements(data.slice(0, elements.length + 1));
+        // setElements(data.slice(0, elements.length + 1));
+        setElements(data);
     };
 
     const getTimelineElements = () =>
@@ -123,6 +127,7 @@ function Timeline() {
                 <h4 className="vertical-timeline-element-subtitle">{element.subtitle}</h4>
                 <h5 className="font-light text-sm">{element.location}</h5>
                 <p>{element.content}</p>
+                {element.button && <div className="mt-4">{element.button}</div>}
             </VerticalTimelineElement>
         ));
 

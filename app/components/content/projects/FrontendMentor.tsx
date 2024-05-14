@@ -13,6 +13,9 @@ import fe10Ecommerce from '@personal/fe10-ecommerce-desktop.jpg';
 import fe10EcommerceMobile from '@personal/fe10-ecommerce-mobile.jpg';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import NewButton from '../../ui/NewButton';
+import GithubIcon from '@/public/icons/githubIcon';
+import { IoIosShareAlt } from 'react-icons/io';
 
 function FrontendMentor() {
 
@@ -66,14 +69,11 @@ function FrontendMentor() {
                     <div className="text-sm">
                         One of my first projects, built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
                     </div>
-                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
-                        <Button type="main" content="View Code"
-                            onClick={() => window.open('https://github.com/yangxdev/fe2-faq-accordion')
-                            } />
+                    <div className={`row mt-4 flex flex-nowrap h-[45px] ${buttonDirection}`}>
+                        <NewButton icon={<GithubIcon />} label="GitHub Repository" url='
+                                https://github.com/yangxdev/fe2-faq-accordion' />
                         <div className="mx-2"></div>
-                        <Button type="main" content="Preview Site"
-                            onClick={() => window.open('https://yangxdev.github.io/fe2-faq-accordion/')}
-                        />
+                        <NewButton icon={<IoIosShareAlt />} label="View Site" url='https://yangxdev.github.io/fe2-faq-accordion/' />
                         {/* {isDesktop && (
                             <>
                                 <div className="mx-2"></div>
@@ -122,14 +122,16 @@ function FrontendMentor() {
                     <div className="text-sm">
                         In my next projects, I prioritized seamless user experiences by enhancing responsiveness and functionality. I successfully implemented a dynamic image carousel, ensuring smooth transitions between desktop and mobile views.
                     </div>
-                    <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
-                        <Button type="main" content="View Code"
+                    <div className={`row mt-4 flex flex-nowrap h-[45px] ${buttonDirection}`}>
+                        {/* <Button type="main" content="View Code"
                             onClick={() => window.open('https://github.com/unimibYNGX/fe8-room-homepage')
-                            } />
+                            } /> */}
+                        <NewButton icon={<GithubIcon />} label="GitHub Repository" url='https://github.com/unimibYNGX/fe8-room-homepage' />
                         <div className="mx-2"></div>
-                        <Button type="main" content="Preview Site"
+                        {/* <Button type="main" content="Preview Site"
                             onClick={() => window.open('https://yangxdev.github.io/fe8-room-homepage/')}
-                        />
+                        /> */}
+                        <NewButton icon={<IoIosShareAlt />} label="View Site" url='https://yangxdev.github.io/fe8-room-homepage/' />
                         {/* {isDesktop && (
                             <>
                                 <div className="mx-2"></div>
@@ -179,13 +181,9 @@ function FrontendMentor() {
                         One of the last projects I&apos;ve done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>
                     <div className={`row mt-4 flex flex-nowrap ${buttonDirection}`}>
-                        <Button type="main" content="View Code"
-                            onClick={() => window.open('https://github.com/unimibYNGX/fe10-ecommerce')
-                            } />
+                        <NewButton icon={<GithubIcon />} label="GitHub Repository" url='https://github.com/unimibYNGX/fe10-ecommerce' />
                         <div className="mx-2"></div>
-                        <Button type="main" content="Preview Site"
-                            onClick={() => window.open('https://yangxdev.github.io/fe10-ecommerce/')}
-                        />
+                        <NewButton icon={<IoIosShareAlt />} label="View Site" url='https://yangxdev.github.io/fe10-ecommerce/' />
                         {/* {isDesktop && (
                             <>
                                 <div className="mx-2"></div>
@@ -205,7 +203,8 @@ function FrontendMentor() {
                 Want to see more? Check out my <strong>Frontend Mentor</strong> profile!
             </div>
             <div className="flex justify-center mt-4">
-                <Button type="main" content="View Profile" onClick={() => window.open('https://www.frontendmentor.io/profile/yangxdev')} />
+                {/* <Button type="main" content="View Profile" onClick={() => window.open('https://www.frontendmentor.io/profile/yangxdev')} /> */}
+                <NewButton icon={<IoIosShareAlt />} label="Frontend Mentor" url='https://www.frontendmentor.io/profile/yangxdev' />
             </div>
         </div >
     );
