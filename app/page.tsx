@@ -20,6 +20,9 @@ export default function Home() {
             <div className={isTouch ? "hidden" : ""}>
                 <AnimatedCursor
                     color="240, 240, 240"
+                    innerStyle={{
+                        mixBlendMode: "exclusion",
+                    }}
                     outerAlpha={1}
                     outerStyle={{
                         mixBlendMode: "exclusion",

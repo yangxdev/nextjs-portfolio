@@ -14,6 +14,7 @@ import PDMSmooviePreviewMobile from '@university/PDM_smoovie_preview_mobile.png'
 import NewButton from '../../ui/NewButton';
 import { IoIosShareAlt } from 'react-icons/io';
 import GithubIcon from '@/public/icons/githubIcon';
+import Badge from '../../ui/Badge';
 
 function UniversityProjects() {
 
@@ -84,6 +85,11 @@ function UniversityProjects() {
                         Distributed Systems Course Project: Flask Banking System
                     </h2>
                     <h3 className="mb-4 text-lg text-[#f0f0f0]">June 2022</h3>
+                    <div className="badges flex flex-row mb-4 items-center gap-2">
+                        <Badge label="Python" bgColor="#3776ab" />
+                        <Badge label="Javascript" bgColor="#f7df1e" />
+                        <Badge label="GitHub" bgColor="#2b3137" />
+                    </div>
                     <div className="text-sm">
                         For the Distributed Systems course, our task was to develop a website that would allow users to manage their bank accounts. The website had to be developed using the Flask framework and had to be able to communicate with a server-side API and a database. The website had to be able to perform the following operations:
                         <ul style={{ listStyleType: 'disc' }} className="ml-6">
@@ -135,6 +141,11 @@ function UniversityProjects() {
                         Mobile Devices Programming Project: Smoovie
                     </h2>
                     <h3 className="mb-4 text-lg text-[#f0f0f0]">August 2022 to September 2022</h3>
+                    <div className="badges flex flex-row mb-4 items-center gap-2">
+                        <Badge label="Android Studio" bgColor="#A4C639" />
+                        <Badge label="Java" bgColor="#E11E22" />
+                        <Badge label="GitHub" bgColor="#2b3137" />
+                    </div>
                     <div className="text-sm">
                         For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. The application had to be able to perform the following operations:
                         <ul style={{ listStyleType: 'disc' }} className="ml-6">

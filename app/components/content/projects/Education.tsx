@@ -47,7 +47,6 @@ function Education() {
                                 <div>Developed the front-end side of a Python Flask website in a team of 2.</div>
                                 <div className="badges h-fit items-center my-2 flex flex-row flex-wrap gap-3">
                                     <Badge label="Python" bgColor="#3776ab" />
-                                    {/* <Badge label="Flask" bgColor="#367E8E" /> */}
                                     <Badge label="Javascript" bgColor="#f7df1e" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
                                     <NewButton label="Go to project" icon={<FaArrowDown />} disableZoom light small scrollTo="distributedSystemsProject" />

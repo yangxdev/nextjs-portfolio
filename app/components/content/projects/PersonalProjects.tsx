@@ -64,7 +64,7 @@ function PersonalProjects() {
                         <Badge label="Tailwind CSS" bgColor="#38B2AC" />
                         <Badge label="PostgreSQL" bgColor="#336791" />
                         <Badge label="Prisma" bgColor="#bf8bff" />
-                        <Badge label="ChartJS 2" bgColor="#43436B" />
+                        <Badge label="Chart.js" bgColor="#43436B" />
                     </div>
                     <div className="text-sm">
                         Budget Buddy is a web app that helps individuals manage their personal finances and budget effectively. It is built using Next.js, a React-based framework that enables server-side rendering and generates static websites for React-based web applications. The project utilizes
@@ -106,7 +106,7 @@ function PersonalProjects() {
                         <Badge label="Ant Design" bgColor="#0170FE" />
                     </div>
                     <div className="text-sm">
-                        Flower Manager is an order manager I made for a client's flower business where they can keep track of her orders and customers throughout the month. This project gives me a chance to make a real world impact, using the latest technologies to make a product that can provide
+                        Flower Manager is an order manager I made for a client's flower business where they can keep track of the orders and customers throughout the month. This project gives me a chance to make a real world impact, using the latest technologies to make a product that can provide
                         value to a business.{" "}
                     </div>
                     <div className={`mt-4 flex gap-4 flex-wrap h-[60px] items-center justify-center`}>

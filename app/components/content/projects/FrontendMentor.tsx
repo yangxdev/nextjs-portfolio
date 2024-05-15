@@ -16,6 +16,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 import NewButton from '../../ui/NewButton';
 import GithubIcon from '@/public/icons/githubIcon';
 import { IoIosShareAlt } from 'react-icons/io';
+import Badge from '../../ui/Badge';
 
 function FrontendMentor() {
 
@@ -66,6 +67,12 @@ function FrontendMentor() {
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-2xl font-bold text-[#f0f0f0]">FAQ Accordion</h2>
+                    <div className="badges flex flex-row items-center gap-2 mb-4 justify-center">
+                        <Badge label="HTML" bgColor='#f06529' />
+                        <Badge label="CSS" bgColor='#2965f1' />
+                        <Badge label="JavaScript" bgColor='#f0db4f' />
+                        <Badge label="Responsive" bgColor='#61dafb' />
+                    </div>
                     <div className="text-sm">
                         One of my first projects, built with vanilla JavaScript and CSS. It&apos;s a simple, responsive design that&apos;s easy to navigate and understand. The project was a great introduction to the fundamentals of web design and development.
                     </div>
@@ -118,6 +125,12 @@ function FrontendMentor() {
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-2xl text-[#f0f0f0]"><strong>Room Homepage</strong></h2>
+                    <div className="badges flex flex-row items-center gap-2 mb-4 justify-center">
+                        <Badge label="HTML" bgColor='#f06529' />
+                        <Badge label="CSS" bgColor='#2965f1' />
+                        <Badge label="JavaScript" bgColor='#f0db4f' />
+                        <Badge label="Responsive" bgColor='#61dafb' />
+                    </div>
                     <div className="text-sm">
                         In my next projects, I prioritized seamless user experiences by enhancing responsiveness and functionality. I successfully implemented a dynamic image carousel, ensuring smooth transitions between desktop and mobile views.
                     </div>
@@ -169,6 +182,11 @@ function FrontendMentor() {
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
                     <h2 className="mb-4 text-3xl text-[#f0f0f0]"><strong>E-commerce</strong></h2>
+                    <div className="badges flex flex-row items-center gap-2 mb-4 justify-center">
+                        <Badge label="React" bgColor='#61dafb' />
+                        <Badge label="SASS" bgColor='#c69' />
+                        <Badge label="Responsive" bgColor='#61dafb' />
+                    </div>
                     <div className="text-sm">
                         One of the last projects I&apos;ve done in this platform, this e-commerce website was initially built with vanilla JavaScript and CSS. I then decided to refactor the code using React and SASS, which allowed me to implement a more efficient and scalable design.
                     </div>

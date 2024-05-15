@@ -36,7 +36,7 @@ function Footer() {
                     Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me an email, text me on Telegram, or write me on LinkedIn!
                 </p>
             </div>
-            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex items-center text-sm h-[60px] gap-4 mt-8 ${isMobile ? 'flex-col items-center' : ''}`}>
+            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex items-center text-sm gap-4 mt-8 ${isMobile ? 'h-[180px] justify-center flex-col items-center' : 'h-[60px]'}`}>
                 <a
                     draggable="false"
                     href="mailto:yangxdev@gmail.com"

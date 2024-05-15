@@ -34,7 +34,7 @@ function DeloitteDigital() {
                         <div className="md:ml-6 ">
                             <div className="border p-3 rounded-lg">
                                 <div className="font-bold">B2B Booking E-Commerce Platform</div>
-                                <ul className="list-disc ml-6">
+                                <ul className="list-disc ml-6 my-1 text-sm">
                                     <li>Released graphical and functional updates to entire sections of the booking flow, used by 2000+ agencies worldwide to serve 1 million+ clients annually </li>
                                     <li>Communication with clients, PMs, UI/UX design and testing teams to understand requirements, provide feedback and propose solutions</li>
                                     <li>Planning, review and implementation of new designs, features, functionalities and bug fixes</li>
@@ -56,9 +56,9 @@ function DeloitteDigital() {
                         <div className="md:ml-6 ">
                             <div className="border p-3 rounded-lg">
                                 <div className="font-bold">Deloitte</div>
-                                <div className="text-sm">8 technical, 3 functional, 1 Scrum Master, 1 UX/UI</div>
+                                <div className="text-sm">8 technical, 3 functional, 1 Scrum Master, 1 UX/UI designer</div>
                                 <div className="font-bold">Client</div>
-                                <div className="text-sm">1 PM, 2 testers</div>
+                                <div className="text-sm">1 Product Manager, 2 testers</div>
                                 <div className="badges flex flex-row gap-2 mt-2 flex-wrap">
                                     <Badge label="Agile Scrum" bgColor='#61DAFB' />
                                     <Badge label="Jira" bgColor='#0052CC' />
