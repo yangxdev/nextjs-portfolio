@@ -73,13 +73,13 @@ const ScrollToTopButton = () => {
             >
                 <div className="transition-all flex flex-row duration-500 ease-in-out text-sm">
                     <div className="text-[#f0f0f0] py-[0.375rem] px-2 rounded-lg backdrop-blur backdrop-opacity-90 ">
-                        <div className="text-3xl md:text-4xl lg:text-5xl">▲</div>
-                    {/* <p className={`transition-all duration-500 ease-in-out h-[0px] ${isScrollTextVisible ? "opacity-1" : "opacity-0"}`}>{scrollPoint && ("Return")}</p> */}
+                        <div className="text-3xl md:text-4xl lg:text-5xl" >▲</div>
                     </div>
                 </div>
             </button>
         </div>
     );
+    {/* <p className={`transition-all duration-500 ease-in-out h-[0px] ${isScrollTextVisible ? "opacity-1" : "opacity-0"}`}>{scrollPoint && ("Return")}</p> */}
 };
 
 export default ScrollToTopButton;

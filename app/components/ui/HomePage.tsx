@@ -62,3 +62,5 @@ export default function HomePage() {
         </>
     );
 }
+
+// TODO: add more links on the left side nav bar

@@ -22,11 +22,11 @@ function CurriculumVitae() {
         "
         >
             <h1 className="text-3xl text-center text-[#f0f0f0] mb-4 font-bold">Curriculum Vitae</h1>
-            <div className="badges flex flex-row justify-center items-center mb-4 gap-2">
+            <div className="badges flex flex-row justify-center items-center mb-4 gap-2 flex-wrap">
                 <Badge label="React" bgColor="#61dafb" />
                 <Badge label="Tailwind CSS" bgColor="#06b6d4" />
                 <Badge label="TypeScript" bgColor="#007acc" />
-                <Badge label="Vercel" bgColor="#39393" />
+                <Badge label="Vercel" bgColor="#393939" />
             </div>
             <div className="text-center text-sm mb-4 w-[90%] md:w-[80%] flex flex-col justify-center items-center ml-auto mr-auto">
                 Not satisfied with online resume makers, I initially decided to build my own interactive CV using React and Tailwind CSS. The project is open-source and can be viewed on GitHub.
