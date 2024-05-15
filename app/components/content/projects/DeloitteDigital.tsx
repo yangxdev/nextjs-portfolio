@@ -4,6 +4,7 @@ import NewButton from '../../ui/NewButton';
 import { IoIosShareAlt } from 'react-icons/io';
 import Badge from '../../ui/Badge';
 import { FaArrowDown } from 'react-icons/fa6';
+import { MdOutlineLaptop } from 'react-icons/md';
 
 function DeloitteDigital() {
     return (
@@ -14,9 +15,11 @@ function DeloitteDigital() {
                 <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
                     <div className="gap-2 flex flex-col">
                         <div className="flex flex-row justify-between items-center flex-wrap gap-2">
-                            <div className="font-bold text-xl">Deloitte Digital</div>
+                            <div className="font-bold flex flex-row items-center gap-4"><MdOutlineLaptop size={32}/>
+                                <div className="text-xl">Deloitte Digital</div>
+                                </div>
                             <div className="border rounded-xl">
-                                <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} label={`Visit website`} light />
+                                <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} disableZoom label={`Visit website`} light />
                             </div>
                         </div>
                         <div className="flex flex-row gap-3">
@@ -39,7 +42,7 @@ function DeloitteDigital() {
                                     <li>Communication in English and Italian</li>
                                 </ul>
                                 <div className='badges flex flex-row gap-2 mt-2 flex-wrap'>
-                                    <Badge label="JavaScript" bgColor='#f7df1e' />
+                                    <Badge label="JavaScript" bgColor='#FED93F' />
                                     <Badge label="jQuery" bgColor='#0768AC' />
                                     <Badge label="Bootstrap" bgColor='#7A43B6' />
                                     <Badge label="Java" bgColor='#E11E22' />
@@ -53,7 +56,7 @@ function DeloitteDigital() {
                         <div className="md:ml-6 ">
                             <div className="border p-3 rounded-lg">
                                 <div className="font-bold">Deloitte</div>
-                                <div className="text-sm">3 functional, 8 technical, 1 Scrum Master, 1 UX/UI</div>
+                                <div className="text-sm">8 technical, 3 functional, 1 Scrum Master, 1 UX/UI</div>
                                 <div className="font-bold">Client</div>
                                 <div className="text-sm">1 PM, 2 testers</div>
                                 <div className="badges flex flex-row gap-2 mt-2 flex-wrap">

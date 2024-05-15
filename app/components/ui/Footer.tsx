@@ -5,7 +5,10 @@ import withFadeIn from '@functional/withFadeIn';
 import { useIsMobile } from '@functional/useIsMobile';
 import Button from '@ui/Button';
 // import LogoSmall from '@logos/logo_small_gray.jpg';
-import Logo from '@logos/logo_transparent.png';
+import Logo from '@logos/logo_transparent.png'; import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+
+import NewButton from './NewButton';
+import { IoIosMail } from 'react-icons/io';
 
 function Footer() {
 
@@ -33,8 +36,19 @@ function Footer() {
                     Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me an email, text me on Telegram, or write me on LinkedIn!
                 </p>
             </div>
-            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex text-sm mt-8 ${isMobile ? 'flex-col items-center' : ''}`}>
-                {footerButtons.map((button, index) => (
+            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex items-center text-sm h-[60px] gap-4 mt-8 ${isMobile ? 'flex-col items-center' : ''}`}>
+                <a
+                    draggable="false"
+                    href="mailto:yangxdev@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <NewButton label="Email Me" icon={<IoIosMail />} />
+                </a>
+                <NewButton label="Telegram" url='https://telegram.me/yangxng' icon={<FaTelegramPlane />
+                } />
+                <NewButton label="LinkedIn" url='https://www.linkedin.com/in/yangxng/' icon={<FaLinkedin />} />
+                {/* {footerButtons.map((button, index) => (
                     <React.Fragment key={index}>
                         {index > 0 && <span className="divider mx-2"></span>}
                         <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
@@ -54,7 +68,7 @@ function Footer() {
                             )}
                         </div>
                     </React.Fragment>
-                ))}
+                ))} */}
             </div>
             <div className="footer-text-subsubtitle relative mt-8 mb-8 text-xs opacity-100 text-center">
                 <div className="opacity-80">

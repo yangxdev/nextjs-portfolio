@@ -9,16 +9,15 @@ interface NewButtonProps {
     light?: boolean;
     small?: boolean;
     scrollTo?: string;
+    disableZoom?: boolean;
 }
 
-const NewButton: React.FC<NewButtonProps> = ({ url, icon, label, light, small, scrollTo }) => (
+const NewButton: React.FC<NewButtonProps> = ({ url, icon, label, light, small, scrollTo, disableZoom }) => (
     <>
         {scrollTo ? (
             <Link to={scrollTo} smooth={true} duration={750} offset={-100}>
                 <div
-                    className={`animated-cursor flex flex-row items-center gap-2 select-none transition-all rounded-xl ${light ? "bg-[#fdfdfd] hover:bg-[#0f0f0f] hover:text-[#fdfdfd] border-[#0f0f0f] border-[0px]" : "bg-[#0f0f0f] hover:bg-[#fdfdfd] hover:text-[#0f0f0f]"} border w-fit ${
-                        small ? "p-3 h-[20px] hover:p-4" : "p-3 h-fit hover:p-4"
-                    } hover:font-semibold ${!url ? "cursor-not-allowed" : ""}`}
+                    className={`animated-cursor flex flex-row items-center gap-2 select-none transition-all rounded-xl ${light ? "bg-[#fdfdfd] hover:bg-[#0f0f0f] hover:text-[#fdfdfd] border-[#0f0f0f] border-[0px]" : "bg-[#0f0f0f] hover:bg-[#fdfdfd] hover:text-[#0f0f0f]"} border w-fit ${small ? "p-3 h-[30px]" : "p-3 h-fit"} ${disableZoom ? "" : "hover:p-4"} hover:font-semibold ${!url ? "cursor-not-allowed" : ""}`}
                     onClick={() => url && window.open(url, "_blank")}
                 >
                     {icon && <div className="w-4">{icon}</div>}
@@ -27,9 +26,7 @@ const NewButton: React.FC<NewButtonProps> = ({ url, icon, label, light, small, s
             </Link>
         ) : (
             <div
-                className={`animated-cursor flex flex-row items-center gap-2 select-none transition-all rounded-xl ${light ? "bg-[#fdfdfd] hover:bg-[#0f0f0f] hover:text-[#fdfdfd] border-[#0f0f0f] border-[0px]" : "bg-[#0f0f0f] hover:bg-[#fdfdfd] hover:text-[#0f0f0f]"} border w-fit ${
-                    small ? "p-3 h-[20px] hover:p-4" : "p-3 hover:p-4"
-                } hover:font-semibold ${!url ? "cursor-not-allowed" : ""}`}
+                className={`animated-cursor flex flex-row items-center gap-2 select-none transition-all rounded-xl ${light ? "bg-[#fdfdfd] hover:bg-[#0f0f0f] hover:text-[#fdfdfd] border-[#0f0f0f] border-[0px]" : "bg-[#0f0f0f] hover:bg-[#fdfdfd] hover:text-[#0f0f0f]"} border w-fit ${small ? "p-3 h-[30px]" : "p-3"} ${disableZoom ? "" : "hover:p-4"} hover:font-semibold ${!url ? "cursor-not-allowed" : ""}`}
                 onClick={() => url && window.open(url, "_blank")}
             >
                 {icon && <div className="w-4">{icon}</div>}

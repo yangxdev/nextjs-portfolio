@@ -108,8 +108,6 @@ const data = [
 
 function Timeline() {
     const [elements, setElements] = useState(data.slice(0, 2));
-    console.log("elements", elements.length);
-    console.log("data", data.length);
 
     // useEffect(() => {
     //     loadMore();
