@@ -23,10 +23,20 @@ function CurriculumVitae() {
             <h1 className="text-3xl text-left text-[#f0f0f0] mb-4 font-bold">Curriculum Vitae</h1>
             <div className="text-left text-sm mb-4">
                 Not satisfied with online resume makers, I taught myself React.js and Next.js to craft a personalized CV tailored to my needs. The challenging yet fulfilling process not only enhanced my skills but also resulted in a unique tool showcasing my qualifications and experiences.
+                <br />
+                <strong>Note: the full interactive CV can be viewed from this website on desktop only.</strong>
             </div>
             <div className="flex justify-start">
                 {isDesktop ? (
-                    <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: "100%", height: "111.6vh" }} />
+                    <>
+                        <div className="flex flex-col w-full gap-4">
+                            <div className="gap-4 flex h-[45px]">
+                                <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" />
+                                <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
+                            </div>
+                            <embed src="https://nextjs-cv-snowy.vercel.app/" className="rounded-xl" style={{ width: "100%", height: "120vh" }} />
+                        </div>
+                    </>
                 ) : (
                     <>
                         <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" />
@@ -35,12 +45,6 @@ function CurriculumVitae() {
                     </>
                 )}
             </div>
-            {isDesktop && (
-                <div className="text-left text-md my-4 flex items-center h-[55px]">
-                    <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
-                    <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
-                </div>
-            )}
         </div>
     );
 }

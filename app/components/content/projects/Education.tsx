@@ -45,7 +45,7 @@ function Education() {
                                     <Badge label="Android Studio" bgColor="#A4C639" />
                                     <Badge label="Java" bgColor="#E11E22" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
-                                    <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="distributedSystemsProject" />
+                                    <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="mobileDevicesProgrammingProject" />
                                 </div>
                                 <div className="flex items-center"></div>
                             </div>
@@ -57,7 +57,7 @@ function Education() {
                                     {/* <Badge label="Flask" bgColor="#367E8E" /> */}
                                     <Badge label="Javascript" bgColor="#f7df1e" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
-                                    <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="mobileDevicesProgrammingProject" />
+                                    <NewButton label="Go to project" icon={<FaArrowDown />} light small scrollTo="distributedSystemsProject" />
                                 </div>
                             </div>
                         </div>
