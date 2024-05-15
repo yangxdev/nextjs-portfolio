@@ -29,7 +29,7 @@ const data = [
         subtitle: "Freelance",
         location: "Full Remote",
         content: "Crafting exceptional front-end products for clients, specializing in React.js and Next.js.",
-        button: <div className="border w-fit rounded-xl"><NewButton label="Go to projects" scrollTo="Personal Projects & Freelance" light icon={<FaArrowDown />} /></div>,
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to projects" scrollFrom="Timeline" scrollTo="Personal Projects & Freelance" light icon={<FaArrowDown />} /></div>,
     },
     {
         props: {
@@ -44,7 +44,7 @@ const data = [
         subtitle: "Deloitte Digital",
         location: "Milan, MI / Full Remote",
         content: "Contributing to the development of a globally used e-commerce booking platform.",
-        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollTo="Deloitte Digital" light icon={<FaArrowDown />} /></div>,
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Deloitte Digital" light icon={<FaArrowDown />} /></div>,
     },
     {
         props: {
@@ -74,7 +74,7 @@ const data = [
         subtitle: "University of Milan-Bicocca",
         location: "Milan, MI",
         content: "Thesis: 'The transition from monolithic to microservices architecture in e-commerce platforms'.",
-        button: <NewButton label="Go to details" scrollTo="Education" icon={<FaArrowDown />} />,
+        button: <NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Education" icon={<FaArrowDown />} />,
     },
     {
         props: {

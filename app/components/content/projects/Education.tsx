@@ -2,7 +2,7 @@ import React from "react";
 import withFadeIn from "@functional/withFadeIn";
 import NewButton from "../../ui/NewButton";
 import { IoIosShareAlt } from "react-icons/io";
-import { FaArrowDown, FaBook } from "react-icons/fa6";
+import { FaArrowDown, FaBook, FaBookOpen } from "react-icons/fa6";
 import Badge from "../../ui/Badge";
 import { MdSchool } from "react-icons/md";
 
@@ -16,8 +16,11 @@ function Education() {
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Education</h1>
-            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">📚 From 2015</h3>
+            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Education</h1>
+            <h3 className="text-lg text-center text-[#f0f0f0] mt-2 gap-2 flex flex-row items-center justify-center">
+                <FaBookOpen />
+                From 2015
+            </h3>
             {/* <br />
             My educational journey in the Software Development field started since I was in high school, where I learned the fundamentals of programming and computer science. Coupled with my passion for technology and self-learning, I was able to build a solid foundation for my career. */}
             <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
@@ -49,7 +52,7 @@ function Education() {
                                     <Badge label="Python" bgColor="#3776ab" />
                                     <Badge label="Javascript" bgColor="#f7df1e" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
-                                    <NewButton label="Go to project" icon={<FaArrowDown />} disableZoom light small scrollTo="distributedSystemsProject" />
+                                    <NewButton label="Go to project" icon={<FaArrowDown />} disableZoom light small scrollTo="distributedSystemsProject" scrollFrom="Education" />
                                 </div>
                             </div>
                             <div className="border p-3 rounded-lg mt-2">
@@ -59,7 +62,7 @@ function Education() {
                                     <Badge label="Android Studio" bgColor="#A4C639" />
                                     <Badge label="Java" bgColor="#E11E22" />
                                     <Badge label="GitHub" bgColor="#2b3137" />
-                                    <NewButton label="Go to project" icon={<FaArrowDown />} disableZoom light small scrollTo="mobileDevicesProgrammingProject" />
+                                    <NewButton label="Go to project" icon={<FaArrowDown />} disableZoom light small scrollTo="mobileDevicesProgrammingProject" scrollFrom="Education" />
                                 </div>
                                 <div className="flex items-center"></div>
                             </div>
@@ -84,15 +87,15 @@ function Education() {
                         </div>
                     </div>
                 </div>
-                <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
+                <div className="card text-left border border-[#fdfdfd] text-[#fdfdfd] bg-[#0f0f0f] rounded-lg p-4 mt-4">
                     <div className="gap-3 flex flex-col">
                         <div className="flex flex-row justify-between items-center flex-wrap gap-2">
-                            <div className="font-bold flex flex-row gap-4 items-center"
-                            ><FaBook size={32} />
+                            <div className="font-bold flex flex-row gap-4 items-center">
+                                <FaBook size={32} />
                                 <div className="text-lg">ITTS "Belluzzi - Da Vinci", Rimini, Italy</div>
                             </div>
                             <div className="border rounded-xl">
-                                <NewButton url="https://www.ittsrimini.edu.it/" icon={<IoIosShareAlt />} disableZoom label="Visit website" light />
+                                <NewButton url="https://www.ittsrimini.edu.it/" icon={<IoIosShareAlt />} disableZoom label="Visit website" />
                             </div>
                         </div>
                         <div className="flex flex-row gap-3">

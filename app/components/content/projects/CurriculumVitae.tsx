@@ -7,6 +7,7 @@ import NewButton from "../../ui/NewButton";
 import GithubIcon from "@/public/icons/githubIcon";
 import { CiShare1 } from "react-icons/ci";
 import { IoIosShareAlt } from "react-icons/io";
+import Badge from "../../ui/Badge";
 
 function CurriculumVitae() {
     const isDesktop = useIsDesktop();
@@ -20,17 +21,23 @@ function CurriculumVitae() {
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-left text-[#f0f0f0] mb-4 font-bold">Curriculum Vitae</h1>
-            <div className="text-left text-sm mb-4">
-                Not satisfied with online resume makers, I taught myself React.js and Next.js to craft a personalized CV tailored to my needs. The challenging yet fulfilling process not only enhanced my skills but also resulted in a unique tool showcasing my qualifications and experiences.
-                <br />
-                <strong>Note: the full interactive CV can be viewed from this website on desktop only.</strong>
+            <h1 className="text-3xl text-center text-[#f0f0f0] mb-4 font-bold">Curriculum Vitae</h1>
+            <div className="badges flex flex-row justify-center items-center mb-4 gap-2">
+                <Badge label="React" bgColor="#61dafb" />
+                <Badge label="Tailwind CSS" bgColor="#06b6d4" />
+                <Badge label="TypeScript" bgColor="#007acc" />
+                <Badge label="Vercel" bgColor="#39393" />
             </div>
-            <div className="flex justify-start">
+            <div className="text-center text-sm mb-4 w-[90%] md:w-[80%] flex flex-col justify-center items-center ml-auto mr-auto">
+                Not satisfied with online resume makers, I initially decided to build my own interactive CV using React and Tailwind CSS. The project is open-source and can be viewed on GitHub.
+                <br />
+                {!isDesktop && <strong>Note: the fully interactive CV can be viewed from this website on desktop only.</strong>}
+            </div>
+            <div className="flex justify-center">
                 {isDesktop ? (
                     <>
                         <div className="flex flex-col w-full gap-4">
-                            <div className="gap-4 flex h-[45px]">
+                            <div className="gap-4 flex h-[45px] flex-row justify-center">
                                 <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" />
                                 <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
                             </div>
@@ -39,9 +46,11 @@ function CurriculumVitae() {
                     </>
                 ) : (
                     <>
-                        <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" />
-                        <div className="mx-2"></div>
-                        <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
+                        <div className="h-[45px] flex flex-row justify-center">
+                            <NewButton url="cv/XIANG_CV.pdf" icon={<IoIosShareAlt />} label="View CV" />
+                            <div className="mx-2"></div>
+                            <NewButton url="https://github.com/yangxdev/nextjs-cv/" icon={<GithubIcon />} label="GitHub Repository" />
+                        </div>
                     </>
                 )}
             </div>

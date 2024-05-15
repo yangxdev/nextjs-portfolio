@@ -22,6 +22,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NewButton from "../../ui/NewButton";
 import GithubIcon from "@/public/icons/githubIcon";
 import Badge from "../../ui/Badge";
+import { FaRocket } from "react-icons/fa6";
 
 function PersonalProjects() {
     const isMobile = useIsMobile();
@@ -38,8 +39,11 @@ function PersonalProjects() {
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-left text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
-            <h3 className="text-lg text-left text-[#f0f0f0] mt-2">🚀 From 2024</h3>
+            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
+            <h3 className="text-lg text-center text-[#f0f0f0] mt-2 gap-2 items-center justify-center flex flex-row">
+                <FaRocket />
+                From 2024
+            </h3>
             <br />
 
             <div className="fm-row flex flex-col">
@@ -60,6 +64,7 @@ function PersonalProjects() {
                     <h3 className="mb-4 font-semibold text-lg">My personal finance manager</h3>
                     <div className="badges flex flex-wrap flex-row items-center justify-center mb-4 gap-2">
                         <Badge label="React" bgColor="#61DAFB" />
+                        <Badge label="TypeScript" bgColor="#007acc" />
                         <Badge label="Next.js" bgColor="#494949" />
                         <Badge label="Tailwind CSS" bgColor="#38B2AC" />
                         <Badge label="PostgreSQL" bgColor="#336791" />
@@ -91,16 +96,15 @@ function PersonalProjects() {
                     </div>
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className="text-2xl font-bold text-[#f0f0f0]">
-                        🌷 Flower Manager
-                    </h2>
+                    <h2 className="text-2xl font-bold text-[#f0f0f0]">🌷 Flower Manager</h2>
                     <h3 className="mb-4 font-semibold text-lg">The order manager for florists</h3>
                     <div className="badges flex flex-wrap flex-row items-center justify-center mb-4 gap-2">
                         <Badge label="React" bgColor="#61DAFB" />
+                        <Badge label="TypeScript" bgColor="#007acc" />
                         <Badge label="Next.js" bgColor="#494949" />
                         <Badge label="Redux" bgColor="#764ABC" />
-                        <Badge label="Tailwind CSS" bgColor="#38B2AC" />
                         <Badge label="AWS S3" bgColor="#FF9900" />
+                        <Badge label="Tailwind CSS" bgColor="#38B2AC" />
                         <Badge label="PostgreSQL" bgColor="#336791" />
                         <Badge label="Prisma" bgColor="#bf8bff" />
                         <Badge label="Ant Design" bgColor="#0170FE" />
