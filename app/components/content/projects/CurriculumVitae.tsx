@@ -1,11 +1,8 @@
 import React from "react";
-import Button from "@ui/Button";
-import { useMediaQuery } from "react-responsive";
 import withFadeIn from "@functional/withFadeIn";
 import { useIsDesktop } from "@functional/useIsDesktop";
 import NewButton from "../../ui/NewButton";
 import GithubIcon from "@/public/icons/githubIcon";
-import { CiShare1 } from "react-icons/ci";
 import { IoIosShareAlt } from "react-icons/io";
 import Badge from "../../ui/Badge";
 
@@ -29,7 +26,7 @@ function CurriculumVitae() {
                 <Badge label="Vercel" bgColor="#393939" />
             </div>
             <div className="text-center text-sm mb-4 w-[90%] md:w-[80%] flex flex-col justify-center items-center ml-auto mr-auto">
-                Not satisfied with online resume makers, I initially decided to build my own interactive CV using React and Tailwind CSS. The project is open-source and can be viewed on GitHub.
+                Not satisfied with online resume makers, I decided to build my own interactive CV using React and Tailwind CSS. The component structure makes it easy to update and maintain as I continue to develop my skills and experience.
                 <br />
                 {!isDesktop && <strong>Note: the fully interactive CV can be viewed from this website on desktop only.</strong>}
             </div>
