@@ -3,21 +3,22 @@ import withFadeIn from '@functional/withFadeIn';
 import NewButton from '../../ui/NewButton';
 import { IoIosShareAlt } from 'react-icons/io';
 import Badge from '../../ui/Badge';
-import { FaArrowDown } from 'react-icons/fa6';
+import { FaArrowDown, FaSuitcase } from 'react-icons/fa6';
 import { MdOutlineLaptop } from 'react-icons/md';
 
 function DeloitteDigital() {
     return (
-        <div id="Deloitte Digital" className="deloitte-digital w-full max-w-5xl py-20 border-b select-none border-slate-700 mx-6 md:mx-20 lg:mx-40">
+        <div id="Work" className="deloitte-digital w-full max-w-5xl py-20 border-b select-none border-slate-700 mx-6 md:mx-20 lg:mx-40">
             <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Work</h1>
-            <h3 className="text-lg text-center text-[#f0f0f0] mt-2">From March 2023</h3>
+            <h3 className="text-lg text-center text-[#f0f0f0] mt-2 flex flex-row gap-2 justify-center items-center"><FaSuitcase />
+                From March 2023</h3>
             <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
                 <div className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
                     <div className="gap-2 flex flex-col">
                         <div className="flex flex-row justify-between items-center flex-wrap gap-2">
-                            <div className="font-bold flex flex-row items-center gap-4"><MdOutlineLaptop size={32}/>
+                            <div className="font-bold flex flex-row items-center gap-4"><MdOutlineLaptop size={32} />
                                 <div className="text-xl">Deloitte Digital</div>
-                                </div>
+                            </div>
                             <div className="border rounded-xl">
                                 <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} disableZoom label={`Visit website`} light />
                             </div>

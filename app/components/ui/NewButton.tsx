@@ -31,7 +31,7 @@ const NewButton: React.FC<NewButtonProps> = ({ url, icon, label, light, small, s
                             icon: <MdInfo />,
                             position: "bottom-center",
                             duration: 3000,
-                            style: { marginBottom: "18px", borderRadius: "10px", background: "#0f0f0f", color: "#fdfdfd" },
+                            style: { border:"0px solid #fdfdfd", marginBottom: "18px", borderRadius: "10px", background: "#0f0f0f", color: "#fdfdfd" },
                         });
                     }}
                 >

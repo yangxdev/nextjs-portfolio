@@ -1,31 +1,35 @@
 import React from "react";
 import withFadeIn from "@functional/withFadeIn";
 import SummaryElement from "@ui/SummaryElement";
+import { IoBook, IoSchool } from "react-icons/io5";
+import { FaSuitcase } from "react-icons/fa6";
+import { FaRocket } from "react-icons/fa6";
+import { FaPencilRuler } from "react-icons/fa";
 
 function Summary() {
     const experiences = [
         {
-            emoji: "🎓",
+            icon: <IoBook />,
             title: "Education",
             description: "Studied Computer Science at the University of Milan. Here I learned the fundamentals of computer science and how to think like a software engineer.",
         },
         {
-            emoji: "💼",
-            title: "Deloitte Digital",
-            description: "My first job as a Software Engineer. Here I learned how to work in a team and how to deliver high-quality software solutions.",
+            icon: <FaSuitcase />,
+            title: "Work",
+            description: "Working as a Full-stack Developer at Deloitte Digital. Here I contributed to the development of a globally used e-commerce booking platform.",
         },
         {
-            emoji: "🚀",
+            icon: <FaRocket />,
             title: "Personal Projects & Freelance",
             description: "While gaining experience in the industry, I worked on personal projects and freelance gigs to further develop my skills and knowledge.",
         },
         {
-            emoji: "🎨",
+            icon: <FaPencilRuler />,
             title: "Frontend Mentor",
-            description: "Where design meets code. Here I honed my frontend development skills by bringing thought-provoking website designs to life.",
+            description: "Challenging myself with Frontend Mentor projects. Here I learned the fundamentals of front-end development and how to work with modern technologies.",
         },
         {
-            emoji: "🎓",
+            icon: <IoSchool />,
             title: "University Projects",
             description: "My first projects in software development. Here I learned to work for the first time in a team and to deliver software solutions following deadlines and specific requirements.",
         },
@@ -43,8 +47,11 @@ function Summary() {
             <h1 className="text-left text-3xl text-[#f0f0f0] my-4">
                 <strong>My experience</strong>
             </h1>
+            <h2>
+                Press one of the following sections to learn more!
+            </h2>
             {experiences.map((experience, index) => (
-                <SummaryElement emoji={experience.emoji} sectionId={experience.title} key={index} title={experience.title} description={experience.description} />
+                <SummaryElement icon={experience.icon} sectionId={experience.title} key={index} title={experience.title} description={experience.description} />
             ))}
         </div>
     );

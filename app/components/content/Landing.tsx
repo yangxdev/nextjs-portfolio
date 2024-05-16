@@ -8,6 +8,12 @@ import Button from '@ui/Button';
 // import LogoSmall from '@logos/logo_small_gray.jpg';
 import Logo from '@logos/logo_transparent.png';
 import NewButton from '../ui/NewButton';
+import { FaArrowCircleDown } from 'react-icons/fa';
+import { IoDocumentText } from 'react-icons/io5';
+import { IoIosMail } from 'react-icons/io';
+import { AiFillMessage } from "react-icons/ai";
+import { useIsDesktop } from '../functional/useIsDesktop';
+
 
 function Landing() {
     const technologies = [
@@ -36,6 +42,7 @@ function Landing() {
     ];
 
     const isMobile = useIsMobile();
+    const isDesktop = useIsDesktop();
 
     return (
         <div data-testid="Landing" id="Welcome" className="landing relative select-none py-20 border-b border-slate-700 flex flex-col
@@ -66,17 +73,15 @@ function Landing() {
                 </div>
             </div>
             <div className={`landing-buttons flex max-w-max flex-col mt-8`}>
-                <div className={`flex ${isMobile ? 'flex-col gap-4 h-[200px]' : 'flex-row items-center h-[100px]'}`}>
+                <div className={`flex ${isMobile ? 'flex-col gap-4 h-[235px]' : 'flex-row items-center h-[100px]'}`}>
                     <div className="max-w-fit mr-4">
-                        <Link to={'Experience'} smooth={true} duration={750} offset={-100}>
-                            {/* <Button type="main" content="Read my Experience" /> */}
-                            <NewButton label="✨ Read my Experience" />
-                        </Link>
+                        <NewButton icon={<FaArrowCircleDown />} label="Read my Experience" scrollFrom='Welcome' scrollTo='Experience' />
                     </div>
                     <div className="max-w-fit mr-4">
-                        <Link to={'Curriculum Vitae'} smooth={true} duration={750} offset={-100}>
-                            <NewButton label="📄 Read my CV" />
-                        </Link>
+                        <NewButton icon={<AiFillMessage />} label="Go to Contacts" scrollFrom='Welcome' scrollTo='Contact Me' />
+                    </div>
+                    <div className="max-w-fit mr-4">
+                        <NewButton icon={<IoDocumentText />} scrollFrom='Welcome' scrollTo='Curriculum Vitae' label="Read my CV" />
                     </div>
                     <div className="landing-button-email">
                         <a
@@ -85,9 +90,11 @@ function Landing() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <NewButton label="📧 Email Me" />
+                            <NewButton icon={<IoIosMail />
+                            } label=" Email Me" />
                         </a>
                     </div>
+
                 </div>
 
                 <div className="landing-subtitle mt-12 text-sm opacity-70 font-light max-w-full flex flex-wrap">

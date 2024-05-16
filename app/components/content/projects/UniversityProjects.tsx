@@ -12,10 +12,12 @@ import SDTransfer600 from "@university/SD_transfer_600.gif";
 import PDMSmooviePreview from "@university/PDM_smoovie_preview.png";
 import PDMSmooviePreviewMobile from "@university/PDM_smoovie_preview_mobile.png";
 import NewButton from "../../ui/NewButton";
-import { IoIosShareAlt } from "react-icons/io";
+import { IoIosShareAlt, IoMdPhonePortrait } from "react-icons/io";
 import GithubIcon from "@/public/icons/githubIcon";
 import Badge from "../../ui/Badge";
 import { MdSchool } from "react-icons/md";
+import { BsFillPhoneFill } from "react-icons/bs";
+import { BiSolidBank } from "react-icons/bi";
 
 function UniversityProjects() {
     const isMobile = useIsMobile();
@@ -57,7 +59,8 @@ function UniversityProjects() {
                 </div>
                 <div className="fm-col1 flex-1 text-center mt-4">
                     <h2 className="mb-1 text-2xl font-bold text-[#f0f0f0]">Distributed Systems Course Project: Flask Banking System</h2>
-                    <h3 className="mb-4 text-lg text-[#f0f0f0]">June 2022</h3>
+                    <h3 className="mb-4 text-lg text-[#f0f0f0] flex flex-row items-center justify-center gap-1"><BiSolidBank />
+June 2022</h3>
                     <div className="badges flex flex-row mb-4 items-center justify-center gap-2">
                         <Badge label="Python" bgColor="#3776ab" />
                         <Badge label="Javascript" bgColor="#f7df1e" />
@@ -74,7 +77,7 @@ function UniversityProjects() {
                             <li>Make a withdrawal</li>
                             <li>Make a transfer to another user</li>
                         </ul> */}
-                        <div className="flex flex-row flex-wrap gap-2 justify-center items-center w-[50%] ml-auto mr-auto mt-2">
+                        <div className="flex flex-row flex-wrap gap-2 justify-center items-center w-[85%] ml-auto mr-auto mt-2">
                             <Badge label="Search a user by ID" bgColor="#2b3137" />
                             <Badge label="View user balance" bgColor="#2b3137" />
                             <Badge label="View user transactions" bgColor="#2b3137" />
@@ -105,7 +108,9 @@ function UniversityProjects() {
                 </div>
                 <div className="fm-col1 flex-1 text-center mt-4">
                     <h2 className="mb-1 text-2xl font-bold text-[#f0f0f0]">Mobile Devices Programming Project: Smoovie</h2>
-                    <h3 className="mb-4 text-lg text-[#f0f0f0]">August 2022 to September 2022</h3>
+                    <h3 className="mb-4 text-lg text-[#f0f0f0] flex flex-row items-center justify-center gap-1"><BsFillPhoneFill />
+
+                        August 2022 to September 2022</h3>
                     <div className="badges flex flex-row mb-4 justify-center items-center gap-2">
                         <Badge label="Android Studio" bgColor="#A4C639" />
                         <Badge label="Java" bgColor="#E11E22" />
@@ -114,7 +119,7 @@ function UniversityProjects() {
                     <div className="text-sm">
                         For the Mobile Devices Programming course, our task was to develop an Android application that would allow users to search for movies and TV shows. The application had to be developed using the Android Studio IDE and had to be able to communicate with a server-side API. The
                         application had to be able to perform the following operations:
-                        <div className="flex flex-row flex-wrap gap-2 justify-center items-center w-[50%] ml-auto mr-auto mt-2">
+                        <div className="flex flex-row flex-wrap gap-2 justify-center items-center w-[85%] ml-auto mr-auto mt-2">
                             <Badge label="Search for movies according to user's criteria" bgColor="#2b3137" />
                             <Badge label="Real-time information gathering thanks to TMDB's API" bgColor="#2b3137" />
                             <Badge label="Local saving of user's favorite movies" bgColor="#2b3137" />

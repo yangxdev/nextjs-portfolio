@@ -5,7 +5,8 @@ import withFadeIn from '@functional/withFadeIn';
 import { useIsMobile } from '@functional/useIsMobile';
 import Button from '@ui/Button';
 // import LogoSmall from '@logos/logo_small_gray.jpg';
-import Logo from '@logos/logo_transparent.png'; import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+import Logo from '@logos/logo_transparent.png'; import { FaArrowUp, FaLinkedin, FaTelegramPlane } from "react-icons/fa"; import { SiLinktree } from "react-icons/si";
+
 
 import NewButton from './NewButton';
 import { IoIosMail } from 'react-icons/io';
@@ -31,12 +32,12 @@ function Footer() {
             <div className="footer-text-title text-center text-3xl font-bold">
                 LET&apos;S GET IN TOUCH
             </div>
-            <div className="footer-text-subtitle flex text-center text-sm mt-6">
+            <div className="footer-text-subtitle flex text-center text-sm mt-6 md:w-[80%]">
                 <p>
                     Let&apos;s talk about your project and how I can help you, or if you just want to chat about technology - shoot me an email, text me on Telegram, or write me on LinkedIn!
                 </p>
             </div>
-            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex items-center text-sm gap-4 mt-8 ${isMobile ? 'h-[180px] justify-center flex-col items-center' : 'h-[60px]'}`}>
+            <div data-testid="footer-text-buttons" className={`footer-text-buttons flex items-center text-sm gap-4 mt-8 justify-center flex-wrap md:h-[55px]`}>
                 <a
                     draggable="false"
                     href="mailto:yangxdev@gmail.com"
@@ -48,27 +49,10 @@ function Footer() {
                 <NewButton label="Telegram" url='https://telegram.me/yangxng' icon={<FaTelegramPlane />
                 } />
                 <NewButton label="LinkedIn" url='https://www.linkedin.com/in/yangxng/' icon={<FaLinkedin />} />
-                {/* {footerButtons.map((button, index) => (
-                    <React.Fragment key={index}>
-                        {index > 0 && <span className="divider mx-2"></span>}
-                        <div className={`button-mobile-wrapper ${isMobile ? 'mb-2' : ''}`}>
-                            {button.content === "Email Me" ? (
-                                <div data-testid="Email Me" className={`footer-button-email w-fit py-2 px-4 font-[400px] border border-slate-500 rounded-xl hover:bg-accent hover:text-background ease-in-out duration-200}`}>
-                                    <a
-                                        draggable="false"
-                                        href="mailto:yangxdev@gmail.com"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        Email Me
-                                    </a>
-                                </div>
-                            ) : (
-                                <Button type={button.type as 'main'} content={button.content} onClick={button.onClick} />
-                            )}
-                        </div>
-                    </React.Fragment>
-                ))} */}
+                <NewButton label="Linktree" url='https://linktr.ee/yang.xng'
+                    icon={<SiLinktree />
+                    }
+                />
             </div>
             <div className="footer-text-subsubtitle relative mt-8 mb-8 text-xs opacity-100 text-center">
                 <div className="opacity-80">
@@ -81,11 +65,15 @@ function Footer() {
                     alt="YX Logo"
                     width={1000}
                     height={0}
-                    className='footer-logo w-[6rem] h-auto rounded-xl p-6 left-0 right-0 m-auto -z-50 absolute cursor-pointer opacity-80 hover:opacity-100 transition-all'
+                    className='footer-logo w-[6rem] h-auto rounded-xl p-6 left-0 right-0 m-auto -z-50 cursor-pointer opacity-80 hover:opacity-100 transition-all hover:scale-110 duration-200 ease-in-out'
                     draggable={false}
                     priority={true}
                     onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                 />
+                <div className="opacity-80 mt-1 flex flex-row items-center justify-center gap-1">
+                    Press the logo to scroll to the top <FaArrowUp />
+
+                </div>
             </div>
         </div>
     )

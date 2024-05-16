@@ -22,7 +22,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import NewButton from "../../ui/NewButton";
 import GithubIcon from "@/public/icons/githubIcon";
 import Badge from "../../ui/Badge";
-import { FaRocket } from "react-icons/fa6";
+import { FaMoneyBillWave, FaMoneyCheckDollar, FaRocket } from "react-icons/fa6";
+import { PiFlowerLotusBold } from "react-icons/pi";
 
 function PersonalProjects() {
     const isMobile = useIsMobile();
@@ -60,8 +61,10 @@ function PersonalProjects() {
                     </div>
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className=" text-2xl font-bold text-[#f0f0f0]">💸 Budget Buddy</h2>
-                    <h3 className="mb-4 font-semibold text-lg">My personal finance manager</h3>
+                    <h2 className=" text-2xl font-bold text-[#f0f0f0]">Budget Buddy</h2>
+                    <h3 className="mb-4 font-semibold text-lg flex flex-row items-center justify-center gap-2"><FaMoneyCheckDollar />
+
+                        My personal finance manager</h3>
                     <div className="badges flex flex-wrap flex-row items-center justify-center mb-4 gap-2">
                         <Badge label="React" bgColor="#61DAFB" />
                         <Badge label="TypeScript" bgColor="#007acc" />
@@ -96,8 +99,9 @@ function PersonalProjects() {
                     </div>
                 </div>
                 <div className={`fm-col1 flex-1 ${textDirection} mt-4`}>
-                    <h2 className="text-2xl font-bold text-[#f0f0f0]">🌷 Flower Manager</h2>
-                    <h3 className="mb-4 font-semibold text-lg">The order manager for florists</h3>
+                    <h2 className="text-2xl font-bold text-[#f0f0f0]">Flower Manager</h2>
+                    <h3 className="mb-4 font-semibold text-lg flex flex-row items-center justify-center gap-1"><PiFlowerLotusBold />
+                        The order manager for florists</h3>
                     <div className="badges flex flex-wrap flex-row items-center justify-center mb-4 gap-2">
                         <Badge label="React" bgColor="#61DAFB" />
                         <Badge label="TypeScript" bgColor="#007acc" />

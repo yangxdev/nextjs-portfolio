@@ -24,7 +24,7 @@ export default function HomePage() {
         { label: "Timeline", id: "Timeline" },
         { label: "Curriculum", id: "Curriculum Vitae" },
         { label: "Education", id: "Education" },
-        { label: "Work", id: "Deloitte Digital" },
+        { label: "Work", id: "Work" },
         { label: "Projects", id: "Personal Projects & Freelance" },
         { label: "University", id: "University Projects" },
         { label: "Contacts", id: "Contact Me" },
@@ -71,5 +71,5 @@ export default function HomePage() {
     );
 }
 
-// TODO: add more links on the left side nav bar
-// TODO: add toast to first section's buttons
+// DONE: add more links on the left side nav bar
+// DONE: add toast to first section's buttons

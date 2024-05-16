@@ -44,7 +44,7 @@ const data = [
         subtitle: "Deloitte Digital",
         location: "Milan, MI / Full Remote",
         content: "Contributing to the development of a globally used e-commerce booking platform.",
-        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Deloitte Digital" light icon={<FaArrowDown />} /></div>,
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Work" light icon={<FaArrowDown />} /></div>,
     },
     {
         props: {
@@ -154,4 +154,4 @@ function Timeline() {
 
 export default withFadeIn(Timeline);
 
-// TODO: change to light boxes
+// DONE: change to light boxes
