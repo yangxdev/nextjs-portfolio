@@ -24,8 +24,10 @@ const LoadingScreen = ({ isLoaded }: { isLoaded: boolean }) => {
 
     useEffect(() => {
         if (isLoaded) {
-            const loadingScreen = document.querySelector(".loading-screen-container");
-            loadingScreen?.setAttribute("data-aos", "fade-down");
+            setTimeout(() => {
+                const loadingScreen = document.querySelector(".loading-screen-container");
+                loadingScreen?.setAttribute("data-aos", "fade-down");
+            }, 1000);
         }
     }, [isLoaded]);
 
