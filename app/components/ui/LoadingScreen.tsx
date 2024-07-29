@@ -31,7 +31,7 @@ const LoadingScreen = ({ loadingComplete: loadingComplete }: { loadingComplete: 
                 progress?.setAttribute("data-aos", "fade-up");
                 setTimeout(() => {
                 const loadingScreen = document.querySelector(".loading-screen-container");
-                loadingScreen?.setAttribute("data-aos", "fade-down");
+                loadingScreen?.setAttribute("data-aos", "fade-out");
                 }, 200);
             }, 1000);
         }
