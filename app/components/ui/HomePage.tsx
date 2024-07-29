@@ -17,7 +17,11 @@ import ScrollToTopButton from "@ui/ScrollToTopButton";
 import PersonalProjects from "../content/projects/PersonalProjects";
 import { ScrollPointContext } from "../functional/ScrollPointContext";
 
-export default function HomePage() {
+const HomePage = ({ onLoaded }: { onLoaded: () => void }) => {
+    React.useEffect(() => {
+        onLoaded();
+    }, [onLoaded]);
+
     const sections = [
         // { label: "Start", id: "Welcome" },
         { label: "Summary", id: "Experience" },
@@ -62,14 +66,15 @@ export default function HomePage() {
                     <PersonalProjects />
                     <FrontendMentor />
                     <UniversityProjects />
-                    {/* <CoverLetterMaker /> */}
                     <Footer />
                     <ScrollToTopButton />
                 </div>
             </ScrollPointContext.Provider>
         </>
     );
-}
+};
 
 // DONE: add more links on the left side nav bar
 // DONE: add toast to first section's buttons
+
+export default HomePage;
