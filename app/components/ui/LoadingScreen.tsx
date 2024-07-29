@@ -4,7 +4,7 @@ import logo from "@/public/logos/logo_transparent.png";
 import Image from "next/image"; // Import the 'Image' component from 'next/image'
 import { useEffect, useState } from "react";
 
-const LoadingScreen = ({ isLoaded }: { isLoaded: boolean }) => {
+const LoadingScreen = ({ loadingComplete: loadingComplete }: { loadingComplete: boolean }) => {
     useEffect(() => {
         scrollTo(0, 0);
         AOS.init({
@@ -23,13 +23,13 @@ const LoadingScreen = ({ isLoaded }: { isLoaded: boolean }) => {
     }, []);
 
     useEffect(() => {
-        if (isLoaded) {
+        if (loadingComplete) {
             setTimeout(() => {
                 const loadingScreen = document.querySelector(".loading-screen-container");
                 loadingScreen?.setAttribute("data-aos", "fade-down");
             }, 1000);
         }
-    }, [isLoaded]);
+    }, [loadingComplete]);
 
     return (
         <div className="loading-screen-container bg-[#0f0f0f] h-full w-full absolute z-[200]">

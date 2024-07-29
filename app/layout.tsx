@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import AnimatedCursor from "react-animated-cursor";
 import { Suspense, useEffect, useState } from "react";
+import LoadingContext from "@/app/components/functional/LoadingContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,20 +16,24 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+    const [loadingComplete, setLoadingComplete] = useState(false);
+
     useEffect(() => {
-        setTimeout(() => {
+        if (loadingComplete) {
             const body = document.querySelector("body");
             body?.classList.remove("overflow-hidden");
-        }, 2300);
-    }, []);
+        }
+    }, [loadingComplete]);
 
     return (
         <html lang="en" className="dark">
-            <body className={`${inter.className} overflow-hidden`}>
-                <SpeedInsights />
-                {children}
-                <Analytics />
-            </body>
+            <LoadingContext.Provider value={{ loadingComplete, setLoadingComplete }}>
+                <body className={`${inter.className} overflow-hidden`}>
+                    <SpeedInsights />
+                    {children}
+                    <Analytics />
+                </body>
+            </LoadingContext.Provider>
         </html>
     );
 }
