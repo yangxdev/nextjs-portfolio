@@ -25,15 +25,13 @@ const LoadingScreen = ({ loadingComplete: loadingComplete }: { loadingComplete: 
     useEffect(() => {
         if (loadingComplete) {
             setTimeout(() => {
-                const logo = document.querySelector(".loading-logo")?.parentElement;
-                logo?.setAttribute("data-aos", "fade-down");
-                const progress = document.querySelector(".loading-bar")?.parentElement;
-                progress?.setAttribute("data-aos", "fade-up");
-                setTimeout(() => {
+                // const logo = document.querySelector(".loading-logo")?.parentElement;
+                // logo?.setAttribute("data-aos", "fade-down");
+                // const progress = document.querySelector(".loading-bar")?.parentElement;
+                // progress?.setAttribute("data-aos", "fade-up");
                 const loadingScreen = document.querySelector(".loading-screen-container");
-                loadingScreen?.setAttribute("data-aos", "fade-out");
-                }, 200);
-            }, 1000);
+                loadingScreen?.setAttribute("data-aos", "fade-down");
+            }, 2000);
         }
     }, [loadingComplete]);
 
