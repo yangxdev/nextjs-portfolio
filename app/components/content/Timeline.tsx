@@ -1,18 +1,14 @@
 "use client";
-import React, { ReactElement, useEffect, useState } from "react";
 import withFadeIn from "@functional/withFadeIn";
-import Button from "@ui/Button";
-import LinkedinIcon from "@/public/icons/linkedinIcon";
-import NewButton from "../ui/NewButton";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { MdWorkOutline } from "react-icons/md";
-import { MdComputer } from "react-icons/md";
-import { PiEggCrack } from "react-icons/pi";
+import { useState } from "react";
 import { FaArrowDown, FaPlus } from "react-icons/fa6";
 import { IoBookOutline, IoSchoolOutline } from "react-icons/io5";
 import { LuSchool } from "react-icons/lu";
-import { MdOutlineViewInAr } from "react-icons/md";
+import { MdComputer, MdWorkOutline } from "react-icons/md";
+import { PiEggCrack } from "react-icons/pi";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import NewButton from "../ui/NewButton";
 import './Timeline.css';
 
 const data = [
@@ -28,23 +24,38 @@ const data = [
         title: "Front-end Developer",
         subtitle: "Freelance",
         location: "Full Remote",
-        content: "Crafting exceptional front-end products for clients, specializing in React.js and Next.js.",
+        content: "Crafting exceptional front-end products, specializing in React",
         button: <div className="border w-fit rounded-xl"><NewButton label="Go to projects" scrollFrom="Timeline" scrollTo="Personal Projects & Freelance" light icon={<FaArrowDown />} /></div>,
     },
     {
         props: {
-            date: "March 2023 - Present",
+            date: "November 2024 - Present",
             className: "vertical-timeline-element--work text-[#f0f0f0]",
             contentStyle: { background: "#fdfdfd", border: "1px solid #fdfdfd", color: "#0f0f0f" },
             contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
             iconStyle: { background: "#fdfdfd", color: "#0f0f0f" },
+            icon: <MdComputer />,
+        },
+        title: "Software Engineer",
+        subtitle: "AdKaora (Mondadori Media)",
+        location: "Milan, MI / Hybrid",
+        content: "Research and development of new internal tools, automation, and optimization of existing processes.",
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Work" light={true} icon={<FaArrowDown />} /></div>,
+    },
+    {
+        props: {
+            date: "March 2023 - November 2024",
+            className: "vertical-timeline-element--work text-[#f0f0f0]",
+            contentStyle: { background: "#111", border: "1px solid #fdfdfd", color: "#fdfdfd" },
+            contentArrowStyle: { borderRight: "7px solid #fdfdfd" },
+            iconStyle: { background: "#0f0f0f", color: "#fdfdfd" },
             icon: <MdWorkOutline />,
         },
         title: "Full-stack Developer",
         subtitle: "Deloitte Digital",
         location: "Milan, MI / Full Remote",
         content: "Contributing to the development of a globally used e-commerce booking platform.",
-        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Work" light icon={<FaArrowDown />} /></div>,
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to details" scrollFrom="Timeline" scrollTo="Work" light={false} icon={<FaArrowDown />} /></div>,
     },
     {
         props: {

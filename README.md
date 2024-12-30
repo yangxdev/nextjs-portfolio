@@ -15,7 +15,7 @@
 ---
 
 ### Overview
-Welcome to my Next.js Portfolio, a dynamic and interactive platform designed to go beyond the traditional resume. This portfolio is not just a static representation but a living showcase of my journey in the world of software engineering.
+Welcome to my Portfolio, a dynamic and interactive platform designed to go beyond the traditional resume. This portfolio is not just a static representation but a living showcase of my journey in the world of software engineering.
 
 ---
 

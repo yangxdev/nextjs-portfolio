@@ -22,7 +22,7 @@ function WorkSection() {
                         </div>
                         <div className="flex flex-row gap-3">
                             <div className="font-bold">Role: </div>
-                            <div>Full-stack Developer</div>
+                            <div>Software Engineer</div>
                         </div>
                         <div className="flex flex-row gap-3">
                             <div className="font-bold">Time: </div>
