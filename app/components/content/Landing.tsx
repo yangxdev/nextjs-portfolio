@@ -21,7 +21,8 @@ function Landing() {
         "jQuery",
         "Typescript",
         "React.js",
-        "Next.js",
+        "Python",
+        // "Next.js",
         "Tailwind CSS",
         "Java",
         "Agile",
@@ -67,7 +68,7 @@ function Landing() {
                 </div>
                 <div className="landing-text-secondary mt-4 text-md font-normal">
                     Currently based in <strong>Italy</strong>, I&apos;m a Full-stack Developer at{" "}
-                    <span className="text-accent font-semibold">Deloitte Digital</span>,
+                    <span className="text-accent font-semibold">AdKaora</span>,
                     where I bring innovative solutions to life through code and
                     creativity.
                 </div>

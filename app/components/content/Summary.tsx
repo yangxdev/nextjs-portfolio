@@ -16,7 +16,7 @@ function Summary() {
         {
             icon: <FaSuitcase />,
             title: "Work",
-            description: "Working as a Full-stack Developer at Deloitte Digital. Here I contributed to the development of a globally used e-commerce booking platform.",
+            description: "Working as a Full-stack Developer at AdKaora, previously at Deloitte Digital. Here I contributed to the development of a globally used e-commerce booking platform.",
         },
         {
             icon: <FaRocket />,

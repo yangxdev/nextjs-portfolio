@@ -7,7 +7,7 @@ import Timeline from "@content/Timeline";
 import Landing from "@content/Landing";
 import Summary from "@content/Summary";
 import CurriculumVitae from "@projects/CurriculumVitae";
-import DeloitteDigital from "@projects/DeloitteDigital";
+import WorkSection from "@/app/components/content/projects/WorkSection";
 import Education from "@projects/Education";
 import FrontendMentor from "@projects/FrontendMentor";
 import UniversityProjects from "@projects/UniversityProjects";
@@ -62,7 +62,7 @@ const HomePage = ({ onLoaded }: { onLoaded: () => void }) => {
                     <Timeline />
                     <CurriculumVitae />
                     <Education />
-                    <DeloitteDigital />
+                    <WorkSection />
                     <PersonalProjects />
                     <FrontendMentor />
                     <UniversityProjects />
