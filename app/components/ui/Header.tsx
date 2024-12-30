@@ -24,7 +24,7 @@ export default function Header() {
             )} 
             w-full top-0 py-5 px-6 z-10`}>
             <div className="row flex flex-nowrap justify-between items-center">
-                <Button testid="header-title" type="logo" content="YANGXDEV" onClick={() => {
+                <Button testid="header-title" type="logo" content="YX STUDIO" onClick={() => {
                     // window.location.reload(); window.scrollTo(0, 0); 
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 }} />

@@ -59,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <meta name="twitter:description" content="Portfolio Website, made by Yang // yangxdev" />
                 <meta name="twitter:image" content="https://yangxdev.vercel.app/og-image.png" />
                 <meta name="twitter:image:alt" content="YANGXDEV" />
-                <title>YANGXDEV</title>
+                <title>YX STUDIO</title>
             </head>
             <LoadingContext.Provider value={{ loadingComplete, setLoadingComplete }}>
                 <body className={`${inter.className} overflow-hidden`}>
