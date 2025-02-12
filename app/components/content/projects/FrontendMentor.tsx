@@ -34,7 +34,7 @@ function FrontendMentor() {
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Frontend Mentor</h1>
+            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Projects: Frontend Mentor</h1>
             <h3 className="text-lg text-center text-[#f0f0f0] mt-2 gap-2 flex flex-row justify-center items-center">
                 <FaPencilRuler/>
                 From 2022

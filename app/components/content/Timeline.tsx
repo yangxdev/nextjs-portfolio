@@ -25,7 +25,7 @@ const data = [
         subtitle: "Freelance",
         location: "Full Remote",
         content: "Crafting exceptional front-end products, specializing in React",
-        button: <div className="border w-fit rounded-xl"><NewButton label="Go to projects" scrollFrom="Timeline" scrollTo="Personal Projects & Freelance" light icon={<FaArrowDown />} /></div>,
+        button: <div className="border w-fit rounded-xl"><NewButton label="Go to projects" scrollFrom="Timeline" scrollTo="Personal Projects" light icon={<FaArrowDown />} /></div>,
     },
     {
         props: {

@@ -33,14 +33,14 @@ function PersonalProjects() {
 
     return (
         <div
-            id="Personal Projects & Freelance"
+            id="Personal Projects"
             className="frontend-mentor py-20 border-b select-none border-slate-700 max-w-5xl
             mx-6
             md:mx-20
             lg:mx-40
         "
         >
-            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Personal Projects & Freelance</h1>
+            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Personal Projects</h1>
             <h3 className="text-lg text-center text-[#f0f0f0] mt-2 gap-2 items-center justify-center flex flex-row">
                 <FaRocket />
                 From 2024

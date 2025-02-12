@@ -29,8 +29,8 @@ const HomePage = ({ onLoaded }: { onLoaded: () => void }) => {
         { label: "Curriculum", id: "Curriculum Vitae" },
         { label: "Education", id: "Education" },
         { label: "Work", id: "Work" },
-        { label: "Projects", id: "Personal Projects & Freelance" },
-        { label: "University", id: "University Projects" },
+        { label: "Projects", id: "Personal Projects" },
+        { label: "University", id: "Projects: University" },
         { label: "Contacts", id: "Contact Me" },
     ];
 

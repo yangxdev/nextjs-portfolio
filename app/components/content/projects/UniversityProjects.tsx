@@ -24,14 +24,14 @@ function UniversityProjects() {
 
     return (
         <div
-            id="University Projects"
+            id="Projects: University"
             className="university-projects max-w-5xl py-20 border-b select-none border-slate-700 
             mx-6
             md:mx-20
             lg:mx-40
             "
         >
-            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">University Projects</h1>
+            <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Projects: University</h1>
             {/* <h3 className='text-lg text-left text-[#f0f0f0] mt-2'>From September 2020 to July 2023</h3> */}
             <h3 className="text-lg text-center text-[#f0f0f0] mt-2 flex flex-row gap-2 items-center justify-center">
                 <MdSchool />

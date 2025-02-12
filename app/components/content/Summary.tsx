@@ -20,17 +20,17 @@ function Summary() {
         },
         {
             icon: <FaRocket />,
-            title: "Personal Projects & Freelance",
+            title: "Personal Projects",
             description: "While gaining experience in the industry, I worked on personal projects and freelance gigs to further develop my skills and knowledge.",
         },
-        {
-            icon: <FaPencilRuler />,
-            title: "Frontend Mentor",
-            description: "Challenging myself with Frontend Mentor projects. Here I learned the fundamentals of front-end development and how to work with modern technologies.",
-        },
+        // {
+        //     icon: <FaPencilRuler />,
+        //     title: "Frontend Mentor",
+        //     description: "Challenging myself with Frontend Mentor projects. Here I learned the fundamentals of front-end development and how to work with modern technologies.",
+        // },
         {
             icon: <IoSchool />,
-            title: "University Projects",
+            title: "Projects: University",
             description: "My first projects in software development. Here I learned to work for the first time in a team and to deliver software solutions following deadlines and specific requirements.",
         },
     ];
@@ -39,6 +39,7 @@ function Summary() {
         <div
             id="Experience"
             className="summary max-w-5xl select-none py-20 border-b border-slate-700
+            w-full
             mx-6
             md:mx-20
             lg:mx-40
@@ -50,9 +51,17 @@ function Summary() {
             <h2>
                 Press one of the following sections to learn more!
             </h2>
-            {experiences.map((experience, index) => (
-                <SummaryElement icon={experience.icon} sectionId={experience.title} key={index} title={experience.title} description={experience.description} />
-            ))}
+            <div className="summaries-wrapper flex flex-row gap-3">
+                {experiences.map((experience, index) => (
+                    <SummaryElement
+                        icon={experience.icon}
+                        sectionId={experience.title}
+                        key={index}
+                        title={experience.title}
+                        description={experience.description}
+                    />
+                ))}
+            </div>
         </div>
     );
 }

@@ -28,12 +28,15 @@ function WorkSection() {
                             <div className="font-bold">Time: </div>
                             <div>November 2024 - Present</div>
                         </div>
-                        <div className="font-bold">Projects: </div>
+                        <div className="font-bold">Tasks: </div>
                         <div className="project md:ml-6">
                             <div className="border p-3 rounded-lg">
-                                <div className="font-bold">🚧 Work in Progress! 🚧</div>
-                                {/* <ul className="list-disc ml-6 my-1 text-sm">
-                                </ul> */}
+                                <div className="font-bold"></div>
+                                <ul className="list-disc ml-6 my-1 text-sm">
+                                    <li>Developing ETL tools leveraging AWS services such as S3, Lambda, and Glue to process million of files</li>
+                                    <li>Refactored legacy projects by integrating new technologies (Logging, Docker, Localstack, Devcontainer)</li>
+                                    <li>Maintaining current tools used across the company, fixing bugs and adding new features</li>
+                                </ul>
                                 <div className='badges flex flex-row gap-2 mt-2 flex-wrap'>
                                     <Badge label="Python" bgColor='#3776AB' />
                                     <Badge label="Docker" bgColor='#2496ED' />
@@ -51,21 +54,23 @@ function WorkSection() {
                                 {/* <div className="font-bold">Client</div> */}
                                 {/* <div className="text-sm">1 Product Manager, 2 testers</div> */}
                                 <div className="badges flex flex-row gap-2 mt-2 flex-wrap">
-                                    <Badge label="Monday" bgColor='#7B68EE' />
+                                    <Badge label="GitHub" bgColor='#181717' />
                                     <Badge label="Slack" bgColor='#4A154B' />
+                                    <Badge label="Notion" bgColor='#D1BB91' />
+                                    <Badge label="Monday" bgColor='#7B68EE' />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="DeloitteDigital" className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
+                <div id="DeloitteDigital" className="card text-left border border-[#fdfdfd] text-[#fdfdfd] bg-[#0f0f0f] rounded-lg p-4 mt-4">
                     <div className="gap-2 flex flex-col">
                         <div className="flex flex-row justify-between items-center flex-wrap gap-2">
                             <div className="font-bold flex flex-row items-center gap-4"><MdOutlineLaptop size={32} />
                                 <div className="text-xl">Deloitte Digital</div>
                             </div>
                             <div className="border rounded-xl">
-                                <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} disableZoom label={`Visit website`} light />
+                                <NewButton url="https://www.deloittedigital.com/us/en.html" icon={<IoIosShareAlt />} disableZoom label={`Visit website`} />
                             </div>
                         </div>
                         <div className="flex flex-row gap-3">
