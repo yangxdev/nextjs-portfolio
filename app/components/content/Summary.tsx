@@ -51,7 +51,7 @@ function Summary() {
             <h2>
                 Press one of the following sections to learn more!
             </h2>
-            <div className="summaries-wrapper flex flex-row gap-3">
+            <div className="summaries-wrapper flex flex-col md:flex-row md:gap-3 gap-0">
                 {experiences.map((experience, index) => (
                     <SummaryElement
                         icon={experience.icon}

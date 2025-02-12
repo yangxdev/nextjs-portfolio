@@ -7,7 +7,7 @@ import NewButton from '../../ui/NewButton';
 
 function WorkSection() {
     return (
-        <div id="Work" className="work-section w-full max-w-5xl py-20 border-b select-none border-slate-700">
+        <div id="Work" className="work-section w-full max-w-5xl py-20 border-b select-none border-slate-700 mx-6 md:mx-20 lg:mx-40">
             <h1 className="text-3xl text-center text-[#f0f0f0] font-bold">Work</h1>
             <div className="cards flex ml-auto my-2 mr-auto flex-col max-w-3xl">
                 <div id="AdKaora" className="card text-left border border-[#fdfdfd] text-[#0f0f0f] bg-[#fdfdfd] rounded-lg p-4 mt-4">
