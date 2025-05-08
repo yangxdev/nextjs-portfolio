@@ -120,7 +120,7 @@ For any updates or changes to the project, simply push the changes to the connec
 ### License
 MIT License
 
-Copyright (c) 2024 yangxdev
+Copyright (c) 2025 yangxdev
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

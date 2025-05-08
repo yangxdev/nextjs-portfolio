@@ -58,7 +58,7 @@ function Footer() {
             </div>
             <div className="footer-text-subsubtitle relative mt-8 mb-8 text-xs opacity-100 text-center">
                 <div className="opacity-80">
-                    <div data-testid="footer-copyright" className="mb-1">© 2024 YANGXDEV</div>
+                    <div data-testid="footer-copyright" className="mb-1">© 2025 YANGXDEV</div>
                     <div data-testid="footer-email" className="mb-1">yangxdev@gmail.com</div>
                     <div data-testid="footer-location" className="mb-1">Milan, Italy → What&apos;s next?</div>
                 </div>
