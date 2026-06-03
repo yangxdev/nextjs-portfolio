@@ -16,6 +16,7 @@ import UniversityProjects from '@projects/UniversityProjects';
 import Footer from '@ui/Footer';
 import Header from '@ui/Header';
 import ScrollToTopButton from '@ui/ScrollToTopButton';
+import PersonalProjects from '../content/projects/PersonalProjects';
 
 export default function HomePage() {
 
@@ -55,6 +56,7 @@ export default function HomePage() {
             <CurriculumVitae />
             <Education />
             <DeloitteDigital />
+            <PersonalProjects />
             <FrontendMentor />
             <UniversityProjects />
             {/* <CoverLetterMaker /> */}

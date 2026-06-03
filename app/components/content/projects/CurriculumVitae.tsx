@@ -3,6 +3,8 @@ import Button from '@ui/Button';
 import { useMediaQuery } from 'react-responsive';
 import withFadeIn from '@functional/withFadeIn';
 import { useIsDesktop } from '@functional/useIsDesktop';
+import NewButton from '../../ui/NewButton';
+import GithubIcon from '@/public/icons/githubIcon';
 
 function CurriculumVitae() {
 
@@ -23,16 +25,16 @@ function CurriculumVitae() {
                     <embed src="https://nextjs-cv-snowy.vercel.app/" style={{ width: '100%', height: '111.6vh' }} />
                 ) : (
                     <>
-                        <Button type="main" content="View CV" onClick={() => window.open('cv/XIANG_CV.pdf')} />
+                        <NewButton url="cv/XIANG_CV.pdf" label="👀 View CV" />
                         <div className="mx-2"></div>
-                        <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/tree/develop')} />
+                        <NewButton url='https://github.com/yangxdev/nextjs-cv/' icon={<GithubIcon/>} label="GitHub Repository" />
                     </>
                 )}
             </div>
             {isDesktop && (
                 <div className="text-left text-md my-4 flex items-center">
                     <div className="mr-4">Interested in how I made this? Check out the GitHub project!</div>
-                    <Button type="main" content="View Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/')} />
+                    <Button type="main" content="View GitHub Repository" onClick={() => window.open('https://github.com/yangxdev/nextjs-cv/')} />
                 </div>
             )}
         </div>
